@@ -16,7 +16,7 @@ public class CharacterBarney : CharacterScript<CharacterBarney>
 		yield return C.Barney.Say("Yeah?");
 		yield return C.WalkToClicked();
 		D.ChatWithBarney.Start();
-		Globals.m_spokeToBarney = true;
+		//Globals.m_spokeToBarney = true;
 		yield return E.Break;
 		
 	}

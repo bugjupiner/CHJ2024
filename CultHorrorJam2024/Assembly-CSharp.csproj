@@ -36,85 +36,88 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestDefinitions.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Systems/SystemDebug.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Character.cs" />
+     <Compile Include="Assets/Game/Gui/Save/GuiSave.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestAnimationTriggers.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/GlobalScriptBase.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/CharacterScript.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestCursorComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/Label.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Effect.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiUtils.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Room.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestScratchpad.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Systems/SystemTime.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDialogTreeComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/DialogTreeComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/AlignToScreen.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/GridContainer.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDropDownBar.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/InventoryPanel.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/Button.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestCameraComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiControl.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Audio/AudioCue.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/AlignToObject.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RegionComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSinMotion.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/WalkableComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Pathfinder.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestInterfaces.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestText.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDialogOption.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/ScreenShakeTester.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/FitToScreen.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestCamera.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/InventoryPanelItem.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/SystemText.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestScratchpad.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Pathfinder.cs" />
+     <Compile Include="Assets/Game/Rooms/Forest/RoomForest.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestUtils.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/HotspotComponent.cs" />
+     <Compile Include="Assets/Game/Gui/Prompt/GuiPrompt.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiUtils.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDropDownBar.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomScript.cs" />
+     <Compile Include="Assets/Game/Inventory/Bucket/InventoryBucket.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/DialogTreeComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/InventoryPanel.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Audio/AudioCue.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSinMotion.cs" />
+     <Compile Include="Assets/Game/Gui/Toolbar/GuiToolbar.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiSpeechBoxComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/CharacterScript.cs" />
+     <Compile Include="Assets/Game/Characters/Barney/CharacterBarney.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/Slider.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestScriptAutosBase.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Systems/SystemDebug.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/Label.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/Button.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestText.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestInterfaces.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Audio/SystemAudio.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestMainSequences.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDialogTreeComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/AlignToScreen.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/CharacterComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Effect.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RegionComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/Container.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Sortable.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuest.cs" />
+     <Compile Include="Assets/Game/Gui/HoverText/GuiHoverText.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestDefinitions.cs" />
+     <Compile Include="Assets/Game/GlobalScript.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/InventoryComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/FitToObject.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/GlobalScriptBase.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Room.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiControl.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestCamera.cs" />
+     <Compile Include="Assets/Game/QuestScriptAutos.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSettings.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/TextField.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomComponentClipper.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Audio/AudioCueSource.cs" />
+     <Compile Include="Assets/Game/Characters/Shapes/CharacterShapes.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/ThirdParty/TextureScaler.cs" />
+     <Compile Include="Assets/Game/Gui/Options/GuiOptions.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/GuiComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/WalkableComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/Image.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/GridContainer.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestCameraComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/AlignToObject.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/FitToScreen.cs" />
+     <Compile Include="Assets/Game/PowerQuestExtensions.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestScript.cs" />
+     <Compile Include="Assets/Game/Rooms/Cells/RoomCells.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PropComponent.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Character.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/ThirdParty/clipper.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestSave.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomScript.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/InventoryComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/Container.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/FitToObject.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/InventoryPanelItem.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSettings.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiSpeechBoxComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestUtils.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/TextField.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestScriptAutosBase.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/SystemText.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomComponentClipper.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Sortable.cs" />
+     <Compile Include="Assets/Game/DialogTree/ChatWithBarney/DialogChatWithBarney.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestGui.cs" />
+     <Compile Include="Assets/Game/Rooms/Title/RoomTitle.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Systems/SystemTime.cs" />
+     <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDialogOption.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestMenuManager.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PixelPerfectCollider.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Audio/AudioCueSource.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestScript.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/ThirdParty/TextureScaler.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuest.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PropComponent.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSaveManager.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Audio/SystemAudio.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/HotspotComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/Gui/Image.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/CharacterComponent.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestGui.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestMainSequences.cs" />
-     <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/GuiComponent.cs" />
-     <Compile Include="Assets/Game/Gui/Prompt/GuiPrompt.cs" />
-     <Compile Include="Assets/Game/Gui/Save/GuiSave.cs" />
-     <Compile Include="Assets/Game/Gui/Toolbar/GuiToolbar.cs" />
-     <Compile Include="Assets/Game/Rooms/Forest/RoomForest.cs" />
-     <Compile Include="Assets/Game/Inventory/Bucket/InventoryBucket.cs" />
-     <Compile Include="Assets/Game/QuestScriptAutos.cs" />
-     <Compile Include="Assets/Game/DialogTree/ChatWithBarney/DialogChatWithBarney.cs" />
-     <Compile Include="Assets/Game/PowerQuestExtensions.cs" />
-     <Compile Include="Assets/Game/GlobalScript.cs" />
-     <Compile Include="Assets/Game/Gui/Options/GuiOptions.cs" />
-     <Compile Include="Assets/Game/Characters/Barney/CharacterBarney.cs" />
-     <Compile Include="Assets/Game/Rooms/Title/RoomTitle.cs" />
-     <Compile Include="Assets/Game/Gui/HoverText/GuiHoverText.cs" />
+     <Compile Include="Assets/Game/Characters/Angel/CharacterAngel.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontPixelSmooth.shader" />
@@ -710,97 +713,97 @@
       <Project>{b67dc8f2-9548-cbc1-4b42-901cc5da19a0}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
-      <Project>{ab4ad752-01c7-3289-8c19-9ca0d632220b}</Project>
-      <Name>Unity.2D.IK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{5e35d8f5-e82c-4428-53cb-fa257a895f46}</Project>
-      <Name>Unity.2D.Common.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{8b9ce40d-f135-6b0f-8267-8398ed734afa}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{eaabe380-a84c-4045-075c-b58db3bbcec9}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
-      <Project>{ea0eead8-d9fa-f268-9517-003c4877d4bf}</Project>
-      <Name>Unity.2D.Tilemap.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{0a974496-18a1-b761-c438-1d391c68e585}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
       <Project>{0e4739da-9aa8-014e-45e2-457ad9a1fbaa}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.PixelPerfect.Editor.csproj">
-      <Project>{8e4e8bfa-39cc-b83c-19e8-06e490858a15}</Project>
-      <Name>Unity.2D.PixelPerfect.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{ced275dc-41b0-127d-634d-affb55a7cd17}</Project>
-      <Name>Unity.2D.Animation.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{28d0995e-0105-9365-75ff-4f6c01140338}</Project>
-      <Name>Unity.InternalAPIEngineBridge.001</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{4543f9ab-0ce1-ef40-8ee4-3f250d0314c3}</Project>
-      <Name>Unity.InternalAPIEditorBridge.001</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{9ddfab37-96f8-2094-229b-4bf71edce79b}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{16eb135c-bd60-985a-68bf-e93ad1cef902}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5700d846-c9f4-d116-b897-d47cb200cf61}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{ef121323-2606-c37c-f14b-fb09201c44dc}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
-      <Project>{118d7bd7-0f3a-c196-fc93-ec96248ad281}</Project>
-      <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
-      <Project>{dafee6b6-ac85-8ff8-1db0-75931d6535d1}</Project>
-      <Name>Unity.2D.PixelPerfect</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Path.Editor.csproj">
-      <Project>{bbc302f8-a32c-5af7-d6d1-e815c5ca19b9}</Project>
-      <Name>Unity.2D.Path.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
       <Project>{9c548949-ccd8-48d0-e3ae-dd7b440ea4e1}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{eb6708fb-adfb-cce1-afd1-483a422e230f}</Project>
-      <Name>Unity.Mathematics</Name>
+    <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
+      <Project>{28d0995e-0105-9365-75ff-4f6c01140338}</Project>
+      <Name>Unity.InternalAPIEngineBridge.001</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{034d3669-1a61-c062-323d-d985bff839eb}</Project>
-      <Name>Unity.2D.Common.Editor</Name>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{0a974496-18a1-b761-c438-1d391c68e585}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
+      <Project>{dafee6b6-ac85-8ff8-1db0-75931d6535d1}</Project>
+      <Name>Unity.2D.PixelPerfect</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
+      <Project>{ea0eead8-d9fa-f268-9517-003c4877d4bf}</Project>
+      <Name>Unity.2D.Tilemap.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Editor.csproj">
       <Project>{e00bf87a-c47a-db02-d7f2-bd7ad979f1ef}</Project>
       <Name>Unity.2D.Animation.Triangle.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{8b9ce40d-f135-6b0f-8267-8398ed734afa}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
+      <Project>{ced275dc-41b0-127d-634d-affb55a7cd17}</Project>
+      <Name>Unity.2D.Animation.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.PixelPerfect.Editor.csproj">
+      <Project>{8e4e8bfa-39cc-b83c-19e8-06e490858a15}</Project>
+      <Name>Unity.2D.PixelPerfect.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{16eb135c-bd60-985a-68bf-e93ad1cef902}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{ef121323-2606-c37c-f14b-fb09201c44dc}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
+      <Project>{5e35d8f5-e82c-4428-53cb-fa257a895f46}</Project>
+      <Name>Unity.2D.Common.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
+      <Project>{ab4ad752-01c7-3289-8c19-9ca0d632220b}</Project>
+      <Name>Unity.2D.IK.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{9ddfab37-96f8-2094-229b-4bf71edce79b}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Path.Editor.csproj">
+      <Project>{bbc302f8-a32c-5af7-d6d1-e815c5ca19b9}</Project>
+      <Name>Unity.2D.Path.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
       <Project>{c3f36780-4604-0594-c599-392b9c9ee9d5}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{eaabe380-a84c-4045-075c-b58db3bbcec9}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Editor.csproj">
+      <Project>{034d3669-1a61-c062-323d-d985bff839eb}</Project>
+      <Name>Unity.2D.Common.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
+      <Project>{4543f9ab-0ce1-ef40-8ee4-3f250d0314c3}</Project>
+      <Name>Unity.InternalAPIEditorBridge.001</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{5700d846-c9f4-d116-b897-d47cb200cf61}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
+      <Project>{118d7bd7-0f3a-c196-fc93-ec96248ad281}</Project>
+      <Name>Unity.2D.SpriteShape.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{eb6708fb-adfb-cce1-afd1-483a422e230f}</Project>
+      <Name>Unity.Mathematics</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

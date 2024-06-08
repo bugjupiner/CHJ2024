@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterAngelAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: b1183a9a4934f464c8889ab59522c645, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -335996320826241515, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: -4077859673973074574, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: 1218397606271187950, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: -1364843288682871251, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: 8914592415502773182, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: -7032793669107900222, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: -6947267083859557518, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: 7296287387161279443, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  - {fileID: 9135758550103795984, guid: 643d1389a83ec4352884bea08e97ba46, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - burntangel-sheet_8
+  - burntangel-sheet_4
+  - burntangel-sheet_5
+  - burntangel-sheet_6
+  - burntangel-sheet_7
+  - burntangel-sheet_0
+  - burntangel-sheet_1
+  - burntangel-sheet_2
+  - burntangel-sheet_3
+  m_RenderDataMap: {}
+  m_Tag: CharacterAngelAtlas
+  m_IsVariant: 0

@@ -26,9 +26,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	};
 	public eProgress m_progressExample = eProgress.None;
 	
-	/// Just an example of using a global variable that can be accessed in any room with `Globals.m_spokeToBarney`.
-	/// All variables like this in Quest Scripts are automatically saved
-	public bool m_spokeToBarney = false;
+	public bool jumbled = false;
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
@@ -243,12 +241,12 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	{		
 		// This function is called when the player interacts with something that doesn't have a response
 		
-		if ( mouseOver.ClickableType == eQuestClickableType.Inventory )
+		if ( mouseOver.ClickableType == eQuestClickableType.Inventory)
 		{
 			// If clicking an inventory item, select it as the active inventory
 			E.ActiveInventory = (IInventory)mouseOver;
 		}
-		else
+		else if (mouseOver.ClickableType != eQuestClickableType.Character)
 		{
 			// This bit of logic cycles between three options. The '% 3' makes it cycle between 3 options.
 			int option = E.Occurrence("unhandledInteract") % 3;

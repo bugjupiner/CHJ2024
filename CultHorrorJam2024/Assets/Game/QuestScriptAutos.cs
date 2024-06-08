@@ -15,6 +15,8 @@ namespace PowerScript
 		// Access to specific characters (Auto-generated)
 		public static ICharacter Dave           { get { return PowerQuest.Get.GetCharacter("Dave"); } }
 		public static ICharacter Barney         { get { return PowerQuest.Get.GetCharacter("Barney"); } }
+		public static ICharacter Shapes         { get { return PowerQuest.Get.GetCharacter("Shapes"); } }
+		public static ICharacter Angel          { get { return PowerQuest.Get.GetCharacter("Angel"); } }
 		// #CHARS# - Do not edit this line, it's used by the system to insert characters
 	}
 
@@ -45,6 +47,7 @@ namespace PowerScript
 		// Access to specific room (Auto-generated)
 		public static IRoom Title          { get { return PowerQuest.Get.GetRoom("Title"); } }
 		public static IRoom Forest         { get { return PowerQuest.Get.GetRoom("Forest"); } }
+		public static IRoom Cells          { get { return PowerQuest.Get.GetRoom("Cells"); } }
 		// #ROOM# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 
