@@ -37,8 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/SpriteSkin.cs" />
-     <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/NativeArrayHelper.cs" />
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/TransformAccessJob.cs" />
+     <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/NativeArrayHelper.cs" />
+     <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/SpriteLib/SpriteLibraryUtility.cs" />
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/SpriteSkinBatch.cs" />
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/UpdateBoundsJob.cs" />
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/SpriteSkinUpdateHelper.cs" />
@@ -55,7 +56,6 @@
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/PrepareSkinningSystem.cs" />
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/BufferManager.cs" />
      <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/SpriteSkinComposite.cs" />
-     <Compile Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/SpriteLib/SpriteLibraryUtility.cs" />
      <None Include="Library/PackageCache/com.unity.2d.animation@5.2.7/Runtime/Unity.2D.Animation.Runtime.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.47f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -294,17 +294,20 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.47f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="CSVFile">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/CSVFile.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    <Reference Include="WeCantSpell.Hunspell">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/WeCantSpell.Hunspell.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+    <Reference Include="System.Buffers">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.47f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -287,17 +287,20 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.47f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="CSVFile">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/CSVFile.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    <Reference Include="WeCantSpell.Hunspell">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/WeCantSpell.Hunspell.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>/Users/juniper.foley/Desktop/CHJ/CultHorrorJam2024/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+    <Reference Include="System.Buffers">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+        <HintPath>/Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024/Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.47f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

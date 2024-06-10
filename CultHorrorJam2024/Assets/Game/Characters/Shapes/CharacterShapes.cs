@@ -26,7 +26,7 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 			}
 		}
 		
-		Region("Bars").Walkable = Globals.jumbled;
+		R.Cells.GetRegion("Bars").Walkable = Globals.jumbled;
 		yield return E.Break;
 	}
 

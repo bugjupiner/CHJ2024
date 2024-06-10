@@ -46,16 +46,13 @@ MonoBehaviour:
   m_volumeByType:
   - m_type: 1
     m_volume: 1
-    m_mixerGroup: {fileID: 243360952077068278, guid: 1c6db700d48808a47aeeb712a75a818f,
-      type: 2}
+    m_mixerGroup: {fileID: 243360952077068278, guid: 1c6db700d48808a47aeeb712a75a818f, type: 2}
   - m_type: 2
     m_volume: 1
-    m_mixerGroup: {fileID: 243448924589960726, guid: 1c6db700d48808a47aeeb712a75a818f,
-      type: 2}
+    m_mixerGroup: {fileID: 243448924589960726, guid: 1c6db700d48808a47aeeb712a75a818f, type: 2}
   - m_type: 4
     m_volume: 1
-    m_mixerGroup: {fileID: 243504310622813720, guid: 1c6db700d48808a47aeeb712a75a818f,
-      type: 2}
+    m_mixerGroup: {fileID: 243504310622813720, guid: 1c6db700d48808a47aeeb712a75a818f, type: 2}
   m_musicDuckingMaxVolume: 0.5
   m_falloffMinVol: 0.2
   m_falloffPanMax: 0.75
@@ -64,8 +61,10 @@ MonoBehaviour:
   m_falloffPanStart: 0.5
   m_falloffPanEnd: 2
   m_noDuplicateTime: 0.05
+  m_narratorMixerGroup: {fileID: 0}
   m_autoAddCues: 1
   m_audioCues:
+  - {fileID: 3941748774763875043, guid: e189eef094fea414889d36a832900642, type: 3}
   - {fileID: 11426600, guid: 2c643cf6d170a1845bd86209b6ca496a, type: 3}
   - {fileID: 11426600, guid: c6310e800026e2e428019c2a6358d52e, type: 3}
   - {fileID: 114876034982820868, guid: 3b2a729029b4ad04985d489155e1943a, type: 3}

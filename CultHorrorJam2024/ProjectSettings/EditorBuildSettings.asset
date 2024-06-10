@@ -5,16 +5,73 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Game/Rooms/Title/SceneRoomTitle.unity
     guid: ead3603028b9575468e0b9f054b6dc6c
-  - enabled: 1
-    path: Assets/Game/Rooms/Forest/SceneRoomForest.unity
-    guid: 1121794b7ab7e6f44a29b3e8be8fbb08
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Game/Rooms/Cells/SceneRoomCells.unity
     guid: 7677c2cf049d24fe29881f33a7e9261e
+  - enabled: 1
+    path: Assets/Game/Rooms/Basement/SceneRoomBasement.unity
+    guid: 76416fc7bfd4a469490ec2e1659ede9b
+  - enabled: 1
+    path: Assets/Game/Rooms/Fork/SceneRoomFork.unity
+    guid: f29c96f10cd07442db1f9437493d19ee
+  - enabled: 1
+    path: Assets/Game/Rooms/Storeroom/SceneRoomStoreroom.unity
+    guid: a9b2b6858675c448dafff3a2116e88e1
+  - enabled: 1
+    path: Assets/Game/Rooms/Cliff/SceneRoomCliff.unity
+    guid: f64eaa30d54894c9f98cebcd5eec598b
+  - enabled: 1
+    path: Assets/Game/Rooms/Ladder/SceneRoomLadder.unity
+    guid: 70ade19c0c27844a29c1d389002c9a26
+  - enabled: 1
+    path: Assets/Game/Rooms/Yard/SceneRoomYard.unity
+    guid: 34724c948f3b142ada5d85350dd6c46a
+  - enabled: 1
+    path: Assets/Game/Rooms/Kitchen/SceneRoomKitchen.unity
+    guid: 962696acd5eb54ef985f959554c1fb16
+  - enabled: 1
+    path: Assets/Game/Rooms/Dorm/SceneRoomDorm.unity
+    guid: 37d5bfff489004af2a9d723be030aae9
+  - enabled: 1
+    path: Assets/Game/Rooms/Front/SceneRoomFront.unity
+    guid: 2c7fae43c88b34d229e47db85654f9e6
+  - enabled: 1
+    path: Assets/Game/Rooms/Landing/SceneRoomLanding.unity
+    guid: e1b071e102f8b4c5a8e85b9dfe3cb380
+  - enabled: 1
+    path: Assets/Game/Rooms/Entryway/SceneRoomEntryway.unity
+    guid: eb4ee1863dd7d40cda20fadfc99ac6f6
+  - enabled: 1
+    path: Assets/Game/Rooms/CloisterStart/SceneRoomCloisterStart.unity
+    guid: 8d94895a3320f40698def23523650de9
+  - enabled: 1
+    path: Assets/Game/Rooms/Cloister/SceneRoomCloister.unity
+    guid: f7fb7ed42d14041a58f44528c8b415e9
+  - enabled: 1
+    path: Assets/Game/Rooms/CloisterEnd/SceneRoomCloisterEnd.unity
+    guid: 1d7e12900af34492e9fefc9300ea9581
+  - enabled: 1
+    path: Assets/Game/Rooms/Stairwell/SceneRoomStairwell.unity
+    guid: 233be6f801eed45edab81e10c2011486
+  - enabled: 1
+    path: Assets/Game/Rooms/Pathway/SceneRoomPathway.unity
+    guid: a01b63312276d41c08d93ec717d903ac
+  - enabled: 1
+    path: Assets/Game/Rooms/RitualSite/SceneRoomRitualSite.unity
+    guid: 6ebc7bf5f13f44135a4c9c6e50c719ee
+  - enabled: 1
+    path: Assets/Game/Rooms/Bedroom/SceneRoomBedroom.unity
+    guid: 50a6171873daa4c5dab396338bc7b2f3
+  - enabled: 1
+    path: Assets/Game/Rooms/HiddenRoom/SceneRoomHiddenRoom.unity
+    guid: 3d0592dd2934d421aab0011164904c64
   m_configObjects: {}

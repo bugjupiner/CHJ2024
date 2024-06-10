@@ -106,7 +106,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 27.826086, y: 44.52174}
+    oldSize: {x: 40, y: 64}
     newSize: {x: 160, y: 256}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_tint: {r: 1, g: 1, b: 1, a: 0}
   m_outline: {r: 1, g: 1, b: 1, a: 0}
-  m_offset: {x: 0, y: 15.652174}
+  m_offset: {x: 0, y: 22.5}
   m_shaderOverride: {fileID: 0}
 --- !u!95 &6028481808726526738
 Animator:

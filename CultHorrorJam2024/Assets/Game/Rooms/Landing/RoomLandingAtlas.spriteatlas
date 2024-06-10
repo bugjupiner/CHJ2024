@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RoomLandingAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 0f833ec555ebf46c2b08983b43b018d1, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 93603cc13a1d64495a7c9e97a5270c3d, type: 3}
+  - {fileID: 21300000, guid: 95df7a5847da64a2eab07f0b99325d75, type: 3}
+  - {fileID: 21300000, guid: 6b4165b8298754d56bce269ac3ff773c, type: 3}
+  - {fileID: 21300000, guid: b47b4c8d2deee4f8f8290a211062a4a4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 01F-Composite
+  - 01F-Obstacle02
+  - 01F-Obstacle03
+  - 01F-Obstacle01
+  m_RenderDataMap: {}
+  m_Tag: RoomLandingAtlas
+  m_IsVariant: 0

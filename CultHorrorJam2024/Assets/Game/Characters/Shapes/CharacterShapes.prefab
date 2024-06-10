@@ -57,7 +57,7 @@ MonoBehaviour:
     m_clickable: 1
     m_visible: 1
     m_inventory: []
-    m_walkSpeed: {x: 50, y: 50}
+    m_walkSpeed: {x: 70, y: 60}
     m_moveable: 1
     m_solid: 0
     m_solidSize: {x: 20, y: 4}
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_antiGlide: 0
     m_footstepSound: 
     m_useSpriteAsHotspot: 0
-    m_baseline: 0
+    m_baseline: 0.9777632
     m_walkToPoint: {x: 17.33, y: -19.78}
     m_lookAtPoint: {x: 17.45, y: 0}
     m_scriptName: Shapes
@@ -105,11 +105,11 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 2.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 27.826086, y: 44.52174}
+    oldSize: {x: 40, y: 64}
     newSize: {x: 160, y: 256}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -117,12 +117,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4.5189238, y: -1.2117176}
-      - {x: -2.170775, y: 13.538095}
-      - {x: -5.277091, y: 25.354218}
+    - - {x: -0.52045274, y: -3.5882878}
+      - {x: -5.985569, y: -0.9672775}
+      - {x: -4.3707438, y: 13.538095}
+      - {x: -5.765973, y: 28.531954}
       - {x: -0.62861943, y: 31.04245}
-      - {x: 5.1227813, y: 27.855228}
-      - {x: 2.81534, y: 9.700725}
+      - {x: 9.76716, y: 28.344112}
+      - {x: 2.570899, y: 14.100661}
       - {x: 2.7697587, y: -1.5336361}
 --- !u!212 &1591562842259307285
 SpriteRenderer:
@@ -163,7 +164,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: -8927612033162531626, guid: ce87df701aef745a0a89917a053abefb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -188,9 +189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_tint: {r: 1, g: 1, b: 1, a: 0}
-  m_outline: {r: 1, g: 1, b: 1, a: 0}
-  m_offset: {x: 0, y: 18.086956}
-  m_shaderOverride: {fileID: 0}
+  m_outline: {r: 1, g: 1, b: 1, a: 1}
+  m_offset: {x: 0, y: 28}
+  m_shaderOverride: {fileID: 4800000, guid: be43750faab6d0b40baba2acf00099df, type: 3}
 --- !u!95 &7294469601832168917
 Animator:
   serializedVersion: 5

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{5700d846-c9f4-d116-b897-d47cb200cf61}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{f132392c-0cf5-9ed7-5c87-6fa695543dc1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{b7d2ff52-11ae-fcc2-d69e-233abf8ef5a4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mathematics", "Unity.Mathematics.csproj", "{eb6708fb-adfb-cce1-afd1-483a422e230f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{5700d846-c9f4-d116-b897-d47cb200cf61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{b67dc8f2-9548-cbc1-4b42-901cc5da19a0}"
 EndProject
@@ -64,14 +64,14 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5700d846-c9f4-d116-b897-d47cb200cf61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5700d846-c9f4-d116-b897-d47cb200cf61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f132392c-0cf5-9ed7-5c87-6fa695543dc1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f132392c-0cf5-9ed7-5c87-6fa695543dc1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b7d2ff52-11ae-fcc2-d69e-233abf8ef5a4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b7d2ff52-11ae-fcc2-d69e-233abf8ef5a4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{eb6708fb-adfb-cce1-afd1-483a422e230f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{eb6708fb-adfb-cce1-afd1-483a422e230f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5700d846-c9f4-d116-b897-d47cb200cf61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5700d846-c9f4-d116-b897-d47cb200cf61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b67dc8f2-9548-cbc1-4b42-901cc5da19a0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b67dc8f2-9548-cbc1-4b42-901cc5da19a0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16eb135c-bd60-985a-68bf-e93ad1cef902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

@@ -49,11 +49,17 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 1710a7a041a514df3932637e6be605ed, type: 3}
+  - {fileID: 21300000, guid: ea6e91323f8e5428aa931f5bc7755a0d, type: 3}
   - {fileID: 21300000, guid: 253a6a485bd234510a284a0506b9e445, type: 3}
+  - {fileID: 21300000, guid: c77d67884984c465b810a9ab87a34229, type: 3}
   - {fileID: 21300000, guid: f269bbcad637841d18f29fd04d9efa72, type: 3}
   - {fileID: 21300000, guid: e0b029ab03a5049f6b57167d98c95a7a, type: 3}
   m_PackedSpriteNamesToIndex:
+  - 03A-Obstacle02
+  - 03A-Obstacle01
   - 3A-Composite
+  - 03A-Composite
   - 3A-Obstruction02
   - 3A-Obstruction01
   m_RenderDataMap: {}

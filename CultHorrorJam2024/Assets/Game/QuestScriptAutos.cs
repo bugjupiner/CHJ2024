@@ -13,8 +13,6 @@ namespace PowerScript
 	public static partial class C
 	{
 		// Access to specific characters (Auto-generated)
-		public static ICharacter Dave           { get { return PowerQuest.Get.GetCharacter("Dave"); } }
-		public static ICharacter Barney         { get { return PowerQuest.Get.GetCharacter("Barney"); } }
 		public static ICharacter Shapes         { get { return PowerQuest.Get.GetCharacter("Shapes"); } }
 		public static ICharacter Angel          { get { return PowerQuest.Get.GetCharacter("Angel"); } }
 		// #CHARS# - Do not edit this line, it's used by the system to insert characters
@@ -48,6 +46,25 @@ namespace PowerScript
 		public static IRoom Title          { get { return PowerQuest.Get.GetRoom("Title"); } }
 		public static IRoom Forest         { get { return PowerQuest.Get.GetRoom("Forest"); } }
 		public static IRoom Cells          { get { return PowerQuest.Get.GetRoom("Cells"); } }
+		public static IRoom Basement       { get { return PowerQuest.Get.GetRoom("Basement"); } }
+		public static IRoom Fork           { get { return PowerQuest.Get.GetRoom("Fork"); } }
+		public static IRoom Storeroom      { get { return PowerQuest.Get.GetRoom("Storeroom"); } }
+		public static IRoom Cliff          { get { return PowerQuest.Get.GetRoom("Cliff"); } }
+		public static IRoom Ladder         { get { return PowerQuest.Get.GetRoom("Ladder"); } }
+		public static IRoom Yard           { get { return PowerQuest.Get.GetRoom("Yard"); } }
+		public static IRoom Kitchen        { get { return PowerQuest.Get.GetRoom("Kitchen"); } }
+		public static IRoom Dorm           { get { return PowerQuest.Get.GetRoom("Dorm"); } }
+		public static IRoom Front          { get { return PowerQuest.Get.GetRoom("Front"); } }
+		public static IRoom Landing        { get { return PowerQuest.Get.GetRoom("Landing"); } }
+		public static IRoom Entryway       { get { return PowerQuest.Get.GetRoom("Entryway"); } }
+		public static IRoom CloisterStart  { get { return PowerQuest.Get.GetRoom("CloisterStart"); } }
+		public static IRoom Cloister       { get { return PowerQuest.Get.GetRoom("Cloister"); } }
+		public static IRoom CloisterEnd    { get { return PowerQuest.Get.GetRoom("CloisterEnd"); } }
+		public static IRoom Stairwell      { get { return PowerQuest.Get.GetRoom("Stairwell"); } }
+		public static IRoom Pathway        { get { return PowerQuest.Get.GetRoom("Pathway"); } }
+		public static IRoom RitualSite     { get { return PowerQuest.Get.GetRoom("RitualSite"); } }
+		public static IRoom Bedroom        { get { return PowerQuest.Get.GetRoom("Bedroom"); } }
+		public static IRoom HiddenRoom     { get { return PowerQuest.Get.GetRoom("HiddenRoom"); } }
 		// #ROOM# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 
@@ -55,7 +72,6 @@ namespace PowerScript
 	public static partial class D
 	{
 		// Access to specific dialog trees (Auto-generated)
-		public static IDialogTree ChatWithBarney       { get { return PowerQuest.Get.GetDialogTree("ChatWithBarney"); } }
 		// #DIALOG# - Do not edit this line, it's used by the system to insert rooms for easy access	    	    
 	}
 

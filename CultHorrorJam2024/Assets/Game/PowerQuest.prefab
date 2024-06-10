@@ -100,13 +100,29 @@ MonoBehaviour:
   m_cameraPrefab: {fileID: 11462848, guid: b254fcd8f583c324ba3da9904a492986, type: 3}
   m_roomPrefabs:
   - {fileID: 114788632828080210, guid: 908a928d57ccea1418803714fc2b24b8, type: 3}
-  - {fileID: 114107578643181592, guid: 815776d2d5a9623498c61578ffc4c1cc, type: 3}
   - {fileID: 7747387063818197922, guid: 696f3eb79af8945698d080240e65cbe6, type: 3}
+  - {fileID: 6261826099331960415, guid: adb1472d760854c95951b1a9f63ab5b8, type: 3}
+  - {fileID: 3143989622822765789, guid: d67055eea531c43b48926e5c4805fd6d, type: 3}
+  - {fileID: 1510229373849977832, guid: f8a4291ed21ba472f868b6a2eab2f325, type: 3}
+  - {fileID: 6566135710899452995, guid: dda0443ee065644deab3909c039a3af2, type: 3}
+  - {fileID: 1180811963136486856, guid: b4326821ce0e8427a8fd2401a3f16154, type: 3}
+  - {fileID: 3364837646529973806, guid: 92f28d6ba33364ea8b480729b6ff7654, type: 3}
+  - {fileID: 4798782776890393861, guid: 74b9e8b7562494361b01920e4806f710, type: 3}
+  - {fileID: 304426393631651218, guid: dc8f6b0141c504c6ea7cc7d590ffef3b, type: 3}
+  - {fileID: 6860093456525893061, guid: f9c14f505115548fcb5cf533f0bae7fa, type: 3}
+  - {fileID: 509419736617716863, guid: c0e300e8fa1a445ec980d466af32fd93, type: 3}
+  - {fileID: 315338205764121885, guid: 48c693ae770ec451d9d625f8e15a7246, type: 3}
+  - {fileID: 6389011339503456472, guid: 5c9c1e42842c3495d972b95fa845e59f, type: 3}
+  - {fileID: 2576658799612629930, guid: 70a969726db0843eaa3e6ff7a217a87d, type: 3}
+  - {fileID: 4595999300839579197, guid: 27abdbe8e10f04c06a599ba1b5611635, type: 3}
+  - {fileID: 5635789801070736483, guid: f334817215b974effafe0544953102aa, type: 3}
+  - {fileID: 8533027023697356731, guid: 5514377ac4a18496fa53c1fd3d6e1d9b, type: 3}
+  - {fileID: 2659243734896140960, guid: d2f3d129c15154ac2a36280f4124a834, type: 3}
+  - {fileID: 8969335850113791569, guid: bc3cd6eb6a5584221a7100b72a0531cf, type: 3}
+  - {fileID: 2656716053218651544, guid: 0bae08d0071d649b2adc09487e50d800, type: 3}
   m_characterPrefabs:
   - {fileID: 2423624693694106930, guid: c19ec3c7495954b1aad33c2f19912605, type: 3}
   - {fileID: 1066835959361567554, guid: 99f37c182fee244f6bcd5e8a5ed1cd00, type: 3}
-  - {fileID: 114953134120639602, guid: b4910caf4195aeb45895069ad277b9fd, type: 3}
-  - {fileID: 114894982771319608, guid: 65de018bf92bf6a4088d8c3f977119e7, type: 3}
   m_guiPrefabs:
   - {fileID: 114997530584156344, guid: 411a5d13109ce024888cfebc375721e4, type: 3}
   - {fileID: 8056484958200454590, guid: 008d06288a0a6bf40a1f91be9220b969, type: 3}
@@ -117,8 +133,7 @@ MonoBehaviour:
   - {fileID: 8608667894250024884, guid: 2f4aa3f9ba456f34782aaea4044bddaf, type: 3}
   - {fileID: 114536762978702078, guid: f8cb0265062cc8449b37f62e4d70646e, type: 3}
   - {fileID: 5183830718263160604, guid: 9795157985253a44d8fa296584da06e9, type: 3}
-  m_dialogTreePrefabs:
-  - {fileID: 114281990419900940, guid: be73794dfb294f14982196647fe6e96b, type: 3}
+  m_dialogTreePrefabs: []
   m_inventoryPrefabs:
   - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
   m_inventoryAnimations:
@@ -159,6 +174,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4dc1822b79bf80544bc9ba12716865fd, type: 3}
   - {fileID: 21300000, guid: 2d4b4441c8db4b04f983998b482b052c, type: 3}
   m_preloadedShaders:
+  - {fileID: 4800000, guid: 5d3bb2beb98534293bae9b885b18e84b, type: 3}
   - {fileID: 4800000, guid: be43750faab6d0b40baba2acf00099df, type: 3}
   - {fileID: 4800000, guid: 67fc4aa44467421478679021cc374fc4, type: 3}
   - {fileID: 4800000, guid: d98a9fb29ffd9b047b8b28042595d236, type: 3}
