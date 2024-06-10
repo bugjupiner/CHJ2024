@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterWormAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9055fb11185ac470ba8024b7ca535481, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 7329780455424483939, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  - {fileID: 925542808389095491, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  - {fileID: -493377637618504967, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  - {fileID: -4495652169793646596, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  - {fileID: 5954410242074443835, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  - {fileID: -8609016199811815964, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Cultist1-sheet_4
+  - Cultist1-sheet_1
+  - Cultist1-sheet_0
+  - Cultist1-sheet_3
+  - Cultist1-sheet_2
+  - Cultist1-sheet_5
+  m_RenderDataMap: {}
+  m_Tag: CharacterWormAtlas
+  m_IsVariant: 0

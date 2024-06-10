@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Landing
+    m_description: To Beach
     m_cursor: 
     m_clickable: 1
     m_baseline: -52.072437
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Dorm
+    m_description: To Dorm
     m_cursor: 
     m_clickable: 1
     m_baseline: -89.45631
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Entryway
+    m_description: Large Doors
     m_cursor: 
     m_clickable: 1
     m_baseline: -24.09964

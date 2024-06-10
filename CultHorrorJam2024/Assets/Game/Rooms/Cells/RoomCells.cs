@@ -12,7 +12,7 @@ public class RoomCells : RoomScript<RoomCells>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
-		yield return C.Display("Yep. Barrels.");
+		yield return C.Shapes.Say("Yep. Barrels.");
 		yield return E.Break;
 	}
 
@@ -35,7 +35,7 @@ public class RoomCells : RoomScript<RoomCells>
 	IEnumerator OnInteractHotspotBasement( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		C.Player.Room = R.Basement;
+		if(C.Player.TargetPosition == Hotspot("Basement").WalkToPoint) C.Player.Room = R.Basement;
 		yield return E.Break;
 	}
 
@@ -49,9 +49,9 @@ public class RoomCells : RoomScript<RoomCells>
 
 	IEnumerator UpdateBlocking()
 	{
-		if (!Audio.IsPlaying("Cells"))
+		if (!Audio.IsPlaying("Music_Basement_Loop"))
 		{
-					Audio.PlayMusic("Cells");
+					Audio.PlayMusic("Music_Basement_Loop");
 		}
 		yield return E.Break;
 	}
@@ -65,8 +65,16 @@ public class RoomCells : RoomScript<RoomCells>
 		}
 		else
 		{
-			yield return E.ConsumeEvent;
+			yield return C.Shapes.Say("Looks smelly...");
 		}
 		yield return E.Break;
+	}
+
+	void OnEnterRegionBGBars( IRegion region, ICharacter character )
+	{
+	}
+
+	void OnExitRegionBGBars( IRegion region, ICharacter character )
+	{
 	}
 }

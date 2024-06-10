@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Kitchen
+    m_description: To Kitchen
     m_cursor: 
     m_clickable: 1
     m_baseline: -86.195015
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Front
+    m_description: To Outside
     m_cursor: 
     m_clickable: 1
     m_baseline: 0

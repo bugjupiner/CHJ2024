@@ -123,6 +123,12 @@ MonoBehaviour:
   m_characterPrefabs:
   - {fileID: 2423624693694106930, guid: c19ec3c7495954b1aad33c2f19912605, type: 3}
   - {fileID: 1066835959361567554, guid: 99f37c182fee244f6bcd5e8a5ed1cd00, type: 3}
+  - {fileID: 9054964623789741836, guid: f67bb820c37064097af307cb9d4c9d0c, type: 3}
+  - {fileID: 4828552827909545308, guid: 7c351c50a7f4c40cc8ded548263dbdd8, type: 3}
+  - {fileID: 3197268434600622406, guid: fd2facc88003348078498d9b61dda47d, type: 3}
+  - {fileID: 6056317965103691455, guid: 0bbe849acefb84edf8f0c05e6e1f5cf2, type: 3}
+  - {fileID: 7900395482769087748, guid: 185594d6833d54332a4830125f2c4ae9, type: 3}
+  - {fileID: 4564714505735506226, guid: 58f83d316cf454cf2bee993bcdad32c3, type: 3}
   m_guiPrefabs:
   - {fileID: 114997530584156344, guid: 411a5d13109ce024888cfebc375721e4, type: 3}
   - {fileID: 8056484958200454590, guid: 008d06288a0a6bf40a1f91be9220b969, type: 3}

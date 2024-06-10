@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Bedroom
+    m_description: Strange Door
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -194,7 +194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8778025052253712438}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8978639419805236261
 MonoBehaviour:
@@ -340,6 +340,7 @@ Transform:
   - {fileID: 1044127142613682960}
   - {fileID: 28004940431837630}
   - {fileID: 3430026831758626074}
+  - {fileID: 2855493896154125160}
   - {fileID: 34664348242220861}
   - {fileID: 4509195767883325460}
   - {fileID: 3175885389678608011}
@@ -379,6 +380,7 @@ MonoBehaviour:
   - {fileID: 4842839937808770005}
   - {fileID: 2139907591624600995}
   - {fileID: 3636945301435875005}
+  - {fileID: 1871220338436620332}
   m_propComponents:
   - {fileID: 4494107469667032363}
   - {fileID: 8978639419805236261}
@@ -481,7 +483,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8778025052253712438}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4494107469667032363
 MonoBehaviour:
@@ -640,7 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterStart
+    m_description: Metal Grate
     m_cursor: 
     m_clickable: 1
     m_baseline: -54.22419
@@ -723,7 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Front
+    m_description: To Front Gate
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -795,7 +797,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8778025052253712438}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8037408020284407594
 MonoBehaviour:
@@ -909,6 +911,89 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6107143427757735037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2855493896154125160}
+  - component: {fileID: 1871220338436620332}
+  - component: {fileID: 8072058934053363950}
+  m_Layer: 0
+  m_Name: HotspotBigDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2855493896154125160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107143427757735037}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8778025052253712438}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1871220338436620332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107143427757735037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0df7c458d97544b909b49c6789dea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+    m_description: Big Door
+    m_cursor: 
+    m_clickable: 1
+    m_baseline: -42.745388
+    m_walkToPoint: {x: -106.1265, y: -42.745388}
+    m_lookAtPoint: {x: -110.54845, y: -43.482384}
+    m_scriptName: BigDoor
+--- !u!60 &8072058934053363950
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107143427757735037}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -120.54842, y: -44.638504}
+      - {x: -127.91831, y: 71.17013}
+      - {x: -120.819176, y: 82.72686}
+      - {x: -103.05104, y: 52.275593}
+      - {x: -104.97036, y: -20.216574}
+      - {x: -104.233376, y: -35.05764}
 --- !u!1 &8107892742400413531
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,7 +1026,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8778025052253712438}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1287771181748276
 MonoBehaviour:

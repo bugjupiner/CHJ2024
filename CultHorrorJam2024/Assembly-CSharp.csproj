@@ -134,6 +134,12 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PixelPerfectCollider.cs" />
      <Compile Include="Assets/Game/Rooms/Fork/RoomFork.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSaveManager.cs" />
+     <Compile Include="Assets/Game/Characters/Recruit/CharacterRecruit.cs" />
+     <Compile Include="Assets/Game/Characters/Worm/CharacterWorm.cs" />
+     <Compile Include="Assets/Game/Characters/Finger/CharacterFinger.cs" />
+     <Compile Include="Assets/Game/Characters/Wizard/CharacterWizard.cs" />
+     <Compile Include="Assets/Game/Characters/Omen/CharacterOmen.cs" />
+     <Compile Include="Assets/Game/Characters/Shadow/CharacterShadow.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontPixelSmooth.shader" />

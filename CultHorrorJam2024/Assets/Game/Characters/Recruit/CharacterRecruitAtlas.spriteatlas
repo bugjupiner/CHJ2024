@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterRecruitAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f1578286155104e0687438b660a5b74a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -174330717544216549, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -6245856607071061541, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -5827446413109145546, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -6088594897248951774, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -2149427663792403856, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -1483648184105581562, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -839763018367874547, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -6426113507955413722, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -1584593028309939820, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: 3874630811255058223, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: 2591710028205097726, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  - {fileID: -4625951996027169072, guid: 22678612707964f4bb59a4c84a504f6a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Recruit-sheet_8
+  - Recruit-sheet_9
+  - Recruit-sheet_0
+  - Recruit-sheet_1
+  - Recruit-sheet_2
+  - Recruit-sheet_3
+  - Recruit-sheet_4
+  - Recruit-sheet_5
+  - Recruit-sheet_6
+  - Recruit-sheet_7
+  - Recruit-sheet_11
+  - Recruit-sheet_10
+  m_RenderDataMap: {}
+  m_Tag: CharacterRecruitAtlas
+  m_IsVariant: 0

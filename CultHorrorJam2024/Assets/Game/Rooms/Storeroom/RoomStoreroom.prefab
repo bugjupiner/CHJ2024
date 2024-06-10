@@ -34,6 +34,7 @@ Transform:
   - {fileID: 5075606623085376402}
   - {fileID: 8334028588562914667}
   - {fileID: 2347182627615452154}
+  - {fileID: 7074023199233236882}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -66,6 +67,8 @@ MonoBehaviour:
     m_points:
     - m_name: Cells
       m_position: {x: 100, y: -20}
+    - m_name: Worm
+      m_position: {x: -5, y: -50}
   m_debugStartFunction: 
   m_hotspotComponents:
   - {fileID: 3207935551509313341}
@@ -74,7 +77,8 @@ MonoBehaviour:
   - {fileID: 5311338338443353988}
   - {fileID: 8711318087895730564}
   - {fileID: 1915276788604679944}
-  m_regionComponents: []
+  m_regionComponents:
+  - {fileID: 2934855557208824006}
   m_walkableAreas:
   - {fileID: 4659362234787395848}
   m_animations: []
@@ -580,6 +584,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &5533490261735310656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7074023199233236882}
+  - component: {fileID: 2934855557208824006}
+  - component: {fileID: 6323511283312206503}
+  m_Layer: 0
+  m_Name: RegionWormHole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7074023199233236882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5533490261735310656}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4098148566098121708}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2934855557208824006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5533490261735310656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20008c577fbd68147a04948177cd9c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+    m_enabled: 1
+    m_walkable: 0
+    m_playerOnly: 0
+    m_tint: {r: 1, g: 1, b: 1, a: 0}
+    m_fadeDistance: 0
+    m_scaleTop: 1
+    m_scaleBottom: 1
+    m_scriptName: WormHole
+--- !u!60 &6323511283312206503
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5533490261735310656}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 32.422886, y: -56.799053}
+      - {x: -47.336334, y: -72.0265}
+      - {x: -66.0045, y: -4.452774}
+      - {x: 46.734135, y: -15.894556}
+      - {x: 46.398224, y: -48.130196}
+      - {x: 40.712143, y: -54.56272}
 --- !u!1 &7586374021668067660
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Fork
+    m_description: To Fork
     m_cursor: 
     m_clickable: 1
     m_baseline: -58.113007
@@ -806,7 +894,7 @@ MonoBehaviour:
     m_animation: Obstacle03
     m_alpha: 1
     m_position: {x: 0, y: 0}
-    m_baseline: -46.38378
+    m_baseline: -66.33095
     m_baselineFixed: 0
     m_walkToPoint: {x: 0, y: 0}
     m_lookAtPoint: {x: 0, y: 0}
@@ -886,7 +974,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 464
+  m_SortingOrder: 663
   m_Sprite: {fileID: 21300000, guid: 46ef2b9967dae41b8a5203ab5c3ca593, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -33,4 +33,11 @@ public class RoomCliff : RoomScript<RoomCliff>
 		C.Player.Room = R.Fork;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotRupturedEarth( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say(" Looks like the world exploded.");
+		yield return E.Break;
+	}
 }

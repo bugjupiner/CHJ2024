@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Basement
+    m_description: Door
     m_cursor: 
     m_clickable: 1
     m_baseline: -30.594532
@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Storeroom
+    m_description: Metal Grate
     m_cursor: 
     m_clickable: 1
     m_baseline: -90.05182

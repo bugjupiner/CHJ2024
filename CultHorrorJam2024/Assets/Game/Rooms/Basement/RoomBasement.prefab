@@ -54,7 +54,7 @@ MonoBehaviour:
     m_animation: Obstacle01
     m_alpha: 1
     m_position: {x: 0, y: 0}
-    m_baseline: -55.651154
+    m_baseline: -56.73603
     m_baselineFixed: 0
     m_walkToPoint: {x: 0, y: 0}
     m_lookAtPoint: {x: 0, y: 0}
@@ -134,7 +134,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 557
+  m_SortingOrder: 567
   m_Sprite: {fileID: 21300000, guid: a898271b45f074fa49eefd8d0db9cc90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Fork
+    m_description: To Fork
     m_cursor: 
     m_clickable: 1
     m_baseline: -91.721344
@@ -460,7 +460,8 @@ PolygonCollider2D:
       - {x: 177.2851, y: -74.80334}
       - {x: 146.32149, y: -82.02228}
       - {x: 132.06718, y: -68.71831}
-      - {x: 103.688934, y: -58.876987}
+      - {x: 102.616066, y: -55.74651}
+      - {x: 86.87315, y: -61.046764}
       - {x: -46.592808, y: -51.666676}
       - {x: -83.84915, y: -54.608826}
       - {x: -112.63866, y: -47.61606}
@@ -511,6 +512,7 @@ Transform:
   - {fileID: 4777760002451362110}
   - {fileID: 3861294436158570305}
   - {fileID: 8892968166708627774}
+  - {fileID: 1204157730319235086}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -540,7 +542,9 @@ MonoBehaviour:
     m_shortName: Basement
     m_scriptClass: RoomBasement
     m_sceneName: SceneRoomBasement
-    m_points: []
+    m_points:
+    - m_name: Recruit
+      m_position: {x: -113, y: -18}
   m_debugStartFunction: 
   m_hotspotComponents:
   - {fileID: 3446362637135252046}
@@ -551,6 +555,7 @@ MonoBehaviour:
   - {fileID: 2801744825125864531}
   m_regionComponents:
   - {fileID: 6276290300353058169}
+  - {fileID: 7258542409408544401}
   m_walkableAreas:
   - {fileID: 5784167829518986027}
   m_animations: []
@@ -684,7 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Stairwell
+    m_description: Large Door
     m_cursor: 
     m_clickable: 1
     m_baseline: -15.97393
@@ -721,6 +726,90 @@ PolygonCollider2D:
       - {x: 53.596497, y: 69.66058}
       - {x: 72.34991, y: 62.044136}
       - {x: 73.380486, y: -13.607021}
+--- !u!1 &4830621894198828095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204157730319235086}
+  - component: {fileID: 7258542409408544401}
+  - component: {fileID: 813298176276042894}
+  m_Layer: 0
+  m_Name: RegionBars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1204157730319235086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830621894198828095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1342783625116483081}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7258542409408544401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830621894198828095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20008c577fbd68147a04948177cd9c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+    m_enabled: 1
+    m_walkable: 0
+    m_playerOnly: 0
+    m_tint: {r: 1, g: 1, b: 1, a: 0}
+    m_fadeDistance: 0
+    m_scaleTop: 1
+    m_scaleBottom: 1
+    m_scriptName: Bars
+--- !u!60 &813298176276042894
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830621894198828095}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 111.5076, y: -63.15957}
+      - {x: 111.42049, y: -80.29772}
+      - {x: 100.97106, y: -77.2772}
+      - {x: 102.28605, y: -58.890457}
+      - {x: 129.33781, y: -46.95668}
+      - {x: 139.64426, y: -51.225792}
 --- !u!1 &8395039455586155145
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Cells
+    m_description: To Cells
     m_cursor: 
     m_clickable: 1
     m_baseline: -33.49375
@@ -798,10 +887,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -10, y: -10}
-      - {x: -10, y: 10}
-      - {x: 10, y: 10}
-      - {x: 10, y: -10}
+    - - {x: -154.29655, y: -32.42952}
+      - {x: -176.12386, y: -35.93816}
+      - {x: -179.86282, y: 61.240883}
+      - {x: -167.00662, y: 72.80266}
+      - {x: -152.37138, y: 78.3464}
+      - {x: -134.29657, y: 72.80266}
+      - {x: -129.063, y: -16.728857}
 --- !u!1 &8740751883012983673
 GameObject:
   m_ObjectHideFlags: 0

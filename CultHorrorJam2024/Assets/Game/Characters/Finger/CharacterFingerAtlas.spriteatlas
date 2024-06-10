@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterFingerAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: b8940b53ac9a24103bb926e5a28eac26, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -4451695768595579007, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+  - {fileID: 4404245777772344668, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+  - {fileID: -4877612544795035366, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+  - {fileID: 5528072884705057862, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+  - {fileID: 443286328750458148, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+  - {fileID: 305876424985610484, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+  - {fileID: 4539020954127929729, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Cultist3-sheet_6
+  - Cultist3-sheet_5
+  - Cultist3-sheet_4
+  - Cultist3-sheet_3
+  - Cultist3-sheet_2
+  - Cultist3-sheet_1
+  - Cultist3-sheet_0
+  m_RenderDataMap: {}
+  m_Tag: CharacterFingerAtlas
+  m_IsVariant: 0

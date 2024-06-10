@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Entryway
+    m_description: To Entryway
     m_cursor: 
     m_clickable: 1
     m_baseline: -98.71066

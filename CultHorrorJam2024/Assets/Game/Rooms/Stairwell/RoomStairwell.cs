@@ -23,6 +23,7 @@ public class RoomStairwell : RoomScript<RoomStairwell>
 	IEnumerator OnInteractHotspotBasement( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
+		Globals.basementDoorOpened = true;
 		C.Player.Room = R.Basement;
 		yield return E.Break;
 	}

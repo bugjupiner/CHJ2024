@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Front
+    m_description: To Front Gate
     m_cursor: 
     m_clickable: 1
     m_baseline: -59.818752

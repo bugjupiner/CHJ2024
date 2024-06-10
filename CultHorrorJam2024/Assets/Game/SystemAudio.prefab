@@ -65,6 +65,7 @@ MonoBehaviour:
   m_autoAddCues: 1
   m_audioCues:
   - {fileID: 3941748774763875043, guid: e189eef094fea414889d36a832900642, type: 3}
+  - {fileID: 7484354373242902795, guid: 1be551d8249344042986d4a6ad1ca2c9, type: 3}
   - {fileID: 11426600, guid: 2c643cf6d170a1845bd86209b6ca496a, type: 3}
   - {fileID: 11426600, guid: c6310e800026e2e428019c2a6358d52e, type: 3}
   - {fileID: 114876034982820868, guid: 3b2a729029b4ad04985d489155e1943a, type: 3}

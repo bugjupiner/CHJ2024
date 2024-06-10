@@ -51,7 +51,7 @@ public class RoomCloisterStart : RoomScript<RoomCloisterStart>
 	IEnumerator OnInteractHotspotEntryway( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		C.Player.Room = R.Entryway;
+		if(Globals.jumbled) C.Player.Room = R.Entryway;
 		yield return E.Break;
 	}
 }

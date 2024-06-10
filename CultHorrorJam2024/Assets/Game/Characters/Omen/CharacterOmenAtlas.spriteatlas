@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterOmenAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 27df247fb42f34b00b80634c78d272a2, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1956019217564941231, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: 3803951013809315198, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: -5667943238010855066, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: -4220999574673098600, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: 5069266032743146561, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: 7048892778267587490, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: 5464196001578926839, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: 7222875355361982087, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  - {fileID: 4384228772272616054, guid: 02e5f698aa72640578b8c3bade841463, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Omen-sheet_8
+  - Omen-sheet_1
+  - Omen-sheet_0
+  - Omen-sheet_3
+  - Omen-sheet_2
+  - Omen-sheet_5
+  - Omen-sheet_4
+  - Omen-sheet_7
+  - Omen-sheet_6
+  m_RenderDataMap: {}
+  m_Tag: CharacterOmenAtlas
+  m_IsVariant: 0

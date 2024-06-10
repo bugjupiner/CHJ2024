@@ -27,14 +27,22 @@ public class RoomEntryway : RoomScript<RoomEntryway>
 	IEnumerator OnInteractHotspotBedroom( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		C.Player.Room = R.Bedroom;
+		if(Globals.secondFace) C.Player.Room = R.Bedroom;
+		else
+		{
+			yield return C.Shapes.Say("What is this?");
+		}
 		yield return E.Break;
 	}
 
 	IEnumerator OnInteractHotspotCloisterStart( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		C.Player.Room = R.CloisterStart;
+		if(Globals.jumbled) C.Player.Room = R.CloisterStart;
+		else
+		{
+			yield return C.Shapes.Say("It's hot.");
+		}
 		yield return E.Break;
 	}
 
@@ -42,6 +50,13 @@ public class RoomEntryway : RoomScript<RoomEntryway>
 	{
 		yield return C.WalkToClicked();
 		C.Player.Room = R.Front;
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotBigDoor( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("Locked.");
 		yield return E.Break;
 	}
 }

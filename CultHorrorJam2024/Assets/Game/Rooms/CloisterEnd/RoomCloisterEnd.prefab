@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterStone
+    m_description: To Cloister
     m_cursor: 
     m_clickable: 1
     m_baseline: -5.1939554
@@ -945,8 +945,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -180.86757, y: -98.32007}
-      - {x: -160.66364, y: 12.309021}
-      - {x: 169.89972, y: 10}
+      - {x: -159.92665, y: 50.632477}
+      - {x: 169.89972, y: 40.21657}
       - {x: 182.59933, y: -98.89732}
 --- !u!1 &4278299627291367530
 GameObject:
@@ -993,7 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterGrass
+    m_description: To Cloister
     m_cursor: 
     m_clickable: 1
     m_baseline: -60.76935

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: RitualSite
+    m_description: To Ritual Site
     m_cursor: 
     m_clickable: 1
     m_baseline: -88.32007
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterStart
+    m_description: To Cloister
     m_cursor: 
     m_clickable: 1
     m_baseline: 31.749056

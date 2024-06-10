@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Yard
+    m_description: To Outside
     m_cursor: 
     m_clickable: 1
     m_baseline: -49.375374
@@ -374,9 +374,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: HiddenRoom
+    m_description: Inside Chimney
     m_cursor: 
-    m_clickable: 1
+    m_clickable: 0
     m_baseline: -54.83926
     m_walkToPoint: {x: 109.10123, y: -44.448658}
     m_lookAtPoint: {x: 6.9270525, y: -47.912186}
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Dorm
+    m_description: Door
     m_cursor: 
     m_clickable: 1
     m_baseline: -3.2917023
@@ -546,7 +546,7 @@ MonoBehaviour:
     m_animation: Chimeny
     m_alpha: 1
     m_position: {x: 0, y: 0}
-    m_baseline: -47.983215
+    m_baseline: -40.16641
     m_baselineFixed: 0
     m_walkToPoint: {x: 0, y: 0}
     m_lookAtPoint: {x: 0, y: 0}
@@ -626,7 +626,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 480
+  m_SortingOrder: 402
   m_Sprite: {fileID: 21300000, guid: d0fd0b4ed736e4d83abdabe31d53aae4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

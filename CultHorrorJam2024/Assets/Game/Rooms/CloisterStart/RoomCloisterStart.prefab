@@ -494,10 +494,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -174.64859, y: -94.661575}
-      - {x: -169.97401, y: 13.635773}
-      - {x: 81.676674, y: 13.116377}
-      - {x: 190.74986, y: -92.064606}
+    - - {x: -174.64859, y: -99.08351}
+      - {x: -169.97401, y: 31.323523}
+      - {x: 180.43326, y: 28.593157}
+      - {x: 193.69781, y: -96.48654}
 --- !u!1 &3189551858860211479
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterGrass
+    m_description: To Cloister
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterStone
+    m_description: To Cloister
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -854,7 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Entryway
+    m_description: Metal Grate
     m_cursor: 
     m_clickable: 1
     m_baseline: -60.286064
@@ -1254,7 +1254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Pathway
+    m_description: Towards Rupture
     m_cursor: 
     m_clickable: 1
     m_baseline: 0

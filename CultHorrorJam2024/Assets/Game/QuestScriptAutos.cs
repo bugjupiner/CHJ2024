@@ -15,6 +15,12 @@ namespace PowerScript
 		// Access to specific characters (Auto-generated)
 		public static ICharacter Shapes         { get { return PowerQuest.Get.GetCharacter("Shapes"); } }
 		public static ICharacter Angel          { get { return PowerQuest.Get.GetCharacter("Angel"); } }
+		public static ICharacter Recruit        { get { return PowerQuest.Get.GetCharacter("Recruit"); } }
+		public static ICharacter Worm           { get { return PowerQuest.Get.GetCharacter("Worm"); } }
+		public static ICharacter Finger         { get { return PowerQuest.Get.GetCharacter("Finger"); } }
+		public static ICharacter Wizard         { get { return PowerQuest.Get.GetCharacter("Wizard"); } }
+		public static ICharacter Omen           { get { return PowerQuest.Get.GetCharacter("Omen"); } }
+		public static ICharacter Shadow         { get { return PowerQuest.Get.GetCharacter("Shadow"); } }
 		// #CHARS# - Do not edit this line, it's used by the system to insert characters
 	}
 

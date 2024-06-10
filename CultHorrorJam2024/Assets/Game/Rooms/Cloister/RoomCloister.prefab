@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterEndGrass
+    m_description: To Back
     m_cursor: 
     m_clickable: 1
     m_baseline: -69.59909
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterStartGrass
+    m_description: To Rupture
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterEndStone
+    m_description: To Back
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: CloisterStartStone
+    m_description: To Rupture
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Stairwell
+    m_description: To Stairs
     m_cursor: 
     m_clickable: 1
     m_baseline: -97.64648
@@ -1692,10 +1692,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -173.0904, y: -86.35125}
-      - {x: -175.16798, y: 5.325434}
-      - {x: 171.53221, y: 7.9224157}
-      - {x: 173.60979, y: -86.351234}
+    - - {x: -174.56438, y: -98.14308}
+      - {x: -175.90497, y: 31.12007}
+      - {x: 171.53221, y: 31.506084}
+      - {x: 173.60979, y: -97.406075}
 --- !u!1 &8787266802081190218
 GameObject:
   m_ObjectHideFlags: 0

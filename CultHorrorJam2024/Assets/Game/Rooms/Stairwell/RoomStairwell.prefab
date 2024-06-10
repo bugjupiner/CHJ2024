@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Basement
+    m_description: To Basement
     m_cursor: 
     m_clickable: 1
     m_baseline: -89.47458
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Cloister
+    m_description: To Cloister
     m_cursor: 
     m_clickable: 1
     m_baseline: 41.562397

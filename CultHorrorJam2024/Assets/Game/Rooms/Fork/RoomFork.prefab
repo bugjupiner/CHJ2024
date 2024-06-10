@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Cliff
+    m_description: To Cliff
     m_cursor: 
     m_clickable: 1
     m_baseline: -85.83665
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Basement
+    m_description: To Basement
     m_cursor: 
     m_clickable: 1
     m_baseline: -21.32588
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Storeroom
+    m_description: To Shack
     m_cursor: 
     m_clickable: 1
     m_baseline: -48.516365

@@ -44,4 +44,10 @@ public class RoomFork : RoomScript<RoomFork>
 		C.Player.Room = R.Basement;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotSymbol( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
 }

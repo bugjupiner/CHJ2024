@@ -27,7 +27,10 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public eProgress m_progressExample = eProgress.None;
 	
 	public bool jumbled = false;
+	public bool secondFace = false;
+	
 	public bool onCloisterGrass = false;
+	public bool basementDoorOpened = false;
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
