@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Game/Gui/Save/GuiSave.cs" />
+     <Compile Include="Assets/Game/Characters/Shadow/CharacterShadow.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestAnimationTriggers.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestCursorComponent.cs" />
      <Compile Include="Assets/Game/Rooms/Basement/RoomBasement.cs" />
@@ -47,6 +48,7 @@
      <Compile Include="Assets/Game/Rooms/Storeroom/RoomStoreroom.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestScratchpad.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Pathfinder.cs" />
+     <Compile Include="Assets/Game/Characters/Wizard/CharacterWizard.cs" />
      <Compile Include="Assets/Game/Rooms/Yard/RoomYard.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestUtils.cs" />
      <Compile Include="Assets/Game/Rooms/HiddenRoom/RoomHiddenRoom.cs" />
@@ -55,8 +57,9 @@
      <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiUtils.cs" />
      <Compile Include="Assets/Game/Rooms/Front/RoomFront.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDropDownBar.cs" />
+     <Compile Include="Assets/Game/Characters/Omen/CharacterOmen.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomScript.cs" />
-     <Compile Include="Assets/Game/Inventory/Bucket/InventoryBucket.cs" />
+     <Compile Include="Assets/Game/Inventory/Pamphlet/InventoryPamphlet.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/DialogTreeComponent.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/InventoryPanel.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Audio/AudioCue.cs" />
@@ -74,9 +77,12 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestText.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestInterfaces.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Audio/SystemAudio.cs" />
+     <Compile Include="Assets/Game/Inventory/DormantSoul/InventoryDormantSoul.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestMainSequences.cs" />
+     <Compile Include="Assets/Game/Characters/Worm/CharacterWorm.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDialogTreeComponent.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/AlignToScreen.cs" />
+     <Compile Include="Assets/Game/Gui/Conception/GuiConception.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/CharacterComponent.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/Effect.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RegionComponent.cs" />
@@ -85,6 +91,7 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuest.cs" />
      <Compile Include="Assets/Game/Gui/HoverText/GuiHoverText.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestDefinitions.cs" />
+     <Compile Include="Assets/Game/Inventory/Blanket/InventoryBlanket.cs" />
      <Compile Include="Assets/Game/Rooms/Bedroom/RoomBedroom.cs" />
      <Compile Include="Assets/Game/GlobalScript.cs" />
      <Compile Include="Assets/Game/Rooms/Ladder/RoomLadder.cs" />
@@ -107,9 +114,11 @@
      <Compile Include="Assets/PowerQuest/Scripts/ThirdParty/TextureScaler.cs" />
      <Compile Include="Assets/Game/Gui/Options/GuiOptions.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/GuiComponent.cs" />
+     <Compile Include="Assets/Game/Characters/Recruit/CharacterRecruit.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/WalkableComponent.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/Image.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomComponent.cs" />
+     <Compile Include="Assets/AttachToAnimNode.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/GridContainer.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestCameraComponent.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/AlignToObject.cs" />
@@ -125,6 +134,7 @@
      <Compile Include="Assets/PowerQuest/Scripts/ThirdParty/clipper.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestSave.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestGui.cs" />
+     <Compile Include="Assets/Game/Characters/Finger/CharacterFinger.cs" />
      <Compile Include="Assets/Game/Characters/Angel/CharacterAngel.cs" />
      <Compile Include="Assets/Game/Rooms/Cliff/RoomCliff.cs" />
      <Compile Include="Assets/Game/Rooms/Title/RoomTitle.cs" />
@@ -134,12 +144,8 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PixelPerfectCollider.cs" />
      <Compile Include="Assets/Game/Rooms/Fork/RoomFork.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSaveManager.cs" />
-     <Compile Include="Assets/Game/Characters/Recruit/CharacterRecruit.cs" />
-     <Compile Include="Assets/Game/Characters/Worm/CharacterWorm.cs" />
-     <Compile Include="Assets/Game/Characters/Finger/CharacterFinger.cs" />
-     <Compile Include="Assets/Game/Characters/Wizard/CharacterWizard.cs" />
-     <Compile Include="Assets/Game/Characters/Omen/CharacterOmen.cs" />
-     <Compile Include="Assets/Game/Characters/Shadow/CharacterShadow.cs" />
+     <Compile Include="Assets/Game/Inventory/Conception/InventoryConception.cs" />
+     <Compile Include="Assets/Game/Inventory/Fireglass/InventoryFireglass.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontPixelSmooth.shader" />

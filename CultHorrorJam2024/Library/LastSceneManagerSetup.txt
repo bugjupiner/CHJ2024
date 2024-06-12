@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Game/Rooms/Cells/SceneRoomCells.unity
+- path: Assets/Game/Rooms/CloisterStart/SceneRoomCloisterStart.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -39,7 +39,12 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 
 	IEnumerator OnUseInv( IInventory item )
 	{
-
+		if (item == I.Pamphlet)
+		{
+			yield return C.Display("An invitation of sorts to something called The Circle of Vesta.");
+			yield return C.Display("According to this, Vesta is some pagan goddess of house fires.");
+			yield return C.Display("No, wait, they're actually called 'hearths'.");
+		}
 		yield return E.Break;
 	}
 }

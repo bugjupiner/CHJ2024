@@ -27,7 +27,13 @@ namespace PowerScript
 	public static partial class I
 	{		
 		// Access to specific Inventory (Auto-generated)
-		public static IInventory Bucket         { get { return PowerQuest.Get.GetInventory("Bucket"); } }
+		public static IInventory Pamphlet         { get { return PowerQuest.Get.GetInventory("Pamphlet"); } }
+		public static IInventory SpellbookOne   { get { return PowerQuest.Get.GetInventory("SpellbookOne"); } }
+		public static IInventory DormantSoul    { get { return PowerQuest.Get.GetInventory("DormantSoul"); } }
+		public static IInventory Blanket        { get { return PowerQuest.Get.GetInventory("Blanket"); } }
+		public static IInventory Conception     { get { return PowerQuest.Get.GetInventory("Conception"); } }
+		public static IInventory Knife          { get { return PowerQuest.Get.GetInventory("Knife"); } }
+		public static IInventory Fireglass      { get { return PowerQuest.Get.GetInventory("Fireglass"); } }
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 
@@ -43,6 +49,7 @@ namespace PowerScript
 		public static IGui InventoryBar   { get { return PowerQuest.Get.GetGui("InventoryBar"); } }
 		public static IGui Options        { get { return PowerQuest.Get.GetGui("Options"); } }
 		public static IGui Save           { get { return PowerQuest.Get.GetGui("Save"); } }
+		public static IGui Conception     { get { return PowerQuest.Get.GetGui("Conception"); } }
 		// #GUI# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

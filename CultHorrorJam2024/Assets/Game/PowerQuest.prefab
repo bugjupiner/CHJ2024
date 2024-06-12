@@ -130,6 +130,7 @@ MonoBehaviour:
   - {fileID: 7900395482769087748, guid: 185594d6833d54332a4830125f2c4ae9, type: 3}
   - {fileID: 4564714505735506226, guid: 58f83d316cf454cf2bee993bcdad32c3, type: 3}
   m_guiPrefabs:
+  - {fileID: 8580980553093582170, guid: adfc38c611af745f889e394d1f0c01a2, type: 3}
   - {fileID: 114997530584156344, guid: 411a5d13109ce024888cfebc375721e4, type: 3}
   - {fileID: 8056484958200454590, guid: 008d06288a0a6bf40a1f91be9220b969, type: 3}
   - {fileID: 3440285403923831220, guid: e4d641910d987554f936e3e385631a31, type: 3}
@@ -142,10 +143,43 @@ MonoBehaviour:
   m_dialogTreePrefabs: []
   m_inventoryPrefabs:
   - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
+  - {fileID: 8863799401534256755, guid: 478ed8a6860664bbd96f1905a2654f62, type: 3}
+  - {fileID: 3084716747847593115, guid: 7fe15f2482c5645fca893e45168433c0, type: 3}
+  - {fileID: 177450910264283442, guid: 43ffbbd68accf4baab6de3ee9a60454a, type: 3}
+  - {fileID: 3636650851910989986, guid: f15aa561ab1c04c35b13693cb971497b, type: 3}
+  - {fileID: 843470262827625897, guid: 51334e3a9849b4443a0c1fb0b28bb1f2, type: 3}
+  - {fileID: 6687254513922354368, guid: 2574dc178e3d94e01aee0cc5df29d124, type: 3}
   m_inventoryAnimations:
+  - {fileID: 7400000, guid: 759bd15cdea204096905345e000a8e3e, type: 2}
+  - {fileID: 7400000, guid: 6c2d4cb2dcf5f41b3b85a3b49aedffc5, type: 2}
   - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
+  - {fileID: 7400000, guid: ae645f9fd56ff40a392786889ad7dcf1, type: 2}
+  - {fileID: 7400000, guid: da9b7fa68f69c4481ad6f1451a5f8396, type: 2}
+  - {fileID: 7400000, guid: 995e3ea154d33414e8660dfc44917ffb, type: 2}
+  - {fileID: 7400000, guid: dd06e4ead7d794c6b9950cd7f336e99e, type: 2}
+  - {fileID: 7400000, guid: 2edee8d32000345d983c2fbcb833a5cb, type: 2}
+  - {fileID: 7400000, guid: 56e3d3b88ab9746e691ba8d629b487b0, type: 2}
   m_inventorySprites:
-  - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
+  - {fileID: 21300000, guid: bcc567af209184a1fbbf5ffbbd4aec45, type: 3}
+  - {fileID: 21300000, guid: bf1e5d3da320240c89a59a194249b42d, type: 3}
+  - {fileID: 21300000, guid: 24dae1ca740df4ef486e2f9a936d7c10, type: 3}
+  - {fileID: 2124593038956199820, guid: 73498d08ad6cb4441b5d6b39909128fa, type: 3}
+  - {fileID: 21300000, guid: 36ef6533b1e4a4105b3befef07b9f6f2, type: 3}
+  - {fileID: 21300000, guid: e6f93cb2464c94877b0d225a8203688a, type: 3}
+  - {fileID: 21300000, guid: 72c603fc26ff944bfa6e84c6f647b166, type: 3}
+  - {fileID: 21300000, guid: b03fdb456a67243a5ae47d3834f135a7, type: 3}
+  - {fileID: 21300000, guid: 77f372bc30b4543a1aae3e5148f93c11, type: 3}
+  - {fileID: 21300000, guid: 9bf383f689da1478aa2aa9c05c462056, type: 3}
+  - {fileID: 21300000, guid: e002f5037eb4343a5a30235c0d12a5bb, type: 3}
+  - {fileID: 21300000, guid: 94289dc6bb8174b768d74bd425209681, type: 3}
+  - {fileID: 21300000, guid: 184981cdda80c4a80aa1c96714397650, type: 3}
+  - {fileID: 21300000, guid: 3e8e732dd30b5459e93e2ea851e4877e, type: 3}
+  - {fileID: 21300000, guid: aa3aa1a721b6c4bd1abb2ef50acaecdd, type: 3}
+  - {fileID: 21300000, guid: e658e2ef520ed40f89a6b6bc95648ba8, type: 3}
+  - {fileID: 21300000, guid: 9bf1fb0569e9a431981b358aff8dfee1, type: 3}
+  - {fileID: 21300000, guid: d07cbd4d334a14b6b816f1e15820ca40, type: 3}
+  - {fileID: 21300000, guid: 26ef916af5bc94a93a95eaa8e232cbfb, type: 3}
+  - {fileID: 21300000, guid: 74eec6e26e45349d085feddad920bd32, type: 3}
   m_guiAnimations:
   - {fileID: 0}
   - {fileID: 0}

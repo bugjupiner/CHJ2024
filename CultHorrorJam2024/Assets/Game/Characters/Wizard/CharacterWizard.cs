@@ -18,4 +18,25 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 		yield return C.Wizard.Say("Oh well.");
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+		if(item == I.Knife)
+		{
+			yield return C.Wizard.Say("GAH!");
+			C.Wizard.AnimIdle = "Dead";
+			C.Wizard.Clickable = false;
+			Globals.wizardSpellBroken = true;
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("Somethings changed...");
+		}
+		
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAt()
+	{
+
+		yield return E.Break;
+	}
 }

@@ -33,4 +33,37 @@ public class RoomYard : RoomScript<RoomYard>
 		C.Player.Room = R.Ladder;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtPropSpellBubble( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("Hm...");
+		yield return E.WaitSkip();
+		yield return C.Shapes.Say("It's magic!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropSpellBubble( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Display("Nothing happens.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropSpellbook( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Spellbook Volume One");
+		C.Shapes.AddInventory("SpellbookOne");
+		Prop("Spellbook").Disable();
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropSpellbook( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("Sure hope I can read.");
+		yield return E.Break;
+	}
 }

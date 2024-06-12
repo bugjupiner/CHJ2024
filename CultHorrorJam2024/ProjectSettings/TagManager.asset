@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fireglass
+    uniqueID: 3934230557
+    locked: 0
   - name: Gui
     uniqueID: 3130941793
     locked: 0

@@ -41,13 +41,17 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 672bde156c10745c9957ecfc2692b92a, type: 3}
   - {fileID: 21300000, guid: 99c952a5c8fb5421d9136259489ed803, type: 3}
   - {fileID: 21300000, guid: f4232f563feba490ba825b413e7e9c77, type: 3}
+  - {fileID: 21300000, guid: 03928f5b66a4f45e092e4770a5fb742a, type: 3}
   - {fileID: 21300000, guid: a36027fd0839d4b2c9b65e364b7c9f82, type: 3}
+  - {fileID: 21300000, guid: c92db1df7ee344a439372595ceeb8106, type: 3}
   m_PackedSpriteNamesToIndex:
   - 01C-Composite
   - 01C-Obstacle02
   - 01C-Obstacle01
   - 01C-Obstacle04
+  - 01C-Obstacle05
   - 01C-Obstacle03
+  - 01C-Composite
   m_RenderDataMap: {}
   m_Tag: RoomCloisterStartAtlas
   m_IsVariant: 0

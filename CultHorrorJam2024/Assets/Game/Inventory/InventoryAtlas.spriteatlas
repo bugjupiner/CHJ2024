@@ -15,7 +15,7 @@ SpriteAtlas:
       compressionQuality: 50
       maxTextureSize: 2048
       textureCompression: 0
-      filterMode: 0
+      filterMode: 1
       generateMipMaps: 0
       readable: 0
       crunchedCompression: 0
@@ -26,7 +26,7 @@ SpriteAtlas:
       m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
-      m_TextureCompression: 0
+      m_TextureCompression: 2
       m_CompressionQuality: 50
       m_CrunchedCompression: 0
       m_AllowsAlphaSplitting: 0
@@ -49,9 +49,57 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
+  - {fileID: 21300000, guid: e6f93cb2464c94877b0d225a8203688a, type: 3}
+  - {fileID: 21300000, guid: 74eec6e26e45349d085feddad920bd32, type: 3}
+  - {fileID: 21300000, guid: e002f5037eb4343a5a30235c0d12a5bb, type: 3}
+  - {fileID: 21300000, guid: 36ef6533b1e4a4105b3befef07b9f6f2, type: 3}
+  - {fileID: 21300000, guid: 9bf1fb0569e9a431981b358aff8dfee1, type: 3}
+  - {fileID: 21300000, guid: b03fdb456a67243a5ae47d3834f135a7, type: 3}
+  - {fileID: 21300000, guid: 94289dc6bb8174b768d74bd425209681, type: 3}
+  - {fileID: 21300000, guid: 9bf383f689da1478aa2aa9c05c462056, type: 3}
+  - {fileID: 21300000, guid: aa3aa1a721b6c4bd1abb2ef50acaecdd, type: 3}
+  - {fileID: 6014666435450679491, guid: 73498d08ad6cb4441b5d6b39909128fa, type: 3}
+  - {fileID: 7687815566331496008, guid: 73498d08ad6cb4441b5d6b39909128fa, type: 3}
+  - {fileID: -4076828409724222837, guid: 73498d08ad6cb4441b5d6b39909128fa, type: 3}
+  - {fileID: 2124593038956199820, guid: 73498d08ad6cb4441b5d6b39909128fa, type: 3}
+  - {fileID: -3442700825783480142, guid: 73498d08ad6cb4441b5d6b39909128fa, type: 3}
+  - {fileID: 4807814366700164833, guid: 73498d08ad6cb4441b5d6b39909128fa, type: 3}
+  - {fileID: 21300000, guid: 26ef916af5bc94a93a95eaa8e232cbfb, type: 3}
+  - {fileID: 21300000, guid: 24dae1ca740df4ef486e2f9a936d7c10, type: 3}
+  - {fileID: 21300000, guid: 77f372bc30b4543a1aae3e5148f93c11, type: 3}
+  - {fileID: 21300000, guid: 72c603fc26ff944bfa6e84c6f647b166, type: 3}
+  - {fileID: 21300000, guid: 3e8e732dd30b5459e93e2ea851e4877e, type: 3}
+  - {fileID: 21300000, guid: bf1e5d3da320240c89a59a194249b42d, type: 3}
+  - {fileID: 21300000, guid: d07cbd4d334a14b6b816f1e15820ca40, type: 3}
+  - {fileID: 21300000, guid: 184981cdda80c4a80aa1c96714397650, type: 3}
+  - {fileID: 21300000, guid: bcc567af209184a1fbbf5ffbbd4aec45, type: 3}
+  - {fileID: 21300000, guid: e658e2ef520ed40f89a6b6bc95648ba8, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Bucket_0
+  - Doll
+  - SecondFace
+  - FireglassUI
+  - Diary
+  - Rubble
+  - DollHead
+  - Glass
+  - Fireglass
+  - LaviniasHair
+  - Conception-Icons_5
+  - Conception-Icons_4
+  - Conception-Icons_1
+  - Conception-Icons_0
+  - Conception-Icons_3
+  - Conception-Icons_2
+  - Scroll02
+  - Book02
+  - DormantSoul
+  - DollBody
+  - Knife
+  - Book01
+  - Scroll01
+  - GodBile
+  - Blanket
+  - Pamphlet
   m_RenderDataMap: {}
   m_Tag: InventoryAtlas
   m_IsVariant: 0

@@ -33,4 +33,22 @@ public class RoomLadder : RoomScript<RoomLadder>
 		C.Player.Room = R.Yard;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtPropPamphlet( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Shapes.Say("This has that strange symbol...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropPamphlet( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Pamphlet");
+		Prop("Pamphlet").Disable();
+		C.Shapes.AddInventory("Pamphlet");
+		yield return E.Break;
+	}
 }

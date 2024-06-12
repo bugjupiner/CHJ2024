@@ -40,4 +40,22 @@ public class RoomCliff : RoomScript<RoomCliff>
 		yield return C.Shapes.Say(" Looks like the world exploded.");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotRobe( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Shapes.Say("Someone took this off in a hurry.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotRobe( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Dormant Soul");
+		C.Shapes.AddInventory("DormantSoul");
+		Hotspot("Robe").Disable();
+		yield return E.Break;
+	}
 }

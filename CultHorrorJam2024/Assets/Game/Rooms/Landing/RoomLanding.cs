@@ -22,4 +22,25 @@ public class RoomLanding : RoomScript<RoomLanding>
 		C.Player.Room = R.Front;
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvHotspotShell( IHotspot hotspot, IInventory item )
+	{
+		if(item == I.Conception)
+		{
+			yield return C.WalkToClicked();
+			yield return C.FaceClicked();
+		
+			if(Globals.conceptionSense == senses.Hear)
+			{
+				yield return C.Shapes.Say("It liked that!");
+				Globals.sensesSatisfied += 1;
+				Hotspot("Shell").Disable();
+			}
+			else
+			{
+				yield return C.Shapes.Say(" Not Quite...");
+			}
+		}
+		yield return E.Break;
+	}
 }

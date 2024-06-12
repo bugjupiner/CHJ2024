@@ -44,4 +44,18 @@ public class RoomFront : RoomScript<RoomFront>
 		C.Player.Room = R.Dorm;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotWindow( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("Can't see much...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotWindow( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("Can't see much...");
+		yield return E.Break;
+	}
 }

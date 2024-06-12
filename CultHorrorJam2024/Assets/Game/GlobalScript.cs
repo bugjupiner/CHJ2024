@@ -15,22 +15,28 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Variables
 	
-	/// Just an example of using an enum for game state.
-	/// This can be accessed from other scripts, eg: if ( Globals.m_progressExample == eProgress.DrankWater )...
-	public enum eProgress
-	{
-		None,
-		GotWater,
-		DrankWater,
-		WonGame
-	};
-	public eProgress m_progressExample = eProgress.None;
-	
 	public bool jumbled = false;
 	public bool secondFace = false;
 	
+	public enum senses
+	{
+		See,
+		Taste,
+		Hear,
+		Smell,
+		Feel,
+		Sixth
+	}
+	public senses conceptionSense = senses.See;
+	public int sensesSatisfied = 0;
+	
+	public bool wizardSpellBroken = false;
+	
 	public bool onCloisterGrass = false;
+	public bool dormDoorOpened = false;
 	public bool basementDoorOpened = false;
+	
+	public GameObject fireglassMask = null;
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
@@ -53,6 +59,12 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// Blocking script called whenever you enter a room, after fade in is complete
 	public IEnumerator OnEnterRoomAfterFade()
 	{
+		Transform maskTransform = Cursor.GetInstance().transform.Find("FireglassMask");
+		if(maskTransform != null)
+		{
+			fireglassMask = maskTransform.gameObject;
+			SetFireglass(false);
+		}
 		yield return E.Break;
 	}
 
@@ -216,6 +228,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 				{
 					// Left clicked on inventory item, make it the active item. Remove this "if statement" if you want to be able to "use" items by clicking on them
 					I.Active = (IInventory)E.GetMouseOverClickable();
+					if(I.Active == I.Fireglass) SetFireglass(true);
 				}
 				else
 				{
@@ -227,6 +240,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 			{
 				// Left click empty space, so walk
 				E.ProcessClick( eQuestVerb.Walk );
+				if(fireglassMask) SetFireglass(false);
 			}
 		}
 		else if ( rightClick )
@@ -234,6 +248,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 			// If right clicked something, look at it (if 'look' enabled in PowerQuest Settings)
 			if ( mouseOverSomething )
 				E.ProcessClick( eQuestVerb.Look );
+		   //else if(fireglassMask) SetFireglass(false);
 		}
 	}
 
@@ -294,8 +309,106 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public IEnumerator UnhandledUseInv(IQuestClickable mouseOver, Inventory item)
 	{		
 		// This function is called when the uses an item on things that don't have a response
-		yield return C.Display( "You can't use that" ); 
+		if(item == I.Fireglass)
+		{
+			yield break;
+		}
+		else
+		{
+		yield return C.Display("You can't use that");
+		}
 	}
 
+	public int GetCurrentSense()
+	{
+		int senseNumber = 0;
+		
+		switch(conceptionSense)
+		{
+			case senses.See:
+				break;
+			case senses.Taste:
+				senseNumber = 1;
+				break;
+			case senses.Hear:
+				senseNumber = 2;
+				break;
+			case senses.Smell:
+				senseNumber = 3;
+				break;
+			case senses.Feel:
+				senseNumber = 4;
+				break;
+			case senses.Sixth:
+				senseNumber = 5;
+				break;
+		
+		}
+		
+		return senseNumber;
+	}
 
+	public senses GetNextConceptionSense(int direction) // 0 right, 1 down, 2 left, 3 up
+	{
+		senses nextSense = conceptionSense;
+		switch(conceptionSense)
+		{
+			case senses.Feel:
+				if(direction == 0) nextSense = senses.Taste;
+				if(direction == 1) nextSense = senses.See;
+				if(direction == 2) nextSense = senses.Hear;
+				if(direction == 3) nextSense = senses.Sixth;
+				break;
+			case senses.Smell:
+				if(direction == 0) nextSense = senses.Taste;
+				if(direction == 1) nextSense = senses.Sixth;
+				if(direction == 2) nextSense = senses.Hear;
+				if(direction == 3) nextSense = senses.See;
+				break;
+			case senses.Sixth:
+				if(direction == 0) nextSense = senses.Taste;
+				if(direction == 1) nextSense = senses.Hear;
+				if(direction == 2) nextSense = senses.Feel;
+				if(direction == 3) nextSense = senses.Smell;
+				break;
+			case senses.Taste:
+				if(direction == 0) nextSense = senses.See;
+				if(direction == 1) nextSense = senses.Feel;
+				if(direction == 2) nextSense = senses.Sixth;
+				if(direction == 3) nextSense = senses.Smell;
+				break;
+			case senses.See:
+				if(direction == 0) nextSense = senses.Hear;
+				if(direction == 1) nextSense = senses.Feel;
+				if(direction == 2) nextSense = senses.Taste;
+				if(direction == 3) nextSense = senses.Smell;
+				break;
+			case senses.Hear:
+				if(direction == 0) nextSense = senses.Sixth;
+				if(direction == 1) nextSense = senses.Feel;
+				if(direction == 2) nextSense = senses.See;
+				if(direction == 3) nextSense = senses.Smell;
+				break;
+		}
+
+		return nextSense;
+	} 
+
+	public void UpdateConceptionSprite()
+	{
+		string animName = "Conception" + conceptionSense.ToString();
+		I.Conception.Anim = animName;
+	}
+
+	public void SetFireglass(bool use)
+	{
+		if(use) fireglassMask.SetActive(true);
+		else fireglassMask.SetActive(false);
+	}
+
+	public void SwitchFireglass()
+	{
+		if(!Globals.fireglassMask) Globals.SetFireglass(true);
+		else Globals.SetFireglass(false);
+	}
 }

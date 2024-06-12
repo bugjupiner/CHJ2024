@@ -38,15 +38,21 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 18847707055f2430c841070ff8a03443, type: 3}
+  - {fileID: 21300000, guid: 3eeb8f0790aea4b1eb8c666c76f24cda, type: 3}
   - {fileID: 21300000, guid: c1c9adc723e46449389bbfb210f697e6, type: 3}
   - {fileID: 21300000, guid: 4d79d9f7cc3ba4276819d9f4f6485745, type: 3}
   - {fileID: 21300000, guid: bdd38df7e3a274aac9231486782d16cb, type: 3}
+  - {fileID: 21300000, guid: f063040ab6bf24d00963a53a387c9877, type: 3}
+  - {fileID: 21300000, guid: 190f074b16fda4ffa9ef32fa2be42514, type: 3}
   - {fileID: 21300000, guid: a8eb0d7dd74c840ad99cad5d9bb8679c, type: 3}
   m_PackedSpriteNamesToIndex:
+  - 01E-Composite
   - 01E-Composite
   - 01E-Obstacle02
   - 01E-Obstacle03
   - 01E-Obstacle04
+  - 01E-Obstacle05
+  - 1E-BrokenWindow
   - 01E-Obstacle01
   m_RenderDataMap: {}
   m_Tag: RoomFrontAtlas

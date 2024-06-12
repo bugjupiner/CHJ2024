@@ -33,4 +33,20 @@ public class RoomDorm : RoomScript<RoomDorm>
 		C.Player.Room = R.Kitchen;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtPropBlanket( IProp prop )
+	{
+		yield return C.Shapes.Say("Four beds, one blanket?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropBlanket( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Blanket");
+		C.Shapes.AddInventory("Blanket");
+		Prop("Blanket").Disable();
+		yield return E.Break;
+	}
 }

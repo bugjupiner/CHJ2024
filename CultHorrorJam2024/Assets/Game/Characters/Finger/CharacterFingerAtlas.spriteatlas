@@ -37,6 +37,18 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 5120279203839760430, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: 1421932380558817315, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: -2144155741479861610, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: 2437444544357830521, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: 2786109249217624098, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: 6400132088539785114, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: -2945427644067507737, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: 6284895773050237554, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: -5204862155651213524, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: -236108729646010803, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: 989628599640161695, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
+  - {fileID: -5192319744374075217, guid: 267f4282744a74aaebc571381bc420bf, type: 3}
   - {fileID: -4451695768595579007, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
   - {fileID: 4404245777772344668, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
   - {fileID: -4877612544795035366, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
@@ -45,6 +57,18 @@ SpriteAtlas:
   - {fileID: 305876424985610484, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
   - {fileID: 4539020954127929729, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
   m_PackedSpriteNamesToIndex:
+  - conception-spin-sheet_10
+  - conception-spin-sheet_11
+  - conception-spin-sheet_9
+  - conception-spin-sheet_8
+  - conception-spin-sheet_1
+  - conception-spin-sheet_0
+  - conception-spin-sheet_3
+  - conception-spin-sheet_2
+  - conception-spin-sheet_5
+  - conception-spin-sheet_4
+  - conception-spin-sheet_7
+  - conception-spin-sheet_6
   - Cultist3-sheet_6
   - Cultist3-sheet_5
   - Cultist3-sheet_4
