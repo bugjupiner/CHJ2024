@@ -58,4 +58,36 @@ public class RoomFront : RoomScript<RoomFront>
 		yield return C.Shapes.Say("Can't see much...");
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvHotspotWindow( IHotspot hotspot, IInventory item )
+	{
+		if(item == I.Rubble)
+		{
+			Prop("BrokenWindow").Visible = true;
+			Prop("Glass").Visible = true;
+			Prop("Glass").Clickable = true;
+		
+			I.Rubble.Active = false;
+			C.Shapes.RemoveInventory("Rubble");
+		
+			yield return C.Shapes.Say("Whoops!");
+		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropGlass( IProp prop )
+	{
+		yield return C.Shapes.Say("Doesn't look too sharp.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropGlass( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Glass");
+		C.Shapes.AddInventory("Glass");
+		Prop("Glass").Disable();
+		yield return E.Break;
+	}
 }

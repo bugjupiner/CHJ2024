@@ -21,12 +21,15 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 
 	IEnumerator OnUseInv( IInventory item )
 	{
-		if(item == I.Knife)
+		if(item == I.Knife || item == I.Rubble)
 		{
-			yield return C.Wizard.Say("GAH!");
 			C.Wizard.AnimIdle = "Dead";
+			C.Wizard.AnimTalk = "Dead";
+			yield return C.Wizard.Say("GAH!");
+		
 			C.Wizard.Clickable = false;
 			Globals.wizardSpellBroken = true;
+			yield return E.WaitSkip();
 			yield return E.WaitSkip();
 			yield return C.Shapes.Say("Somethings changed...");
 		}

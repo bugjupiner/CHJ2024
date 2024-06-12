@@ -64,4 +64,21 @@ public class RoomCloister : RoomScript<RoomCloister>
 		C.Player.Room = R.CloisterStart;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtPropRubble( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("This place is a mess.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropRubble( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Rubble");
+		C.Shapes.AddInventory("Rubble");
+		Prop("Rubble").Disable();
+		yield return E.Break;
+	}
 }

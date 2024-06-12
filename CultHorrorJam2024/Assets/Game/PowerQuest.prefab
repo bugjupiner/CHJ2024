@@ -143,13 +143,15 @@ MonoBehaviour:
   m_dialogTreePrefabs: []
   m_inventoryPrefabs:
   - {fileID: 3636650851910989986, guid: f15aa561ab1c04c35b13693cb971497b, type: 3}
-  - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
-  - {fileID: 8863799401534256755, guid: 478ed8a6860664bbd96f1905a2654f62, type: 3}
-  - {fileID: 3084716747847593115, guid: 7fe15f2482c5645fca893e45168433c0, type: 3}
   - {fileID: 177450910264283442, guid: 43ffbbd68accf4baab6de3ee9a60454a, type: 3}
-  - {fileID: 843470262827625897, guid: 51334e3a9849b4443a0c1fb0b28bb1f2, type: 3}
+  - {fileID: 3084716747847593115, guid: 7fe15f2482c5645fca893e45168433c0, type: 3}
   - {fileID: 6687254513922354368, guid: 2574dc178e3d94e01aee0cc5df29d124, type: 3}
+  - {fileID: 843470262827625897, guid: 51334e3a9849b4443a0c1fb0b28bb1f2, type: 3}
+  - {fileID: 8863799401534256755, guid: 478ed8a6860664bbd96f1905a2654f62, type: 3}
   - {fileID: 4442757737107753539, guid: f820710070dc54a1d80c4b0efdbae6be, type: 3}
+  - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
+  - {fileID: 8107170259528221196, guid: a2380263bd8d04f5bad86a89a5dd1879, type: 3}
+  - {fileID: 1690360046108650565, guid: 650158267e5e643f0a36a60ea64262f3, type: 3}
   m_inventoryAnimations:
   - {fileID: 7400000, guid: 759bd15cdea204096905345e000a8e3e, type: 2}
   - {fileID: 7400000, guid: 6c2d4cb2dcf5f41b3b85a3b49aedffc5, type: 2}
