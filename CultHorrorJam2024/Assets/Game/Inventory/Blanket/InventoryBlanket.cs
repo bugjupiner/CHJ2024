@@ -13,4 +13,14 @@ public class InventoryBlanket : InventoryScript<InventoryBlanket>
 		yield return C.Shapes.Say("Feels comfy.");
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvInventory( IInventory thisItem, IInventory item )
+	{
+		if (item == I.Conception)
+		{
+			G.Conception.Show();
+			yield return E.ConsumeEvent;
+		}
+		yield return E.Break;
+	}
 }

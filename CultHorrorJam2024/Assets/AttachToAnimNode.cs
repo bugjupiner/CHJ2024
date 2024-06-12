@@ -13,13 +13,7 @@ public class AttachToAnimNode : MonoBehaviour
 
     void OnEnable()
     {
-        if(target == null)
-        {
-            GameObject targetObj = GameObject.Find(targetName);
-            if(targetObj == null) return;
-            target = targetObj.transform;
-            SetNodes(target);
-        }
+        if(target == null) FindAndSet();
         else SetNodes(target);
         
     }
@@ -31,7 +25,19 @@ public class AttachToAnimNode : MonoBehaviour
 
     void LateUpdate()
     {
-        if(nodes == null) return;
+        if(nodes == null)
+        {
+            if(targetName != null) FindAndSet();
+            else return;
+        }
         transform.position = nodes.GetPosition(nodeIndex);
+    }
+
+    void FindAndSet()
+    {
+        GameObject targetObj = GameObject.Find(targetName);
+        if(targetObj == null) return;
+        target = targetObj.transform;
+        SetNodes(target);
     }
 }

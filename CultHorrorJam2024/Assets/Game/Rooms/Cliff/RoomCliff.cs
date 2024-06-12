@@ -58,4 +58,10 @@ public class RoomCliff : RoomScript<RoomCliff>
 		Hotspot("Robe").Disable();
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractPropConception( IProp prop )
+	{
+
+		yield return E.Break;
+	}
 }

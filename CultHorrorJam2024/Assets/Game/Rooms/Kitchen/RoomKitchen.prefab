@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 7031202211287794153}
   - component: {fileID: 8315525460156834511}
   m_Layer: 0
-  m_Name: PropRat
+  m_Name: PropCookedRat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Rat
+    m_description: Cooked Rat
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -143,7 +143,7 @@ MonoBehaviour:
     m_baselineFixed: 0
     m_walkToPoint: {x: -29.56765, y: -1.007988}
     m_lookAtPoint: {x: -23.18373, y: -4.703949}
-    m_scriptName: Rat
+    m_scriptName: CookedRat
   m_parallaxDepth: 0
   m_parallaxAlignment: {x: 0, y: 0}
 --- !u!60 &5294639675973682438
@@ -261,7 +261,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1 &788456924742177335
 GameObject:
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Door
+    m_description: To Dorm
     m_cursor: 
     m_clickable: 1
     m_baseline: -3.2917023

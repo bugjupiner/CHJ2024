@@ -68,8 +68,9 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 		yield return E.Break;
 	}
 
-	IEnumerator OnLookAtPropRat( IProp prop )
+	IEnumerator OnLookAtPropCookedRat( IProp prop )
 	{
+		yield return C.WalkToClicked();
 		yield return C.Shapes.Say("That's a cooked rat.");
 		yield return E.Break;
 	}
@@ -78,6 +79,8 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 	{
 		if(item == I.DormantSoul)
 		{
+			I.DormantSoul.Active = false;
+			C.Shapes.RemoveInventory("DormantSoul");
 			Globals.dormDoorOpened = true;
 			yield return C.Display("You can now enter the dorm.");
 		}
@@ -102,6 +105,13 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 				yield return C.Shapes.Say(" Not Quite...");
 			}
 		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropCookedRat( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("That's a cooked rat.");
 		yield return E.Break;
 	}
 }

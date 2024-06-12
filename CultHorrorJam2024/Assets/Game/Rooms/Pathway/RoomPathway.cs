@@ -23,7 +23,7 @@ public class RoomPathway : RoomScript<RoomPathway>
 	IEnumerator OnInteractHotspotRitualSite( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		C.Player.Room = R.RitualSite;
+		if(C.Player.TargetPosition == Hotspot("RitualSite").WalkToPoint) C.Player.Room = R.RitualSite;
 		yield return E.Break;
 	}
 
@@ -31,6 +31,32 @@ public class RoomPathway : RoomScript<RoomPathway>
 	{
 		yield return C.WalkToClicked();
 		C.Player.Room = R.CloisterStart;
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropSpellbookTwo( IProp prop )
+	{
+		
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropSpellBubble( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("Magic!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropSpellbookTwo( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropSpellBubble( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("Magic!");
 		yield return E.Break;
 	}
 }

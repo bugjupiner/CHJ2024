@@ -22,6 +22,7 @@ public class CharacterFinger : CharacterScript<CharacterFinger>
 		{
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
+			I.Blanket.Active = false;
 			C.Shapes.RemoveInventory("Blanket");
 			yield return C.Finger.PlayAnimation("BlanketOn");
 			C.Finger.AnimIdle = "Dead";
