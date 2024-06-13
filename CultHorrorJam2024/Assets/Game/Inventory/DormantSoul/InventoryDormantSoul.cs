@@ -10,7 +10,7 @@ public class InventoryDormantSoul : InventoryScript<InventoryDormantSoul>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
-		yield return C.Display("An unmistakable kind of restless energy.");
+		yield return C.Shapes.Say("Restless energy...");
 		yield return E.Break;
 	}
 }

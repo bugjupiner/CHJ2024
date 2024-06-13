@@ -21,6 +21,7 @@ namespace PowerScript
 		public static ICharacter Wizard         { get { return PowerQuest.Get.GetCharacter("Wizard"); } }
 		public static ICharacter Omen           { get { return PowerQuest.Get.GetCharacter("Omen"); } }
 		public static ICharacter Shadow         { get { return PowerQuest.Get.GetCharacter("Shadow"); } }
+		public static ICharacter PastAngel      { get { return PowerQuest.Get.GetCharacter("PastAngel"); } }
 		// #CHARS# - Do not edit this line, it's used by the system to insert characters
 	}
 
@@ -37,6 +38,16 @@ namespace PowerScript
 		public static IInventory SpellbookTwo   { get { return PowerQuest.Get.GetInventory("SpellbookTwo"); } }
 		public static IInventory Rubble         { get { return PowerQuest.Get.GetInventory("Rubble"); } }
 		public static IInventory Glass          { get { return PowerQuest.Get.GetInventory("Glass"); } }
+		public static IInventory SecondFace     { get { return PowerQuest.Get.GetInventory("SecondFace"); } }
+		public static IInventory DollBody       { get { return PowerQuest.Get.GetInventory("DollBody"); } }
+		public static IInventory DollHead       { get { return PowerQuest.Get.GetInventory("DollHead"); } }
+		public static IInventory Doll           { get { return PowerQuest.Get.GetInventory("Doll"); } }
+		public static IInventory AngelsBlood    { get { return PowerQuest.Get.GetInventory("AngelsBlood"); } }
+		public static IInventory VirginsBlood   { get { return PowerQuest.Get.GetInventory("VirginsBlood"); } }
+		public static IInventory GodBile        { get { return PowerQuest.Get.GetInventory("GodBile"); } }
+		public static IInventory InversionScroll { get { return PowerQuest.Get.GetInventory("InversionScroll"); } }
+		public static IInventory MirrorScroll   { get { return PowerQuest.Get.GetInventory("MirrorScroll"); } }
+		public static IInventory LaviniasHair   { get { return PowerQuest.Get.GetInventory("LaviniasHair"); } }
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

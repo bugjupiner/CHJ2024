@@ -10,6 +10,8 @@ public class RoomBasement : RoomScript<RoomBasement>
 
 	void OnEnterRoom()
 	{
+		if(Globals.basementDoorOpened && !Prop("Door").Visible) Prop("Door").Visible = true;
+		
 		if(R.Previous == R.Cells)
 		{
 			C.Player.Position = R.Current.GetHotspot("Cells").WalkToPoint;
@@ -22,6 +24,8 @@ public class RoomBasement : RoomScript<RoomBasement>
 		{
 			C.Player.Position = R.Current.GetHotspot("Fork").WalkToPoint;
 		}
+		
+		
 	}
 
 	IEnumerator OnInteractHotspotFork( IHotspot hotspot )

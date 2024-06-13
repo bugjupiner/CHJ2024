@@ -68,6 +68,7 @@ SpriteAtlas:
   - {fileID: 4724653715315148064, guid: ce87df701aef745a0a89917a053abefb, type: 3}
   - {fileID: -2151181554260367275, guid: ce87df701aef745a0a89917a053abefb, type: 3}
   - {fileID: -8927612033162531626, guid: ce87df701aef745a0a89917a053abefb, type: 3}
+  - {fileID: 21300000, guid: 6f57aeb8b67fe40f2a1717889ad3e60c, type: 3}
   m_PackedSpriteNamesToIndex:
   - player-sheet_18
   - player-sheet_12
@@ -88,6 +89,7 @@ SpriteAtlas:
   - player-sheet_2
   - player-sheet_1
   - player-sheet_0
+  - SecondFaceMask
   m_RenderDataMap: {}
   m_Tag: CharacterShapesAtlas
   m_IsVariant: 0

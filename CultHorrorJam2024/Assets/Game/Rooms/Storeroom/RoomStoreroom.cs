@@ -26,4 +26,14 @@ public class RoomStoreroom : RoomScript<RoomStoreroom>
 		C.Player.Room = R.Fork;
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractPropDollHead( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Doll Head");
+		C.Shapes.AddInventory("DollHead");
+		Prop("DollHead").Disable();
+		yield return E.Break;
+	}
 }

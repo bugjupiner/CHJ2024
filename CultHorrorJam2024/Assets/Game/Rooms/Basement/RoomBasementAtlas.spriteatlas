@@ -39,9 +39,11 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 76bc5159bfa90435cab1182a59c07f2f, type: 3}
   - {fileID: 21300000, guid: a898271b45f074fa49eefd8d0db9cc90, type: 3}
+  - {fileID: 21300000, guid: 3a7e7f4d584ce4ed4aee389a50286ef0, type: 3}
   m_PackedSpriteNamesToIndex:
   - 03B-Composite
   - 03B-Obstacle01
+  - 03B-OpenDoor
   m_RenderDataMap: {}
   m_Tag: RoomBasementAtlas
   m_IsVariant: 0

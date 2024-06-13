@@ -15,6 +15,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Variables
 	
+	// Global Player
 	public bool jumbled = false;
 	public bool secondFace = false;
 	
@@ -30,13 +31,29 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public senses conceptionSense = senses.See;
 	public int sensesSatisfied = 0;
 	
-	public bool wizardSpellBroken = false;
+	public GameObject fireglassMask = null;
+	public bool fireglassActive = false;
 	
+	public bool dollSacrificed = false;
+	public bool virginBloodSacrificed = false;
+	public bool hearthSummoned = true;
+	
+	// Global NPCs
+	public bool angelTutorial = false;
+	public bool angelVolumeOne = false;
+	public bool angelVolumeTwo = false;
+	public bool angelScroll = false;
+	public bool mirrorScrollFree = false;
+	
+	public bool wizardSpellBroken = false;
+	public bool recruitHasKnife = true;
+	public bool recruitHasSecondFace = false;
+	
+	// Global Environment
 	public bool onCloisterGrass = false;
 	public bool dormDoorOpened = false;
 	public bool basementDoorOpened = false;
 	
-	public GameObject fireglassMask = null;
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
@@ -54,6 +71,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// Blocking script called whenever you enter a room, before fading in. Non-blocking functions only
 	public void OnEnterRoom()
 	{
+		if(Globals.secondFace) SetSecondFace(true);
 	}
 
 	/// Blocking script called whenever you enter a room, after fade in is complete
@@ -227,8 +245,9 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 				else if ( E.GetMouseOverType() == eQuestClickableType.Inventory )
 				{
 					// Left clicked on inventory item, make it the active item. Remove this "if statement" if you want to be able to "use" items by clicking on them
-					I.Active = (IInventory)E.GetMouseOverClickable();
-					if(I.Active == I.Fireglass) SetFireglass(true);
+					if((IInventory)E.GetMouseOverClickable() == I.Fireglass) SwitchFireglass();
+					else I.Active = (IInventory)E.GetMouseOverClickable();
+						//if(I.Active == I.Fireglass) SetFireglass(true);
 				}
 				else
 				{
@@ -240,7 +259,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 			{
 				// Left click empty space, so walk
 				E.ProcessClick( eQuestVerb.Walk );
-				if(fireglassMask) SetFireglass(false);
+					//if(fireglassMask) SetFireglass(false);
 			}
 		}
 		else if ( rightClick )
@@ -402,13 +421,26 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 
 	public void SetFireglass(bool use)
 	{
-		if(use) fireglassMask.SetActive(true);
-		else fireglassMask.SetActive(false);
+		fireglassActive = use;
+		fireglassMask.SetActive(fireglassActive);
+		
+		C.Angel.Clickable = !fireglassActive;
+		C.PastAngel.Clickable = fireglassActive;
 	}
 
 	public void SwitchFireglass()
 	{
-		if(!Globals.fireglassMask) Globals.SetFireglass(true);
-		else Globals.SetFireglass(false);
+		SetFireglass(!fireglassActive);
+	}
+
+	public void SetSecondFace(bool isEnabled)
+	{
+		secondFace = isEnabled;
+		
+		Transform secondFaceSprite = C.Shapes.Instance.transform.Find("SecondFace");
+		if ( secondFaceSprite ) secondFaceSprite.gameObject.SetActive(isEnabled);
+		
+		if(isEnabled) C.Shapes.RemoveInventory("SecondFace");
+		else C.Shapes.AddInventory("SecondFace");
 	}
 }

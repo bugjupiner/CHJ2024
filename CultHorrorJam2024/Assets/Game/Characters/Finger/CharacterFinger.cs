@@ -24,11 +24,14 @@ public class CharacterFinger : CharacterScript<CharacterFinger>
 			yield return C.FaceClicked();
 			I.Blanket.Active = false;
 			C.Shapes.RemoveInventory("Blanket");
+			yield return C.Display("Lost Blanket");
+		
 			yield return C.Finger.PlayAnimation("BlanketOn");
 			C.Finger.AnimIdle = "Dead";
 			C.Finger.Clickable = false;
 		
 			Prop("Conception").Disable();
+		
 			yield return C.Display("Got Conception");
 			C.Shapes.AddInventory("Conception");
 		}

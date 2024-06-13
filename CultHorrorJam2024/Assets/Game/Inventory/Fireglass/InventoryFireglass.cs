@@ -15,7 +15,13 @@ public class InventoryFireglass : InventoryScript<InventoryFireglass>
 
 	IEnumerator OnInteractInventory( IInventory thisItem )
 	{
-		
+		Debug.Log("used");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtInventory( IInventory thisItem )
+	{
+		yield return C.Shapes.Say("The whole place looks different through this...");
 		yield return E.Break;
 	}
 }

@@ -16,10 +16,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 66
-    width: 1728
-    height: 993
+    width: 1727
+    height: 992
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Scene
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,12 +39,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 561
+    x: 608
     y: 0
-    width: 348
-    height: 528
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 342.5
+    height: 561.5
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -69,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 909
-    height: 528
-  m_MinSize: {x: 304, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+    width: 950.5
+    height: 561.5
+  m_MinSize: {x: 302, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 333
+  controlID: 115
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,11 +91,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 445
-    width: 404
-    height: 498
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 588.5
+    width: 492.5
+    height: 353.5
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 16}
@@ -121,12 +121,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 404
-    height: 943
-  m_MinSize: {x: 201, y: 342}
-  m_MaxSize: {x: 4001, y: 8042}
+    width: 492.5
+    height: 942
+  m_MinSize: {x: 200, y: 321}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 145
+  controlID: 411
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,12 +142,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1313
+    x: 1443
     y: 0
-    width: 415
-    height: 943
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 284
+    height: 942
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -163,25 +163,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: QuestScriptEditor
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 528
-    width: 909
-    height: 415
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 23}
+    y: 561.5
+    width: 950.5
+    height: 380.5
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 23}
   - {fileID: 17}
   - {fileID: 19}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 3
+  m_Selected: 3
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,12 +202,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1728
-    height: 943
-  m_MinSize: {x: 781, y: 442}
-  m_MaxSize: {x: 16006, y: 8042}
+    width: 1727
+    height: 942
+  m_MinSize: {x: 777, y: 342}
+  m_MaxSize: {x: 16003, y: 8042}
   vertical: 0
-  controlID: 144
+  controlID: 410
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,10 +225,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 404
-    height: 445
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 492.5
+    height: 588.5
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -254,9 +254,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1728
-    height: 993
-  m_MinSize: {x: 875, y: 492}
+    width: 1727
+    height: 992
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -279,7 +279,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1728
+    width: 1727
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -303,8 +303,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 973
-    width: 1728
+    y: 972
+    width: 1727
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -325,14 +325,14 @@ MonoBehaviour:
   - {fileID: 7}
   m_Position:
     serializedVersion: 2
-    x: 404
+    x: 492.5
     y: 0
-    width: 909
-    height: 943
-  m_MinSize: {x: 304, y: 442}
-  m_MaxSize: {x: 8004, y: 8042}
+    width: 950.5
+    height: 942
+  m_MinSize: {x: 302, y: 342}
+  m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 358
+  controlID: 114
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -350,10 +350,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 561
-    height: 528
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 608
+    height: 561.5
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -374,156 +374,86 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: CharacterWizard.cs
+    m_Text: RoomYard.cs
     m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 'CharacterWizard: OnUseInv'
+    m_Tooltip: 'RoomYard: OnEnterRoom'
   m_Pos:
     serializedVersion: 2
-    x: 405
-    y: 624
-    width: 907
-    height: 394
+    x: 493.5
+    y: 657.5
+    width: 948.5
+    height: 359.5
   m_ViewDataDictionary: {fileID: 0}
-  m_path: Assets/Game/Characters/Wizard/CharacterWizard.cs
-  m_fileName: CharacterWizard.cs
-  m_function: OnUseInv
-  m_functionIsCoroutine: 1
+  m_path: Assets/Game/Rooms/Yard/RoomYard.cs
+  m_fileName: RoomYard.cs
+  m_function: OnEnterRoom
+  m_functionIsCoroutine: 0
   m_loaded: 1
   m_scrollPosition: {x: 0, y: 0}
-  m_text: "if(item == I.Knife || item == I.Rubble)\n{\n    C.Wizard.AnimIdle = \"Dead\";\n   
-    C.Wizard.AnimTalk = \"Dead\";\n    Wizard: GAH!\n    \n    C.Wizard.Clickable
-    = false;\n    Globals.wizardSpellBroken = true;\n    ...\n    ...\n    Shapes:
-    Somethings changed...\n}\n\nEnd\n"
-  m_richText: "<color=#F07178>if</color>(item == I.Knife || item == I.Rubble)\n{\n   
-    C.Wizard.AnimIdle = <color=#C792EA></color><color=#C3E88D>\"Dead\"</color>;\n   
-    C.Wizard.AnimTalk = <color=#C792EA></color><color=#C3E88D>\"Dead\"</color>;\n   
-    <color=#C792EA>Wizard:</color><color=#C3E88D> GAH!</color>\n    \n    C.Wizard.Clickable
-    = <color=#F07178>false</color>;\n    Globals.wizardSpellBroken = <color=#F07178>true</color>;\n   
-    <color=#F07178>...</color>\n    <color=#F07178>...</color>\n    <color=#C792EA>Shapes:</color><color=#C3E88D>
-    Somethings changed...</color>\n}\n\n<color=#F07178>End\n</color>"
+  m_text: "if(R.Previous == R.Ladder)\n{\n    C.Player.Position = R.Current.GetHotspot(\"Ladder\").WalkToPoint;\n}\nelse
+    if(R.Previous == R.Kitchen)\n{\n    C.Player.Position = R.Current.GetHotspot(\"Kitchen\").WalkToPoint;\n}\n\nif(Globals.wizardSpellBroken
+    && P.SpellBubble.Visible)\n{\n    P.SpellBubble.Visible = true;\n    P.SpellBubble.Disable();\n   
+    Regions.SpellBlocker.Walkable = true;\n\n    P.Spellbook.Clickable = true;\n}\n\n"
+  m_richText: "<color=#F07178>if</color>(R.Previous == R.Ladder)\n{\n    C.Player.Position
+    = R.Current.GetHotspot(<color=#C792EA></color><color=#C3E88D>\"Ladder\"</color>).WalkToPoint;\n}\n<color=#F07178>else</color>
+    <color=#F07178>if</color>(R.Previous == R.Kitchen)\n{\n    C.Player.Position
+    = R.Current.GetHotspot(<color=#C792EA></color><color=#C3E88D>\"Kitchen\"</color>).WalkToPoint;\n}\n\n<color=#F07178>if</color>(Globals.wizardSpellBroken
+    && P.SpellBubble.Visible)\n{\n    P.SpellBubble.Visible = <color=#F07178>true</color>;\n   
+    P.SpellBubble.Disable();\n    Regions.SpellBlocker.Walkable = <color=#F07178>true</color>;\n\n   
+    P.Spellbook.Clickable = <color=#F07178>true</color>;\n}\n\n"
   m_dirty: 0
   m_functionNames:
   - <header>
   - 
-  - OnInteract
-  - OnLookAt
-  - OnUseInv
+  - OnEnterRoom
+  - 
+  - OnInteractHotspotKitchen
+  - OnInteractHotspotLadder
+  - 
+  - OnInteractPropSpellbook
+  - OnInteractPropSpellBubble
+  - OnLookAtPropSpellbook
+  - OnLookAtPropSpellBubble
+  - 
   - 
   - + New
   m_functionNamesNice:
   - 'header '
   - 
-  - On Interact
-  - On Look At
-  - On Use Inv
+  - On Enter Room
+  - 
+  - On Interact - Kitchen
+  - On Interact - Ladder
+  - 
+  - On Interact - Spellbook
+  - On Interact - Spell Bubble
+  - On Look At - Spellbook
+  - On Look At - Spell Bubble
+  - 
   - 
   - + New
   m_editingHeader: 0
   m_locked: 0
   m_autoLoad: 0
-  m_fontSize: 14
+  m_fontSize: 15
   m_historyIndex: 0
   m_history:
-  - m_file: Assets/Game/Characters/Wizard/CharacterWizard.cs
-    m_function: OnUseInv
-    m_classname: CharacterWizard
-    m_type: 4
-    m_isCoroutine: 1
-    m_cursorIndex: 0
-  - m_file: Assets/Game/Characters/Wizard/CharacterWizard.cs
-    m_function: OnInteract
-    m_classname: CharacterWizard
-    m_type: 4
-    m_isCoroutine: 1
-    m_cursorIndex: 220
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnUseInvHotspotWindow
-    m_classname: RoomFront
-    m_type: 2
-    m_isCoroutine: 1
-    m_cursorIndex: 220
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnInteractHotspotWindow
-    m_classname: RoomFront
-    m_type: 2
-    m_isCoroutine: 1
-    m_cursorIndex: 95
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnInteractPropGlass
-    m_classname: RoomFront
-    m_type: 1
-    m_isCoroutine: 1
-    m_cursorIndex: 95
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnInteractPropGlass
-    m_classname: RoomFront
-    m_type: 1
-    m_isCoroutine: 1
-    m_cursorIndex: 0
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnLookAtPropGlass
-    m_classname: RoomFront
-    m_type: 1
-    m_isCoroutine: 1
-    m_cursorIndex: 31
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnUseInvHotspotWindow
-    m_classname: RoomFront
-    m_type: 2
-    m_isCoroutine: 1
-    m_cursorIndex: 0
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnInteractHotspotWindow
-    m_classname: RoomFront
-    m_type: 2
-    m_isCoroutine: 1
-    m_cursorIndex: 45
-  - m_file: Assets/Game/Rooms/Front/RoomFront.cs
-    m_function: OnLookAtHotspotWindow
-    m_classname: RoomFront
-    m_type: 2
-    m_isCoroutine: 1
-    m_cursorIndex: 45
-  - m_file: Assets/Game/Rooms/Cloister/RoomCloister.cs
-    m_function: OnInteractPropRubble
-    m_classname: RoomCloister
-    m_type: 1
-    m_isCoroutine: 1
-    m_cursorIndex: 45
-  - m_file: Assets/Game/Rooms/Cloister/RoomCloister.cs
-    m_function: OnLookAtPropRubble
-    m_classname: RoomCloister
-    m_type: 1
-    m_isCoroutine: 1
-    m_cursorIndex: 48
-  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
-    m_function: OnInteractHotspotRitualSite
-    m_classname: RoomPathway
-    m_type: 2
-    m_isCoroutine: 1
+  - m_file: Assets/Game/Rooms/Yard/RoomYard.cs
+    m_function: OnEnterRoom
+    m_classname: RoomYard
+    m_type: 0
+    m_isCoroutine: 0
     m_cursorIndex: 0
   - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
-    m_function: OnLookAtPropSpellBubble
+    m_function: OnEnterRoom
+    m_classname: RoomPathway
+    m_type: 0
+    m_isCoroutine: 0
+    m_cursorIndex: 226
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnInteractPropSpellbookTwo
     m_classname: RoomPathway
     m_type: 1
-    m_isCoroutine: 1
-    m_cursorIndex: 32
-  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
-    m_function: OnInteractPropSpellBubble
-    m_classname: RoomPathway
-    m_type: 1
-    m_isCoroutine: 1
-    m_cursorIndex: 0
-  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
-    m_function: OnInteractHotspotCloisterStart
-    m_classname: RoomPathway
-    m_type: 2
-    m_isCoroutine: 1
-    m_cursorIndex: 0
-  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
-    m_function: OnInteractHotspotRitualSite
-    m_classname: RoomPathway
-    m_type: 2
     m_isCoroutine: 1
     m_cursorIndex: 0
   - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
@@ -531,21 +461,105 @@ MonoBehaviour:
     m_classname: RoomPathway
     m_type: 1
     m_isCoroutine: 1
-    m_cursorIndex: 0
+    m_cursorIndex: 5
   - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
-    m_function: OnLookAtPropSpellBubble
+    m_function: OnUseInvPropSpellbookTwo
     m_classname: RoomPathway
     m_type: 1
     m_isCoroutine: 1
-    m_cursorIndex: 0
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnUseInvPropSpellBubble
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnUseInvPropSpellbookTwo
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnInteractPropSpellbookTwo
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnInteractPropSpellBubble
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnInteractPropSpellbookTwo
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
   - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
     m_function: OnLookAtPropSpellbookTwo
     m_classname: RoomPathway
     m_type: 1
     m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnInteractPropSpellbookTwo
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnInteractPropSpellBubble
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnLookAtPropSpellBubble
+    m_classname: RoomPathway
+    m_type: 1
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/Rooms/Pathway/RoomPathway.cs
+    m_function: OnEnterRegionSpellBlocker
+    m_classname: RoomPathway
+    m_type: 3
+    m_isCoroutine: 1
+    m_cursorIndex: 5
+  - m_file: Assets/Game/GlobalScript.cs
+    m_function: 
+    m_classname: GlobalScript
+    m_type: 8
+    m_isCoroutine: 1
     m_cursorIndex: 0
-  m_scriptType: 4
-  m_scriptClass: CharacterWizard
+  - m_file: Assets/Game/Rooms/Cells/RoomCells.cs
+    m_function: OnEnterRoomAfterFade
+    m_classname: RoomCells
+    m_type: 0
+    m_isCoroutine: 1
+    m_cursorIndex: 0
+  - m_file: Assets/Game/Rooms/Cells/RoomCells.cs
+    m_function: OnEnterRoom
+    m_classname: RoomCells
+    m_type: 0
+    m_isCoroutine: 0
+    m_cursorIndex: 0
+  - m_file: Assets/Game/Rooms/Cells/RoomCells.cs
+    m_function: UpdateBlocking
+    m_classname: RoomCells
+    m_type: 0
+    m_isCoroutine: 1
+    m_cursorIndex: 0
+  - m_file: Assets/Game/Rooms/Title/RoomTitle.cs
+    m_function: AfterAnyClick
+    m_classname: RoomTitle
+    m_type: 0
+    m_isCoroutine: 1
+    m_cursorIndex: 0
+  m_scriptType: 0
+  m_scriptClass: RoomYard
   m_colors:
     m_plainText: {r: 0.6509804, g: 0.6745098, b: 0.8039216, a: 1}
     m_event: {r: 0.9411765, g: 0.44313726, b: 0.47058824, a: 1}
@@ -576,9 +590,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1
-    y: 541
-    width: 403
-    height: 477
+    y: 540.5
+    width: 439.5
+    height: 476.5
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -591,38 +605,38 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Inventory/Sprites
+    - Assets/Game/Rooms/Title
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Game/Inventory/Sprites
+  - Assets/Game/Rooms/Title
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/juniper.foley/Desktop/CHJ/CHJ2024/CultHorrorJam2024
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 200.99756}
-    m_SelectedIDs: d24f0000
-    m_LastClickedID: 20434
-    m_ExpandedIDs: 00000000a63c0000a83c0000b03c0000ba3c0000d23c0000d43c0000be53000000ca9a3b
+    scrollPos: {x: 0, y: 1003.5}
+    m_SelectedIDs: 60530000
+    m_LastClickedID: 21344
+    m_ExpandedIDs: 00000000fc520000fe520000005300000253000004530000065300001c5300003c530000445300006c530000265600005458000072590000d85900003c5d0000a2ac000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Shadow
+      m_OriginalName: Shadow
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 23868
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -636,7 +650,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a63c000000ca9a3b
+    m_ExpandedIDs: 00000000fc520000fe52000000530000025300000453000006530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -661,10 +675,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: fe4ff9ff
-    m_LastClickedInstanceID: -438274
+    m_SelectedInstanceIDs: 884d0000
+    m_LastClickedInstanceID: 19848
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 7a5c00005c5c0000345c0000385c0000405c00004c5c0000c4720000a0830000
+    m_ExpandedInstanceIDs: 7a5c00005c5c0000345c0000385c0000405c00004c5c0000c4720000a083000074540000c2510000ca9f0000aa510000885700004eb80000ecbe0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -712,39 +726,30 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 419.5
-    y: 567
-    width: 1006
-    height: 451
+    x: 441.5
+    y: 597.5
+    width: 1009.5
+    height: 419.5
   m_ViewDataDictionary: {fileID: 0}
-  m_clip: {fileID: 7400000, guid: d95cf78aadbe6498eb0a6e18565cb8d0, type: 2}
+  m_clip: {fileID: 7400000, guid: 594394dcea6d64e74919dd9c2cd58613, type: 2}
   m_uiImage: 0
   m_frames:
   - m_time: 0
-    m_length: 0.14285715
-    m_sprite: {fileID: 4539020954127929729, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
-    m_nodes:
-    - m_nodeId: 0
-      m_offset: {x: -7.5, y: -121.5}
-      m_angle: 0
-  - m_time: 0.14285715
-    m_length: 0.14285715
-    m_sprite: {fileID: 305876424985610484, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
+    m_length: 0.16666667
+    m_sprite: {fileID: -4305312060415011512, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
     m_nodes: []
-  - m_time: 0.2857143
-    m_length: 0.14285716
-    m_sprite: {fileID: 443286328750458148, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
-    m_nodes:
-    - m_nodeId: 0
-      m_offset: {x: -9.5, y: -103.5}
-      m_angle: 0
-  - m_time: 0.42857146
-    m_length: 0.14285715
-    m_sprite: {fileID: 305876424985610484, guid: 1d194a6bde49e4b3da2c53ec5ba033e0, type: 3}
-    m_nodes:
-    - m_nodeId: 0
-      m_offset: {x: -7.5, y: -88.5}
-      m_angle: 0
+  - m_time: 0.16666667
+    m_length: 0.16666667
+    m_sprite: {fileID: 5536141865883498116, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
+    m_nodes: []
+  - m_time: 0.33333334
+    m_length: 0.16666666
+    m_sprite: {fileID: 6662512864205336421, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
+    m_nodes: []
+  - m_time: 0.5
+    m_length: 0.16666667
+    m_sprite: {fileID: 5536141865883498116, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
+    m_nodes: []
   m_events: []
   m_spritePath: 
   m_infoPanelWidth: 260
@@ -783,9 +788,9 @@ MonoBehaviour:
   m_visibleNodes: -1
   m_copiedFrames: []
   m_copiedEvents: []
-  m_nodeMask: 1
+  m_nodeMask: 0
   m_nodePositions:
-  - {x: -7.5, y: -121.5}
+  - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
@@ -827,12 +832,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 966
+    x: 1101.5
     y: 96
-    width: 346
-    height: 507
+    width: 340.5
+    height: 540.5
   m_ViewDataDictionary: {fileID: 0}
-  m_scrollPosition: {x: 0, y: 667.00085}
+  m_scrollPosition: {x: 0, y: 94}
   m_powerQuest: {fileID: 11480482, guid: 1d431f985e21f9746a18b85a5ac67c89, type: 3}
   m_powerQuestPath: Assets/Game/PowerQuest.prefab
   m_systemAudioPath: Assets/Game/
@@ -841,9 +846,9 @@ MonoBehaviour:
   m_systemAudio: {fileID: 11461390, guid: f0b6ac7e109cb2543a538fce1bf8a997, type: 3}
   m_questCamera: {fileID: 138134, guid: b254fcd8f583c324ba3da9904a492986, type: 3}
   m_questGuiCamera: {fileID: 195666, guid: dba8cdb55bc7ac6458f9a539610fe130, type: 3}
-  m_selectedTab: 0
-  m_smartCompileRequired: 0
-  m_newVersionCheckTime: 133626089264292990
+  m_selectedTab: 1
+  m_smartCompileRequired: 1
+  m_newVersionCheckTime: 133626968291658780
   m_filterRooms:
     Show: 1
     ParentPath: 
@@ -861,7 +866,7 @@ MonoBehaviour:
     ParentPath: 
     SearchString: 
   m_filterGuis:
-    Show: 1
+    Show: 0
     ParentPath: 
     SearchString: 
   m_scrollPositionGui: {x: 0, y: 0}
@@ -903,10 +908,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 232
-    y: 598
-    width: 1142
-    height: 420
+    x: 441.5
+    y: 575.5
+    width: 1000.5
+    height: 441.5
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -934,9 +939,9 @@ MonoBehaviour:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1e500000
-    m_LastClickedID: 20510
-    m_ExpandedIDs: 00000000a63c0000a83c0000aa3c0000b63c000000ca9a3b
+    m_SelectedIDs: cc510000
+    m_LastClickedID: 20940
+    m_ExpandedIDs: 00000000fc520000fe520000005300000253000004530000065300001c530000045d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -964,7 +969,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a63c000000ca9a3b
+    m_ExpandedIDs: 00000000fc520000fe52000000530000025300000453000006530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -989,8 +994,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1a410000
-    m_LastClickedInstanceID: 16666
+    m_SelectedInstanceIDs: 9cbce8ff
+    m_LastClickedInstanceID: -1524580
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300005c5c0000345c0000505c0000
     m_RenameOverlay:
@@ -1040,10 +1045,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1314
+    x: 1444
     y: 96
-    width: 414
-    height: 922
+    width: 283
+    height: 921
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -1079,29 +1084,29 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 96
-    width: 403
-    height: 424
+    width: 491.5
+    height: 567.5
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1243f9ff
-      m_LastClickedID: -441582
-      m_ExpandedIDs: 3643f9ff4e43f9ff6043f9ff2450f9ff4e50f9ff6a5df9ff945df9ff866bf9ff9e6bf9ffb06bf9ff6e6cf9ff6c8bfcff488cfcff2eb2fcff0ab3fcff14b3fdff2cb3fdff3eb3fdffdcb3fdff5abdfdff84bdfdff8ae1fdffb4e1fdff8824fefffe35feff8836feff3268feff4268feff6c68feff7691fefff69afeff3627ffff6027ffff0828ffffde29ffff082affff842affffae2affff743bffff9e3bfffff2fafffff4ffffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6e39e8ff0c3be8ff363be8fff889e8ffa08ae8ff68bce8ff80bce8ff9cbce8ffc6bce8ff08dae8ff04e6e8ff2ee6e8ff32e7e8ffd8e8e8ff02e9e8ff6e0be9ff860be9ff980be9ff7e53e9ffa853e9ff5055e9ff7a55e9ff3263e9ff5c63e9ffc6bfe9ffeebfe9fff0bfe9ff98c0e9ffc2c0e9fff428eaff1e29eaff703eeaff9a3eeaff303feaff445feafffe87eaff2888eaffc293eaff40aceaff68aceaff6aaceaff14adeaff3eadeaff6aaeeaff94aeeaffa2afeafffac8eaff42d5eaff6cd5eaff12d6eaffd06febfffa6febff1ee3fdff48e3fdffdee3fdff4ae4fdffaaeffdffd4effdff140afeff3e0afeffc441feffee41feff7046feff9a46feff80b6feff66ccfeffe0e0feffe06cffff0a6dfffff879ffff227affffaa7affffd47affffe4d2ffff2adaffff54daffff04dbffff2edbffff0edcffff38dcffffc2dcffff8eddffff20e8ffff4ae8ffff02e9ffffc8e9ffff9eeaffff6aebffff8afaffffa2faffff2afbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: RegionPerspective
-        m_OriginalName: RegionPerspective
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -434994
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -1131,10 +1136,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 405
+    x: 493.5
     y: 96
-    width: 559
-    height: 507
+    width: 606
+    height: 540.5
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -1147,9 +1152,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -31.723063, y: 15.003977, z: -53.391018}
+    m_Target: {x: -47.03902, y: 6.3928766, z: -2.1776981}
     speed: 2
-    m_Value: {x: -31.723063, y: 15.003977, z: -53.391018}
+    m_Value: {x: -47.03902, y: 6.3928766, z: -2.1776981}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1200,9 +1205,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 126.25784
+    m_Target: 165.83801
     speed: 2
-    m_Value: 126.25784
+    m_Value: 165.83801
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1247,10 +1252,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 405
-    y: 624
-    width: 907
-    height: 394
+    x: 493.5
+    y: 505.5
+    width: 948.5
+    height: 511.5
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1258,7 +1263,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 907, y: 373}
+  m_TargetSize: {x: 948.5, y: 490.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1273,10 +1278,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -226.75
-    m_HBaseRangeMax: 226.75
-    m_VBaseRangeMin: -93.25
-    m_VBaseRangeMax: 93.25
+    m_HBaseRangeMin: -237.125
+    m_HBaseRangeMax: 237.125
+    m_VBaseRangeMin: -122.625
+    m_VBaseRangeMax: 122.625
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1294,23 +1299,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 907
-      height: 373
+      width: 948.5
+      height: 490.5
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 453.5, y: 186.5}
+    m_Translation: {x: 474.25, y: 245.25}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -226.75
-      y: -93.25
-      width: 453.5
-      height: 186.5
+      x: -237.125
+      y: -122.625
+      width: 474.25
+      height: 245.25
     m_MinimalGUI: 1
   m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 1814, y: 788}
+  m_LastWindowPixelSize: {x: 1897, y: 1023}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1336,8 +1341,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1
-    y: 541
-    width: 403
-    height: 477
+    x: 0
+    y: 607.5
+    width: 491.5
+    height: 332.5
   m_ViewDataDictionary: {fileID: 0}

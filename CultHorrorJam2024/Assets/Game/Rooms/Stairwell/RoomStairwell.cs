@@ -34,4 +34,27 @@ public class RoomStairwell : RoomScript<RoomStairwell>
 		C.Player.Room = R.Cloister;
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtPropDollBody( IProp prop )
+	{
+		yield return C.Shapes.Say("Looks like part of a doll.");
+		yield return C.Shapes.Say("Where's the head?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropDollBody( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Doll Body");
+		C.Shapes.AddInventory("DollBody");
+		Prop("DollBody").Disable();
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropDollBody( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

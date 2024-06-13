@@ -11,6 +11,11 @@ public class AttachToAnimNode : MonoBehaviour
     public int nodeIndex = 0;
     protected SpriteAnimNodes nodes;
 
+    [Space(10)]
+    public SpriteRenderer parentSprite;
+    public SpriteRenderer thisSprite;
+    public int sortingDifference = 1;
+
     void OnEnable()
     {
         if(target == null) FindAndSet();
@@ -31,6 +36,11 @@ public class AttachToAnimNode : MonoBehaviour
             else return;
         }
         transform.position = nodes.GetPosition(nodeIndex);
+
+        if(parentSprite != null)
+        {
+            thisSprite.sortingOrder = parentSprite.sortingOrder + sortingDifference;
+        }
     }
 
     void FindAndSet()

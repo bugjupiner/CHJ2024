@@ -81,4 +81,42 @@ public class RoomCloister : RoomScript<RoomCloister>
 		Prop("Rubble").Disable();
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractPropRoses( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		if(!Globals.fireglassActive)
+		{
+			yield return C.Shapes.Say("Garden's crispy.");
+		}
+		else
+		{
+			yield return C.Shapes.Say("There were roses here!");
+		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropRoses( IProp prop, IInventory item )
+	{
+		if(Globals.fireglassActive)
+		{
+			yield return C.WalkToClicked();
+			if(item == I.Conception)
+			{
+				if(Globals.conceptionSense == senses.Smell)
+				{
+					Globals.sensesSatisfied += 1;
+					yield return C.Shapes.Say("It liked that!");
+					Prop("Roses").Clickable = false;
+				}
+				else
+				{
+					yield return C.Shapes.Say("Not quite...");
+				}
+			}
+		}
+		
+		
+		yield return E.Break;
+	}
 }

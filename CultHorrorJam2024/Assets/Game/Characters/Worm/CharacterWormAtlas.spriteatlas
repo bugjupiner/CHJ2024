@@ -38,6 +38,8 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 7329780455424483939, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  - {fileID: 3405731695684085638, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
+  - {fileID: 4498878426784876598, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
   - {fileID: 925542808389095491, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
   - {fileID: -493377637618504967, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
   - {fileID: -4495652169793646596, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
@@ -45,6 +47,8 @@ SpriteAtlas:
   - {fileID: -8609016199811815964, guid: 0f2b21b6bd84e4dba82304088b08a7f5, type: 3}
   m_PackedSpriteNamesToIndex:
   - Cultist1-sheet_4
+  - Cultist1-sheet_7
+  - Cultist1-sheet_6
   - Cultist1-sheet_1
   - Cultist1-sheet_0
   - Cultist1-sheet_3

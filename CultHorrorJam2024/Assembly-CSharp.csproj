@@ -70,6 +70,7 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/CharacterScript.cs" />
      <Compile Include="Assets/Game/Rooms/Landing/RoomLanding.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/Slider.cs" />
+     <Compile Include="Assets/Game/Inventory/Conception/InventoryConception.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestScriptAutosBase.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Systems/SystemDebug.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/Label.cs" />
@@ -133,6 +134,7 @@
      <Compile Include="Assets/Game/Rooms/Pathway/RoomPathway.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/ThirdParty/clipper.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestSave.cs" />
+     <Compile Include="Assets/Game/Inventory/Fireglass/InventoryFireglass.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PowerQuestGui.cs" />
      <Compile Include="Assets/Game/Characters/Finger/CharacterFinger.cs" />
      <Compile Include="Assets/Game/Characters/Angel/CharacterAngel.cs" />
@@ -144,8 +146,18 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PixelPerfectCollider.cs" />
      <Compile Include="Assets/Game/Rooms/Fork/RoomFork.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSaveManager.cs" />
-     <Compile Include="Assets/Game/Inventory/Conception/InventoryConception.cs" />
-     <Compile Include="Assets/Game/Inventory/Fireglass/InventoryFireglass.cs" />
+     <Compile Include="Assets/Game/Inventory/Rubble/InventoryRubble.cs" />
+     <Compile Include="Assets/Game/Inventory/Glass/InventoryGlass.cs" />
+     <Compile Include="Assets/Game/Inventory/Knife/InventoryKnife.cs" />
+     <Compile Include="Assets/Game/Inventory/SpellbookTwo/InventorySpellbookTwo.cs" />
+     <Compile Include="Assets/Game/Inventory/SpellbookOne/InventorySpellbookOne.cs" />
+     <Compile Include="Assets/Game/Inventory/SecondFace/InventorySecondFace.cs" />
+     <Compile Include="Assets/Game/Inventory/DollHead/InventoryDollHead.cs" />
+     <Compile Include="Assets/Game/Inventory/Doll/InventoryDoll.cs" />
+     <Compile Include="Assets/Game/Inventory/DollBody/InventoryDollBody.cs" />
+     <Compile Include="Assets/Game/Inventory/InversionScroll/InventoryInversionScroll.cs" />
+     <Compile Include="Assets/Game/Inventory/AngelsBlood/InventoryAngelsBlood.cs" />
+     <Compile Include="Assets/Game/Characters/PastAngel/CharacterPastAngel.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontPixelSmooth.shader" />

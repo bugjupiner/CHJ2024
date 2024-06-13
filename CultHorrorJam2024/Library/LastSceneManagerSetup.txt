@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Game/Rooms/Landing/SceneRoomLanding.unity
+- path: Assets/Game/Rooms/Yard/SceneRoomYard.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

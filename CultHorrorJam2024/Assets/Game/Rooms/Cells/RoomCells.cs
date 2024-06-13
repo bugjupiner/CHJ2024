@@ -49,10 +49,7 @@ public class RoomCells : RoomScript<RoomCells>
 
 	IEnumerator UpdateBlocking()
 	{
-		if (!Audio.IsPlaying("Music_Basement_Loop"))
-		{
-					Audio.PlayMusic("Music_Basement_Loop");
-		}
+		
 		yield return E.Break;
 	}
 
@@ -76,5 +73,66 @@ public class RoomCells : RoomScript<RoomCells>
 
 	void OnExitRegionBGBars( IRegion region, ICharacter character )
 	{
+	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+		if (!Audio.IsPlaying("Music_Basement_Loop"))
+		{
+					Audio.PlayMusic("Music_Basement_Loop");
+		}
+		
+		if(!Globals.angelTutorial)
+		{
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Angel.Say("Heh heh... Awake?");
+			yield return E.WaitSkip();
+			yield return C.Shapes.FaceLeft();
+			yield return C.Shapes.Say("Hello?");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Angel.Say("Don't tell me you're stuck.");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("I'm stuck.");
+			yield return E.WaitSkip();
+			yield return C.Angel.Say("But...");
+			yield return E.WaitSkip();
+			C.Angel.AnimTalk = "AltTalk";
+			yield return C.Angel.Say("But I want to see you.");
+			yield return E.WaitSkip();
+			C.Angel.AnimTalk = "Talk";
+			yield return C.Angel.Say("Find a way out, why don't you?");
+		}
+		
+		yield return E.Break;
+	}
+
+	IEnumerator OnEnterRegionOutsideCells( IRegion region, ICharacter character )
+	{
+		if(!Globals.angelTutorial)
+		{
+			Globals.angelTutorial = true;
+			C.Angel.AnimTalk = "Talk";
+			yield return C.Angel.Say("HA HA HA");
+			yield return E.WaitSkip();
+			yield return C.Angel.Say("The jumbling! It's funny!");
+			yield return E.WaitSkip();
+			C.Angel.AnimTalk = "AltTalk";
+			yield return C.Angel.Say("To see your pieces spin...");
+			yield return C.Angel.Say("heh heh heh.");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			C.Angel.AnimTalk = "Talk";
+			yield return C.Angel.Say("Good luck out there. Something bad spread around.");
+			yield return E.WaitSkip();
+			C.Angel.AnimTalk = "AltTalk";
+			yield return C.Angel.Say("If you find any, hehe, literature...");
+			C.Angel.AnimTalk = "Talk";
+			yield return C.Angel.Say("You might find me USEFUL");
+		}
+		yield return E.Break;
 	}
 }

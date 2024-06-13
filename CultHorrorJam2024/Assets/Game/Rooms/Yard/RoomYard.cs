@@ -18,6 +18,16 @@ public class RoomYard : RoomScript<RoomYard>
 		{
 			C.Player.Position = R.Current.GetHotspot("Kitchen").WalkToPoint;
 		}
+		
+		if(Globals.wizardSpellBroken && Prop("SpellBubble").Visible)
+		{
+			Prop("SpellBubble").Visible = true;
+			Prop("SpellBubble").Disable();
+			Region("SpellBlocker").Walkable = true;
+		
+			Prop("Spellbook").Clickable = true;
+		}
+		
 	}
 
 	IEnumerator OnInteractHotspotKitchen( IHotspot hotspot )

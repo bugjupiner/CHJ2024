@@ -27,7 +27,7 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 	IEnumerator OnInteractHotspotHiddenRoom( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		if(Globals.jumbled) C.Player.Room = R.HiddenRoom;
+		if(Globals.jumbled && Globals.fireglassActive) C.Player.Room = R.HiddenRoom;
 		else
 		{
 			yield return C.Shapes.Say("It's a fireplace.");
@@ -82,7 +82,8 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 			I.DormantSoul.Active = false;
 			C.Shapes.RemoveInventory("DormantSoul");
 			Globals.dormDoorOpened = true;
-			yield return C.Display("You can now enter the dorm.");
+			yield return C.Display("Lost Dormant Soul");
+			yield return C.Shapes.Say("Seems like I can get in there now!");
 		}
 		yield return E.Break;
 	}
@@ -112,6 +113,18 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 	{
 		yield return C.WalkToClicked();
 		yield return C.Shapes.Say("That's a cooked rat.");
+		yield return E.Break;
+	}
+
+	IEnumerator UpdateBlocking()
+	{
+		
+		yield return E.Break;
+	}
+
+	IEnumerator AfterAnyClick()
+	{
+		
 		yield return E.Break;
 	}
 }

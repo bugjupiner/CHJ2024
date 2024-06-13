@@ -15,4 +15,10 @@ public class InventoryConception : InventoryScript<InventoryConception>
 		yield return E.ConsumeEvent;
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvInventory( IInventory thisItem, IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

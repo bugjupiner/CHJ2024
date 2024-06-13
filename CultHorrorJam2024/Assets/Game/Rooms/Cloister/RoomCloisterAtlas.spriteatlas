@@ -40,12 +40,16 @@ SpriteAtlas:
   - {fileID: 21300000, guid: caa13b20137ac4f83b217db286149408, type: 3}
   - {fileID: 21300000, guid: 64e05646fa5ce4d438c25baeb4f00734, type: 3}
   - {fileID: 21300000, guid: 84e2c228e686747de9e4bf78bfe33a58, type: 3}
+  - {fileID: -3632468939158181089, guid: e002945adff1044f9957c5985915773a, type: 3}
+  - {fileID: 131634956771835207, guid: e002945adff1044f9957c5985915773a, type: 3}
   - {fileID: 21300000, guid: e884f26af705a43639b6fb0223d4d1a2, type: 3}
   - {fileID: 21300000, guid: 6f2683cf31f6849e3957c03bcddf1dea, type: 3}
   m_PackedSpriteNamesToIndex:
   - 01B-Obstacle04
   - 01B-Composite
   - 01B-Obstacle01
+  - Roses_0
+  - Roses_1
   - 01B-Obstacle03
   - 01B-Obstacle02
   m_RenderDataMap: {}

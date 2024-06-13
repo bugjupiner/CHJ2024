@@ -7,9 +7,15 @@ using static GlobalScript;
 public class CharacterShapes : CharacterScript<CharacterShapes>
 {
 
-
 	IEnumerator OnInteract()
 	{
+		if(Globals.secondFace)
+		{
+			Globals.SetSecondFace(false);
+			yield return E.ConsumeEvent;
+			yield break;
+		}
+		
 		if(Globals.jumbled == true)
 		{
 			Globals.jumbled = false;
@@ -39,12 +45,73 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 
 	IEnumerator OnUseInv( IInventory item )
 	{
-		if (item == I.Pamphlet)
+		if (item == I.Conception)
 		{
-			yield return C.Display("An invitation of sorts to something called The Circle of Vesta.");
-			yield return C.Display("According to this, Vesta is some pagan goddess of house fires.");
-			yield return C.Display("No, wait, they're actually called 'hearths'.");
+			if(Globals.conceptionSense == senses.Sixth && Globals.sensesSatisfied >= 4)
+			{
+					C.Shapes.RemoveInventory("Conception");
+					yield return C.Display("Lost Conception");
+		
+					yield return C.Shapes.Say("It dropped something...");
+		
+					C.Shapes.AddInventory("GodBile");
+					yield return C.Display("Got God Bile");
+			}
+			yield return C.Shapes.Say("Not sure if it likes me...");
 		}
+		else if (item == I.SecondFace)
+		{
+			Globals.SetSecondFace(true);
+			yield return E.ConsumeEvent;
+		}
+		else if(item == I.Blanket)
+		{
+			yield return C.Shapes.Say("This belongs to someone else.");
+		}
+		else if (item == I.DormantSoul)
+		{
+			yield return C.Shapes.Say("It wants nothing to do with me.");
+		}
+		else if (item == I.Knife)
+		{
+			yield return C.Shapes.Say("No blood...");
+		}
+		else if (item == I.SpellbookOne)
+		{
+			yield return C.Shapes.Say("What language is this?");
+			yield return C.Shapes.Say("I don't think I can read it.");
+		}
+		else if (item == I.SpellbookTwo)
+		{
+			yield return C.Shapes.Say("This is written in a REALLY strange language.");
+			yield return C.Shapes.Say("I definitely can't read this.");
+		}
+		else if (item == I.Pamphlet)
+		{
+			yield return C.Shapes.Say("An invitation to something called The Circle of Vesta.");
+			yield return C.Shapes.Say("Looks like this Vesta is some pagan goddess of house fires.");
+			yield return C.Shapes.Say("No, wait, they're actually called 'hearths'.");
+		}
+		else if (item == I.Rubble)
+		{
+			yield return C.Shapes.Say("Hm...");
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("Tastes like rock.");
+		}
+		else if (item == I.Glass)
+		{
+			yield return C.Shapes.Say("Why did I get this?");
+		}
+		else if(item == I.MirrorScroll)
+		{
+			yield return C.Shapes.Say("The full title is 'Mirrors: Sanctuary for the Soul'");
+			yield return C.Shapes.Say("It's describing some resurrection technique where, uh...");
+			yield return C.Shapes.Say(" 'A lower-order form trades places with its higher-order reflection.'");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("Whatever that means.");
+		}
+		
 		yield return E.Break;
 	}
 }

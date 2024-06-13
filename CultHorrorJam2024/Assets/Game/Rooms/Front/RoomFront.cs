@@ -69,6 +69,7 @@ public class RoomFront : RoomScript<RoomFront>
 		
 			I.Rubble.Active = false;
 			C.Shapes.RemoveInventory("Rubble");
+			yield return C.Display("Lost Rubble");
 		
 			yield return C.Shapes.Say("Whoops!");
 		}

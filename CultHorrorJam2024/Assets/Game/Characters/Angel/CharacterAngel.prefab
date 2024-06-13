@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Angel
+    m_description: Creature
     m_cursor: 
     m_room: Cells
     m_position: {x: -77, y: -20}
@@ -88,6 +88,7 @@ MonoBehaviour:
   m_transitionAnims: []
   m_animations:
   - {fileID: 7400000, guid: d540b8aa5a0bb412f8228d886ddda27a, type: 2}
+  - {fileID: 7400000, guid: 5d37a19065c2248b9987cae834f7e951, type: 2}
   - {fileID: 7400000, guid: 0315c58284ae8494f84e4b0d70cf0318, type: 2}
 --- !u!60 &4172744748126189715
 PolygonCollider2D:
@@ -167,7 +168,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!114 &5249457254053104807
 MonoBehaviour:

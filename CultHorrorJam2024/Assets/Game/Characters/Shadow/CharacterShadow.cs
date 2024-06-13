@@ -18,4 +18,26 @@ public class CharacterShadow : CharacterScript<CharacterShadow>
 		yield return C.Shadow.Say("Like looking in a mirror.");
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+		if(item == I.Conception)
+		{
+			if(Globals.conceptionSense == senses.See)
+			{
+				yield return C.Shadow.Say("NO!");
+				yield return C.Shadow.PlayAnimation("Die");
+				C.Shadow.Disable();
+		
+				C.Shapes.AddInventory("SecondFace");
+				yield return C.Display("Got Second Face");
+			}
+			else
+			{
+				yield return C.Shadow.Say("What is that little thing?");
+			}
+		}
+		
+		yield return E.Break;
+	}
 }

@@ -18,6 +18,15 @@ public class RoomPathway : RoomScript<RoomPathway>
 		{
 			C.Player.Position = R.Current.GetHotspot("RitualSite").WalkToPoint;
 		}
+		
+		if(Globals.wizardSpellBroken && Prop("SpellBubble").Visible)
+		{
+			Prop("SpellBubble").Visible = true;
+			Prop("SpellBubble").Disable();
+			Region("SpellBlocker").Walkable = true;
+		
+			Prop("SpellbookTwo").Clickable = true;
+		}
 	}
 
 	IEnumerator OnInteractHotspotRitualSite( IHotspot hotspot )
@@ -36,7 +45,11 @@ public class RoomPathway : RoomScript<RoomPathway>
 
 	IEnumerator OnInteractPropSpellbookTwo( IProp prop )
 	{
-		
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Spellbook Volume Two");
+		C.Shapes.AddInventory("SpellbookTwo");
+		Prop("SpellbookTwo").Disable();
 		yield return E.Break;
 	}
 
@@ -57,6 +70,24 @@ public class RoomPathway : RoomScript<RoomPathway>
 	{
 		yield return C.WalkToClicked();
 		yield return C.Shapes.Say("Magic!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnEnterRegionSpellBlocker( IRegion region, ICharacter character )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropSpellbookTwo( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropSpellBubble( IProp prop, IInventory item )
+	{
+
 		yield return E.Break;
 	}
 }

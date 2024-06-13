@@ -63,4 +63,28 @@ public class RoomTitle : RoomScript<RoomTitle>
 		yield return E.ConsumeEvent;
 	}
 
+
+	IEnumerator UpdateBlocking()
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnAnyClick()
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator AfterAnyClick()
+	{
+
+		yield return E.Break;
+	}
 }
