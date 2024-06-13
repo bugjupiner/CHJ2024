@@ -1,0 +1,417 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1650353361819064906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8951337799928914830}
+  - component: {fileID: 3089234768591482684}
+  m_Layer: 0
+  m_Name: player_footsteps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8951337799928914830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650353361819064906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3089234768591482684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650353361819064906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f23f8c8a71fc149b63985b43cfa47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_type: 1
+  m_loop: 0
+  m_loopSection:
+    m_startTime: 0
+    m_endTime: 0
+    m_fadeIn: 0
+    m_fadeOut: 0
+  m_volume:
+    m_min: 1
+    m_max: 1
+    m_hasMax: 0
+    m_hasValue: 0
+  m_pitch:
+    m_min: 1
+    m_max: 1
+    m_hasMax: 0
+    m_hasValue: 0
+  m_pan:
+    m_min: 0
+    m_max: 0
+    m_hasMax: 0
+    m_hasValue: 0
+  m_alsoPlay: {fileID: 0}
+  m_chance: 1
+  m_startDelay:
+    m_min: 0
+    m_max: 0
+    m_hasMax: 0
+    m_hasValue: 1
+  m_noDuplicateTime: -1
+  m_mixerGroup: {fileID: 0}
+  m_reverbPreset: 0
+  m_distortionLevel: 0
+  m_lowPass: 0
+  m_lowPassQ: 1
+  m_highPass: 0
+  m_highPassQ: 1
+  m_echoFilter: {fileID: 0}
+  m_lowPassFilter: {fileID: 0}
+  m_highPassFilter: {fileID: 0}
+  m_chorusFilter: {fileID: 0}
+  m_sounds:
+  - m_sound: {fileID: 8300000, guid: ee556975ac9c149119a41dfb6985b281, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 022471b26dcde4ca7bdb76bd3e0b89dc, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 2b3bc4b2d60554e5fa57c343621aaa54, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: b482812a11a8d40608db818f73bad51a, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 5fc974b3b4dba420fbd46d037b0e3d2e, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 2b24743be2f9549c69743ec9d4beb46e, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 5541eddd4625545e5b612a3959242cb0, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 76ca47e8c2b054db0b0986c45b9e8340, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 10e8185c989e4485da70fd60a6b5d7c6, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: b5e58a2a2cd3f44c8a0d01b4cfdd6808, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 1228e7fd5353d4de984c080832412a7b, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 8e5561d2d310c4525b44e56a7d9ef845, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 7d451badd334049768a834bcc0aed31c, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 9f230af795cd94ee4948fe096a6b6551, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: dbdcd5f08f38047a3ae750ae05739574, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: c3ca378459a5942b48a85d6b2f3fbd8e, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: b5f16d98991634263876ecab9789a7b7, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: e4b714a35789e4efa865fc75172df3cb, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 0b611afe6e82e4173968cf8d7b91e0a7, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: ba93fe02cef414e80b657bc8fba3a55e, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 83ae4eeac540d4dfdbb99e8619bf043f, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 52d6f6af5cc34498c9cd32c5db1e46ee, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0

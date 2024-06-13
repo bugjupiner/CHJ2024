@@ -542,6 +542,9 @@ MonoBehaviour:
   target: {fileID: 0}
   targetName: CharacterFinger
   nodeIndex: 0
+  parentSprite: {fileID: 0}
+  thisSprite: {fileID: 0}
+  sortingDifference: 1
 --- !u!1 &6961769530773027377
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +742,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4d318331198f4480dbddb81145615ece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -885,7 +888,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4d318331198f4480dbddb81145615ece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

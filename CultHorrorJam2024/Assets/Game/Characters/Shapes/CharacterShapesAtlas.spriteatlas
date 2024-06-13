@@ -68,6 +68,18 @@ SpriteAtlas:
   - {fileID: 4724653715315148064, guid: ce87df701aef745a0a89917a053abefb, type: 3}
   - {fileID: -2151181554260367275, guid: ce87df701aef745a0a89917a053abefb, type: 3}
   - {fileID: -8927612033162531626, guid: ce87df701aef745a0a89917a053abefb, type: 3}
+  - {fileID: 4587678026348690269, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: 1031061057600021242, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: 4984479925186733850, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: -3800324735458922740, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: 969663169883272083, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: -437474086560807286, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: 1853317568498883259, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: 1875433590469501563, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: -4737589353397994308, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: -6221091781781345404, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: 6726976312357357812, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
+  - {fileID: 4819698981027038348, guid: c385e704de4854d0495b8e0b3c515fba, type: 3}
   - {fileID: 21300000, guid: 6f57aeb8b67fe40f2a1717889ad3e60c, type: 3}
   m_PackedSpriteNamesToIndex:
   - player-sheet_18
@@ -89,6 +101,18 @@ SpriteAtlas:
   - player-sheet_2
   - player-sheet_1
   - player-sheet_0
+  - player-end-sheet_3
+  - player-end-sheet_2
+  - player-end-sheet_1
+  - player-end-sheet_0
+  - player-end-sheet_7
+  - player-end-sheet_6
+  - player-end-sheet_5
+  - player-end-sheet_4
+  - player-end-sheet_9
+  - player-end-sheet_8
+  - player-end-sheet_10
+  - player-end-sheet_11
   - SecondFaceMask
   m_RenderDataMap: {}
   m_Tag: CharacterShapesAtlas

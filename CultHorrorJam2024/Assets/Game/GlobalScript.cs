@@ -18,6 +18,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	// Global Player
 	public bool jumbled = false;
 	public bool secondFace = false;
+	public bool mirrored = false;
 	
 	public enum senses
 	{
@@ -34,9 +35,18 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public GameObject fireglassMask = null;
 	public bool fireglassActive = false;
 	
+	// Global Hearth
 	public bool dollSacrificed = false;
 	public bool virginBloodSacrificed = false;
+	
 	public bool hearthSummoned = false;
+	
+	public bool angelBloodSacrificed = false;
+	public bool godBileSacrificed = false;
+	public bool laviniasHairSacrificed = false;
+	
+	public bool ritualWarning = false;
+	
 	
 	// Global NPCs
 	public bool angelTutorial = false;
@@ -66,6 +76,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// Called after restoring a game. Use this if you need to update any references based on saved data.
 	public void OnPostRestore(int version)
 	{
+		if(mirrored) mirrored = false;
 	}
 
 	/// Blocking script called whenever you enter a room, before fading in. Non-blocking functions only
@@ -103,6 +114,18 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public void Update()
 	{
 		// Add anything that should happen every frame here.
+		if(!Globals.jumbled)
+		{
+			bool mouseOverSomething = E.GetMouseOverClickable() != null;
+			if(mouseOverSomething && !E.GetBlocked())
+			{
+				C.Shapes.AnimIdle = "Curious";
+			}
+			else
+			{
+				C.Shapes.AnimIdle = "Idle";
+			}
+		}
 	}	
 
 	/// Called every frame, even when paused. Non-blocking functions only
@@ -237,6 +260,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		{
 			if ( mouseOverSomething ) // Check if they clicked on anything
 			{
+				if(!jumbled) C.Shapes.AnimIdle = "Idle";
 				if ( C.Plr.HasActiveInventory && Cursor.InventoryCursorOverridden == false )
 				{
 					// Left click with active inventory, use the inventory item
@@ -426,6 +450,9 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		
 		C.Angel.Clickable = !fireglassActive;
 		C.PastAngel.Clickable = fireglassActive;
+		
+		R.Bedroom.GetHotspot("MirrorConception").Clickable = !fireglassActive;
+		R.Bedroom.GetHotspot("MirrorSwitch").Clickable = fireglassActive;
 	}
 
 	public void SwitchFireglass()
@@ -442,5 +469,26 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		
 		if(isEnabled) C.Shapes.RemoveInventory("SecondFace");
 		else C.Shapes.AddInventory("SecondFace");
+	}
+
+	public void SwitchMirrorState()
+	{
+		//Shader customShader = Shader.Find("Sprites/PowerSprite-Custom");
+		//Shader.GetGlobalFloat("_InvertColors",1.0f);
+		
+		if(mirrored)
+		{
+			mirrored = false;
+			Shader.SetGlobalFloat("_InvertColors",0.0f);
+			Audio.StopMusic(0.2f);
+		
+		}
+		else
+		{
+			mirrored = true;
+			Shader.SetGlobalFloat("_InvertColors",1.0f);
+			if (!Audio.IsPlaying("Music_Basement_Reversed_Loop")) Audio.PlayMusic("Music_Basement_Reversed_Loop");
+		
+		}
 	}
 }

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: InversionScroll
+    m_description: Burnt Scroll
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -236,7 +236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 219
+  m_SortingOrder: 95
   m_Sprite: {fileID: 21300000, guid: d07cbd4d334a14b6b816f1e15820ca40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -362,7 +362,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4d318331198f4480dbddb81145615ece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -856,7 +856,11 @@ MonoBehaviour:
     m_shortName: RitualSite
     m_scriptClass: RoomRitualSite
     m_sceneName: SceneRoomRitualSite
-    m_points: []
+    m_points:
+    - m_name: FinalPoint
+      m_position: {x: -19.853743, y: -44.073166}
+    - m_name: CasinaRise
+      m_position: {x: 0, y: 26.940998}
   m_debugStartFunction: 
   m_hotspotComponents:
   - {fileID: 2957461442413591616}
@@ -923,8 +927,8 @@ MonoBehaviour:
   m_data:
     m_description: SmallFire
     m_cursor: 
-    m_visible: 1
-    m_clickable: 1
+    m_visible: 0
+    m_clickable: 0
     m_animation: SmallFire
     m_alpha: 1
     m_position: {x: 0, y: 0}
@@ -1049,7 +1053,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1 &8651745910850930140
 GameObject:
@@ -1165,7 +1169,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4d318331198f4480dbddb81145615ece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1247,8 +1251,8 @@ MonoBehaviour:
   m_data:
     m_description: Fire
     m_cursor: 
-    m_visible: 0
-    m_clickable: 0
+    m_visible: 1
+    m_clickable: 1
     m_animation: Fire
     m_alpha: 1
     m_position: {x: 0, y: 0}
@@ -1346,7 +1350,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4d318331198f4480dbddb81145615ece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1376,5 +1380,5 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0

@@ -40,7 +40,13 @@ public class CharacterRecruit : CharacterScript<CharacterRecruit>
 		if(!Globals.secondFace) // Default
 		{
 			yield return C.Recruit.Say("GET AWAY FROM ME!!!");
-			if(Globals.recruitHasKnife) C.Recruit.PlayAnimation("StabR");
+			if(Globals.recruitHasKnife)
+			{
+				//C.Shapes.AnimIdle = "IdleR";
+				yield return C.Recruit.PlayAnimation("StabR");
+				yield return E.WaitSkip();
+				//C.Shapes.MoveTo(Point("BackAway"));
+			}
 		}
 		
 		else // Wearing Second Face

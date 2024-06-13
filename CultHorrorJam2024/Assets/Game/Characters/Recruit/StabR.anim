@@ -80,4 +80,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1e-45
+    functionName: AnimSound
+    data: recruit_stab_01
+    objectReferenceParameter: {fileID: 6080513943475020916, guid: 12d1383ee562245bebe7e66ec8cf9633, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 1

@@ -16,6 +16,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 		
 		if(!Globals.angelTutorial)
 		{
+			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("I'm sure there's something you can do to get outta there.");
 		}
 		else if(Globals.secondFace)
@@ -35,7 +36,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 			C.Angel.AnimTalk = "AltTalk";
 			yield return C.Angel.Say("If you find any literature, bring it.");
 			yield return E.WaitSkip();
-			yield return C.Angel.Say("You might find me");
+			Audio.Play("angel_hehe_01");
 			C.Angel.AnimTalk = "Talk";
 			yield return C.Angel.Say("USEFUL");
 		}
@@ -44,6 +45,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 			if(!Globals.hearthSummoned)
 			{
 				yield return C.Angel.Say("Huh? You want to know about the book?");
+				 Audio.Play("angel_hehe_01");
 				yield return C.Angel.Say("You could've asked before. I already know.");
 				yield return E.WaitSkip();
 				yield return C.Angel.Say("To summon Vesta's hearth, first find a fire...");
@@ -52,10 +54,12 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return E.WaitSkip();
 				yield return E.WaitSkip();
 				C.Angel.AnimTalk = "AltTalk";
+				 Audio.Play("angel_hehe_04");
 				yield return C.Angel.Say("And if — hehehe");
 				C.Angel.AnimTalk = "Talk";
 				yield return C.Angel.Say("You'd like to know a secret, or two,");
 				C.Angel.AnimTalk = "AltTalk";
+				 Audio.Play("angel_hehe_02");
 				yield return C.Angel.Say("Throw in some glass after.");
 			}
 			else
@@ -69,6 +73,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return E.WaitSkip();
 				yield return E.WaitSkip();
 				yield return E.WaitSkip();
+				Audio.Play("angel_hehe_02");
 				C.Angel.AnimTalk = "Talk";
 				yield return C.Angel.Say("HAAHAHA");
 				yield return E.WaitSkip();
@@ -76,6 +81,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Angel.Say("And makes me hungry");
 				yield return E.WaitSkip();
 				C.Angel.AnimTalk = "AltTalk";
+				Audio.Play("angel_hehe_01");
 				yield return C.Angel.Say("Fetch me another SNACK!");
 			}
 		}
@@ -85,6 +91,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 			yield return C.Angel.Say("Wanna summon a goddess?");
 			yield return C.Angel.Say("All's you need is something called Lavinia's Hair...");
 			C.Angel.AnimTalk = "Talk";
+			Audio.Play("angel_hehe_04");
 			yield return C.Angel.Say("And, hehe, Angel blood.");
 		
 			if(Globals.angelScroll)
@@ -94,6 +101,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Angel.Say("Inverting it brings home to Vesta.");
 				yield return E.WaitSkip();
 				C.Angel.AnimTalk = "AltTalk";
+				Audio.Play("angel_hehe_02");
 				yield return C.Angel.Say("In other words, absorb a god and all their power.");
 				yield return E.WaitSkip();
 				C.Angel.AnimTalk = "Talk";
@@ -101,6 +109,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Angel.Say("Add something called God Bile instead");
 				yield return E.WaitSkip();
 				C.Angel.AnimTalk = "AltTalk";
+				Audio.Play("angel_hehe_01");
 				yield return C.Angel.Say("Hehe, that should work...");
 			}
 		}
@@ -116,6 +125,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 		{
 			C.Angel.AnimTalk = "Talk";
 			yield return C.Angel.Say("One of the High Witch's spellbooks!");
+			Audio.Play("angel_hehe_02");
 			yield return C.Angel.Say("HAHAHA");
 			yield return E.WaitSkip();
 			C.Angel.AnimTalk = "AltTalk";
@@ -124,10 +134,12 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 			C.Angel.AnimTalk = "Talk";
 			yield return C.Angel.Say("Let me see here...");
 			C.Angel.AnimTalk = "AltTalk";
+			Audio.Play("angel_hehe_04");
 			yield return C.Angel.Say("Hm... tasty.. yes, what crunch!");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
 			C.Angel.AnimTalk = "Talk";
+			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("I REALLY needed a snack.");
 		
 			Globals.angelVolumeOne = true;
@@ -150,6 +162,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Angel.Say("Yes... yess...");
 				yield return C.Angel.Say("The text for summoning the goddess herself...");
 				yield return E.WaitSkip();
+				Audio.Play("angel_hehe_02");
 				yield return C.Angel.Say("I'm gunna eat this.");
 		
 				Globals.angelVolumeTwo = true;
@@ -173,11 +186,13 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Angel.Say("An inversion of scroll!");
 				yield return E.WaitSkip();
 				yield return E.WaitSkip();
+				Audio.Play("angel_hehe_01");
 				yield return C.Angel.Say(" Oh wait. Hehehe.");
 				yield return E.WaitSkip();
 				yield return C.Angel.Say("I think if I ate this, I think I'd get hungrier.");
 				yield return E.WaitSkip();
 				yield return E.WaitSkip();
+				Audio.Play("angel_hehe_02");
 				yield return C.Angel.Say("When in Rome!");
 				yield return E.WaitSkip();
 		

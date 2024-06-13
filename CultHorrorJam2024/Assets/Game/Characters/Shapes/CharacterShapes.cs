@@ -6,7 +6,6 @@ using static GlobalScript;
 
 public class CharacterShapes : CharacterScript<CharacterShapes>
 {
-
 	IEnumerator OnInteract()
 	{
 		if(Globals.secondFace)
@@ -21,6 +20,7 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 			Globals.jumbled = false;
 			C.Shapes.AnimIdle = "Idle";
 			C.Shapes.AnimWalk = "Walk";
+			Audio.Stop("player_jumble_01");
 			}
 		else
 		{
@@ -29,6 +29,7 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 				Globals.jumbled = true;
 				C.Shapes.AnimIdle = "Jumble";
 				C.Shapes.AnimWalk = "Jumble";
+				Audio.Play("player_jumble_01");
 			}
 		}
 		

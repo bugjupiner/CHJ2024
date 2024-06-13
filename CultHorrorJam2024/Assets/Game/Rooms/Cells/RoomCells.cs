@@ -86,6 +86,7 @@ public class RoomCells : RoomScript<RoomCells>
 		{
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
+			Audio.Play("angel_hehe_04");
 			yield return C.Angel.Say("Heh heh... Awake?");
 			yield return E.WaitSkip();
 			yield return C.Shapes.FaceLeft();
@@ -101,9 +102,11 @@ public class RoomCells : RoomScript<RoomCells>
 			yield return C.Angel.Say("But...");
 			yield return E.WaitSkip();
 			C.Angel.AnimTalk = "AltTalk";
+			Audio.Play("angel_hehe_02");
 			yield return C.Angel.Say("But I want to see you.");
 			yield return E.WaitSkip();
 			C.Angel.AnimTalk = "Talk";
+			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("Find a way out, why don't you?");
 		}
 		
@@ -114,14 +117,24 @@ public class RoomCells : RoomScript<RoomCells>
 	{
 		if(!Globals.angelTutorial)
 		{
+			Globals.jumbled = false;
+			Audio.Stop("player_jumble_01");
+		
+			C.Shapes.AnimIdle = "Idle";
+			C.Shapes.AnimWalk = "Walk";
+			yield return C.Shapes.FaceLeft();
+		
+		
 			Globals.angelTutorial = true;
 			C.Angel.AnimTalk = "Talk";
+			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("HA HA HA");
 			yield return E.WaitSkip();
 			yield return C.Angel.Say("The jumbling! It's funny!");
 			yield return E.WaitSkip();
 			C.Angel.AnimTalk = "AltTalk";
 			yield return C.Angel.Say("To see your pieces spin...");
+			Audio.Play("angel_hehe_04");
 			yield return C.Angel.Say("heh heh heh.");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
@@ -129,8 +142,10 @@ public class RoomCells : RoomScript<RoomCells>
 			yield return C.Angel.Say("Good luck out there. Something bad spread around.");
 			yield return E.WaitSkip();
 			C.Angel.AnimTalk = "AltTalk";
+			Audio.Play("angel_hehe_02");
 			yield return C.Angel.Say("If you find any, hehe, literature...");
 			C.Angel.AnimTalk = "Talk";
+			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("You might find me USEFUL");
 		}
 		yield return E.Break;

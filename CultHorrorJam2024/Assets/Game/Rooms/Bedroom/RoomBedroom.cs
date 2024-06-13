@@ -50,12 +50,18 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnLookAtHotspotMirrorConception( IHotspot hotspot )
 	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.FaceLeft();
+		
 		yield return C.Shapes.Say("Don't see much...");
 		yield return E.Break;
 	}
 
 	IEnumerator OnInteractHotspotMirrorConception( IHotspot hotspot )
 	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.FaceLeft();
+		
 		yield return C.Shapes.Say("Don't see much...");
 		yield return E.Break;
 	}
@@ -76,6 +82,36 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			{
 				yield return C.Shapes.Say("Not quite...");
 			}
+		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotMirrorSwitch( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.FaceLeft();
+		yield return C.Shapes.Say("Who is that?");
+		yield return C.Shapes.Say("Why is she staring?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotMirrorSwitch( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.FaceLeft();
+		
+		if(Globals.jumbled)
+		{
+			E.FadeColor = Color.white;
+			yield return E.FadeOut(0.1f);
+			Globals.SwitchMirrorState();
+			E.FadeColor = Color.white;
+			yield return E.FadeIn(0.3f);
+		}
+		else
+		{
+			yield return C.Shapes.Say("Who is that?");
+			yield return C.Shapes.Say("Why is she staring?");
 		}
 		yield return E.Break;
 	}

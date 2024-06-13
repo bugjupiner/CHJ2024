@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterVestaAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 0685b331e59574127ba0883a29dae5ee, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 3841401537452671166, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -1632549269316450694, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: 5511635696717129216, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -7821240508240225644, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -886604375143855455, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: 7722065472739776094, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -7296764221689221704, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -3880822892344401763, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -2649692435233915393, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -286256464614784536, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: 6560209509652351156, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: -4474547134016545818, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: 1218208692438917448, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: 4138271509153401295, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  - {fileID: 1878629791897414799, guid: c9675904d66a640b7a9d90976124f5c1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Vesta-sheet_1
+  - Vesta-sheet_0
+  - Vesta-sheet_3
+  - Vesta-sheet_2
+  - Vesta-sheet_5
+  - Vesta-sheet_4
+  - Vesta-sheet_7
+  - Vesta-sheet_6
+  - Vesta-sheet_9
+  - Vesta-sheet_8
+  - Vesta-sheet_10
+  - Vesta-sheet_11
+  - Vesta-sheet_12
+  - Vesta-sheet_13
+  - Vesta-sheet_14
+  m_RenderDataMap: {}
+  m_Tag: CharacterVestaAtlas
+  m_IsVariant: 0

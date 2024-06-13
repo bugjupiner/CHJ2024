@@ -18,6 +18,8 @@ public class RoomStoreroom : RoomScript<RoomStoreroom>
 		{
 			C.Player.Position = R.Current.GetPoint("Cells");
 		}
+		
+		Audio.Play("worm_groan_03");
 	}
 
 	IEnumerator OnInteractHotspotFork( IHotspot hotspot )

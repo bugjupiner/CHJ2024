@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2059038}
   - component: {fileID: 8159176}
   - component: {fileID: 11462848}
+  - component: {fileID: 252129898564803000}
   m_Layer: 0
   m_Name: QuestCamera
   m_TagString: MainCamera
@@ -106,3 +107,15 @@ MonoBehaviour:
   m_shakeFalloffMult: 1
   m_shakeSpeed: 20
   m_prefabPixelCam: {fileID: 1260359474244802, guid: 3d14a5e089970814486e93bba090846d, type: 3}
+--- !u!114 &252129898564803000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01e4f4f4ab404aedaeff7e679956326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
