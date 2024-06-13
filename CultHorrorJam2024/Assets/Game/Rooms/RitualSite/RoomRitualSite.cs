@@ -121,4 +121,22 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		}
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvPropFire( IProp prop, IInventory item )
+	{
+		if(item == I.Glass)
+		{
+			yield return C.WalkToClicked();
+			yield return C.FaceClicked();
+			I.Glass.Active = false;
+			C.Shapes.RemoveInventory("Glass");
+			yield return C.Display("Lost Glass");
+		
+		
+			C.Shapes.AddInventory("Fireglass");
+			yield return C.Display("Got Fireglass");
+		}
+		
+		yield return E.Break;
+	}
 }

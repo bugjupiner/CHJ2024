@@ -36,7 +36,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	
 	public bool dollSacrificed = false;
 	public bool virginBloodSacrificed = false;
-	public bool hearthSummoned = true;
+	public bool hearthSummoned = false;
 	
 	// Global NPCs
 	public bool angelTutorial = false;

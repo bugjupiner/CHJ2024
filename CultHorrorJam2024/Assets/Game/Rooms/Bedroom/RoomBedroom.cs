@@ -62,21 +62,19 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnUseInvHotspotMirrorConception( IHotspot hotspot, IInventory item )
 	{
-		if(Globals.fireglassActive)
+		yield return C.WalkToClicked();
+		
+		if(item == I.Conception)
 		{
-			yield return C.WalkToClicked();
-			if(item == I.Conception)
+			if(Globals.conceptionSense == senses.See)
 			{
-				if(Globals.conceptionSense == senses.See)
-				{
-					Globals.sensesSatisfied += 1;
-					yield return C.Shapes.Say("It liked that!");
-					Hotspot("MirrorConception").Disable();
-				}
-				else
-				{
-					yield return C.Shapes.Say("Not quite...");
-				}
+				Globals.sensesSatisfied += 1;
+				yield return C.Shapes.Say("It liked that!");
+				Hotspot("MirrorConception").Disable();
+			}
+			else
+			{
+				yield return C.Shapes.Say("Not quite...");
 			}
 		}
 		yield return E.Break;
