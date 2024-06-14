@@ -57,6 +57,7 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/HotspotComponent.cs" />
      <Compile Include="Assets/Game/Gui/Prompt/GuiPrompt.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiUtils.cs" />
+     <Compile Include="Assets/ShaderReset.cs" />
      <Compile Include="Assets/Game/Rooms/Front/RoomFront.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/GuiDropDownBar.cs" />
      <Compile Include="Assets/Game/Characters/Omen/CharacterOmen.cs" />
@@ -158,7 +159,7 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PixelPerfectCollider.cs" />
      <Compile Include="Assets/Game/Rooms/Fork/RoomFork.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSaveManager.cs" />
-     <Compile Include="Assets/ShaderReset.cs" />
+     <Compile Include="Assets/Game/Characters/Ghost/CharacterGhost.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontPixelSmooth.shader" />

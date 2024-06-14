@@ -55,7 +55,9 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public bool angelScroll = false;
 	public bool mirrorScrollFree = false;
 	
+	public bool wizardListenedTo = false;
 	public bool wizardSpellBroken = false;
+	
 	public bool recruitHasKnife = true;
 	public bool recruitHasSecondFace = false;
 	

@@ -37,10 +37,14 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 3388566957549434847, guid: 23c86904e748a42faa0fdd3745653407, type: 3}
+  - {fileID: 4469871731732263486, guid: 23c86904e748a42faa0fdd3745653407, type: 3}
   - {fileID: 4022507552532660150, guid: eb6cb0748173a4b65b4674be5ff91301, type: 3}
   - {fileID: 4242708174045290820, guid: eb6cb0748173a4b65b4674be5ff91301, type: 3}
   - {fileID: 7695122515961907668, guid: eb6cb0748173a4b65b4674be5ff91301, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Wizard-Reading_0
+  - Wizard-Reading_1
   - Wizard-sheet_1
   - Wizard-sheet_0
   - Wizard-sheet_2

@@ -23,6 +23,7 @@ namespace PowerScript
 		public static ICharacter Shadow         { get { return PowerQuest.Get.GetCharacter("Shadow"); } }
 		public static ICharacter PastAngel      { get { return PowerQuest.Get.GetCharacter("PastAngel"); } }
 		public static ICharacter Vesta          { get { return PowerQuest.Get.GetCharacter("Vesta"); } }
+		public static ICharacter Ghost          { get { return PowerQuest.Get.GetCharacter("Ghost"); } }
 		// #CHARS# - Do not edit this line, it's used by the system to insert characters
 	}
 
@@ -49,6 +50,7 @@ namespace PowerScript
 		public static IInventory InversionScroll { get { return PowerQuest.Get.GetInventory("InversionScroll"); } }
 		public static IInventory MirrorScroll   { get { return PowerQuest.Get.GetInventory("MirrorScroll"); } }
 		public static IInventory LaviniasHair   { get { return PowerQuest.Get.GetInventory("LaviniasHair"); } }
+		public static IInventory FacelessSoul   { get { return PowerQuest.Get.GetInventory("FacelessSoul"); } }
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

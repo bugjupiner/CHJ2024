@@ -32,4 +32,14 @@ public class RoomCloisterEnd : RoomScript<RoomCloisterEnd>
 		C.Player.Room = R.Cloister;
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractHotspotRobe( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("Got Faceless Soul");
+		C.Shapes.AddInventory("FacelessSoul");
+		Hotspot("Robe").Disable();
+		yield return E.Break;
+	}
 }

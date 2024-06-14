@@ -203,7 +203,11 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Display("Lost Scroll of Inversion");
 			}
 		}
-		
+		if(item == I.Blanket)
+		{
+			Audio.Play("angel_hehe_01");
+			yield return C.Angel.Say("No thanks, I'm warm enough.");
+		}
 		yield return E.Break;
 	}
 }

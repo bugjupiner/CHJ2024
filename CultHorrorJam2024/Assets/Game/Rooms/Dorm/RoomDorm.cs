@@ -49,4 +49,16 @@ public class RoomDorm : RoomScript<RoomDorm>
 		Prop("Blanket").Disable();
 		yield return E.Break;
 	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+		if(C.Shapes.HasInventory("FacelessSoul"))
+		{
+			C.Shapes.RemoveInventory("FacelessSoul");
+			yield return C.Display("Lost Faceless Soul;");
+		
+			yield return C.Shapes.Say("That thing just flew away from me!");
+		}
+		yield return E.Break;
+	}
 }

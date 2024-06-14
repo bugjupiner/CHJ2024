@@ -927,8 +927,8 @@ MonoBehaviour:
   m_data:
     m_description: SmallFire
     m_cursor: 
-    m_visible: 0
-    m_clickable: 0
+    m_visible: 1
+    m_clickable: 1
     m_animation: SmallFire
     m_alpha: 1
     m_position: {x: 0, y: 0}
@@ -1251,8 +1251,8 @@ MonoBehaviour:
   m_data:
     m_description: Fire
     m_cursor: 
-    m_visible: 1
-    m_clickable: 1
+    m_visible: 0
+    m_clickable: 0
     m_animation: Fire
     m_alpha: 1
     m_position: {x: 0, y: 0}

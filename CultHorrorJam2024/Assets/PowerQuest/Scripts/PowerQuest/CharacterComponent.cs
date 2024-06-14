@@ -769,7 +769,7 @@ public partial class CharacterComponent : MonoBehaviour
 			if ( m_data.AdjustSpeedWithScaling )
 				speed *= transform.localScale.y; // scale by speed
 			
-			if ( dist > 0 )
+			if ( dist > 0 && m_playWalkAnim)
 				m_data.FaceDirection( direction, true );
 
 			if ( dist == 0 || dist < speed * remainingDeltaTime )

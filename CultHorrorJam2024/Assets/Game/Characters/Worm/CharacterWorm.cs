@@ -89,4 +89,18 @@ public class CharacterWorm : CharacterScript<CharacterWorm>
 		}
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+		if(item == I.Blanket)
+		{
+			Audio.Play("worm_groan_03");
+			yield return C.Worm.Say("Buh Blanket?");
+			yield return E.WaitSkip();
+			yield return C.Worm.Say("This should...");
+			Audio.Play("worm_groan_01");
+			yield return C.Worm.Say("...create a smiiile!");
+		}
+		yield return E.Break;
+	}
 }
