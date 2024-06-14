@@ -63,6 +63,7 @@ public class RoomFront : RoomScript<RoomFront>
 	{
 		if(item == I.Rubble)
 		{
+			Audio.Play("rubble_window_smash");
 			Prop("BrokenWindow").Visible = true;
 			Prop("Glass").Visible = true;
 			Prop("Glass").Clickable = true;

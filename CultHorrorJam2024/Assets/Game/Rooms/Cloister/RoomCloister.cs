@@ -24,6 +24,8 @@ public class RoomCloister : RoomScript<RoomCloister>
 			if(R.Previous == R.CloisterStart) C.Player.Position = R.Current.GetHotspot("CloisterStartStone").WalkToPoint;
 			if(R.Previous == R.CloisterEnd) C.Player.Position = R.Current.GetHotspot("CloisterEndStone").WalkToPoint;
 		}
+		
+		if(!Globals.conceptionSmelled) I.Conception.AnimGui = "ConceptionIconSpin";
 	}
 
 	IEnumerator OnInteractHotspotStairwell( IHotspot hotspot )
@@ -105,18 +107,30 @@ public class RoomCloister : RoomScript<RoomCloister>
 			{
 				if(Globals.conceptionSense == senses.Smell)
 				{
+					Camera.Shake(1f,1f);
+					Audio.Play("conception_like");
+		
 					Globals.sensesSatisfied += 1;
+					Globals.conceptionSmelled = true;
 					yield return C.Shapes.Say("It liked that!");
 					Prop("Roses").Clickable = false;
 				}
 				else
 				{
+					Camera.Shake(1f,1f);
+					Audio.Play("conception_dislike");
 					yield return C.Shapes.Say("Not quite...");
 				}
 			}
 		}
 		
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
+	{
+		Globals.UpdateConceptionSprite();
 		yield return E.Break;
 	}
 }

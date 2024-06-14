@@ -141,7 +141,7 @@ MonoBehaviour:
     m_animation: Rat
     m_alpha: 1
     m_position: {x: 0, y: 0}
-    m_baseline: -10.511921
+    m_baseline: 27.425419
     m_baselineFixed: 0
     m_walkToPoint: {x: -29.56765, y: -1.007988}
     m_lookAtPoint: {x: -23.18373, y: -4.703949}
@@ -253,7 +253,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 515
+  m_SortingOrder: 136
   m_Sprite: {fileID: -3578019587575532720, guid: b2bad97a96d674c8eb451d6459687553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

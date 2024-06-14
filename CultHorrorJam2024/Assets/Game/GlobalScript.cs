@@ -31,6 +31,10 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	}
 	public senses conceptionSense = senses.See;
 	public int sensesSatisfied = 0;
+	public bool conceptionSaw = false;
+	public bool conceptionHeard = false;
+	public bool conceptionTasted = false;
+	public bool conceptionSmelled = false;
 	
 	public GameObject fireglassMask = null;
 	public bool fireglassActive = false;
@@ -358,6 +362,18 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		{
 			yield break;
 		}
+		else if(item == I.Conception)
+		{
+			if(conceptionSense == senses.Hear && conceptionHeard) Audio.Play("conception_like");
+			else if(conceptionSense == senses.See && conceptionSaw) Audio.Play("conception_like");
+			else if(conceptionSense == senses.Taste && conceptionTasted) Audio.Play("conception_like");
+			else if(conceptionSense == senses.Smell && conceptionSmelled) Audio.Play("conception_like");
+			else
+			{
+				Camera.Shake(1f, 1f);
+				Audio.Play("conception_dislike");
+			}
+		}
 		else
 		{
 		yield return C.Display("You can't use that");
@@ -435,7 +451,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 				if(direction == 3) nextSense = senses.Smell;
 				break;
 		}
-
+		
 		return nextSense;
 	} 
 
@@ -492,5 +508,15 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 			if (!Audio.IsPlaying("Music_Basement_Reversed_Loop")) Audio.PlayMusic("Music_Basement_Reversed_Loop");
 		
 		}
+	}
+
+	public void PlayConceptionSenseSound(senses sense)
+	{
+		if(sense == senses.Hear) Audio.Play("senses_hear");
+		else if(sense == senses.See) Audio.Play("senses_see");
+		else if(sense == senses.Smell) Audio.Play("senses_smell");
+		else if(sense == senses.Taste) Audio.Play("senses_taste");
+		else if(sense == senses.Sixth) Audio.Play("senses_sixth");
+		
 	}
 }

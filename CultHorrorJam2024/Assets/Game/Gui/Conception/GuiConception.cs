@@ -10,6 +10,7 @@ public class GuiConception : GuiScript<GuiConception>
 	IEnumerator OnClickBtnRight( IGuiControl control )
 	{
 		Globals.conceptionSense = Globals.GetNextConceptionSense(0);
+		Globals.PlayConceptionSenseSound(Globals.conceptionSense);
 		Globals.UpdateConceptionSprite();
 		UpdateImage(Globals.GetCurrentSense());
 		yield return E.Break;
@@ -18,6 +19,7 @@ public class GuiConception : GuiScript<GuiConception>
 	IEnumerator OnClickBtnLeft( IGuiControl control )
 	{
 		Globals.conceptionSense = Globals.GetNextConceptionSense(2);
+		Globals.PlayConceptionSenseSound(Globals.conceptionSense);
 		Globals.UpdateConceptionSprite();
 		UpdateImage(Globals.GetCurrentSense());
 		yield return E.Break;
@@ -26,6 +28,7 @@ public class GuiConception : GuiScript<GuiConception>
 	IEnumerator OnClickBtnUp( IGuiControl control )
 	{
 		Globals.conceptionSense = Globals.GetNextConceptionSense(3);
+		Globals.PlayConceptionSenseSound(Globals.conceptionSense);
 		Globals.UpdateConceptionSprite();
 		UpdateImage(Globals.GetCurrentSense());
 		yield return E.Break;
@@ -34,6 +37,7 @@ public class GuiConception : GuiScript<GuiConception>
 	IEnumerator OnClickBtnDown( IGuiControl control )
 	{
 		Globals.conceptionSense = Globals.GetNextConceptionSense(1);
+		Globals.PlayConceptionSenseSound(Globals.conceptionSense);
 		Globals.UpdateConceptionSprite();
 		UpdateImage(Globals.GetCurrentSense());
 		yield return E.Break;
@@ -66,6 +70,7 @@ public class GuiConception : GuiScript<GuiConception>
 	IEnumerator OnClickBtnBack( IGuiControl control )
 	{
 		G.Conception.Hide();
+		Globals.PlayConceptionSenseSound(Globals.conceptionSense);
 		yield return E.Break;
 	}
 }

@@ -134,7 +134,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 			C.Angel.AnimTalk = "Talk";
 			yield return C.Angel.Say("Let me see here...");
 			C.Angel.AnimTalk = "AltTalk";
-			Audio.Play("angel_hehe_04");
+			Audio.Play("angel_eat_spellbook");
 			yield return C.Angel.Say("Hm... tasty.. yes, what crunch!");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
@@ -164,6 +164,8 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return E.WaitSkip();
 				Audio.Play("angel_hehe_02");
 				yield return C.Angel.Say("I'm gunna eat this.");
+				yield return E.WaitSkip();
+				Audio.Play("angel_eat_spellbook");
 		
 				Globals.angelVolumeTwo = true;
 				I.SpellbookTwo.Active = false;
@@ -195,6 +197,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				Audio.Play("angel_hehe_02");
 				yield return C.Angel.Say("When in Rome!");
 				yield return E.WaitSkip();
+				Audio.Play("angel_eat_spellbook");
 		
 				Globals.angelScroll = true;
 				I.InversionScroll.Active = false;

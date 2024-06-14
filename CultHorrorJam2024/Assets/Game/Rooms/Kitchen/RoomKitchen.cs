@@ -22,6 +22,9 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 		{
 			C.Player.Position = R.Current.GetHotspot("HiddenRoom").WalkToPoint;
 		}
+		
+		if(!Globals.conceptionTasted) I.Conception.AnimGui = "ConceptionIconSpin";
+		
 	}
 
 	IEnumerator OnInteractHotspotHiddenRoom( IHotspot hotspot )
@@ -97,12 +100,17 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 		
 			if(Globals.conceptionSense == senses.Taste)
 			{
+				Camera.Shake(1f,1f);
+				Audio.Play("conception_like");
 				yield return C.Shapes.Say("It liked that!");
 				Globals.sensesSatisfied += 1;
+				Globals.conceptionTasted = true;
 				Hotspot("Fridge").Disable();
 			}
 			else
 			{
+				Camera.Shake(1f,1f);
+				Audio.Play("conception_dislike");
 				yield return C.Shapes.Say(" Not Quite...");
 			}
 		}
@@ -125,6 +133,12 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 	IEnumerator AfterAnyClick()
 	{
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
+	{
+		Globals.UpdateConceptionSprite();
 		yield return E.Break;
 	}
 }

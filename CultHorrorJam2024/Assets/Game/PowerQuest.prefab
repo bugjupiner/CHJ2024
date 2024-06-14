@@ -168,14 +168,15 @@ MonoBehaviour:
   - {fileID: 8493252235393816069, guid: 156e589df965643ddba8f1c9d516f06a, type: 3}
   m_inventoryAnimations:
   - {fileID: 7400000, guid: 759bd15cdea204096905345e000a8e3e, type: 2}
-  - {fileID: 7400000, guid: 6c2d4cb2dcf5f41b3b85a3b49aedffc5, type: 2}
-  - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
   - {fileID: 7400000, guid: ae645f9fd56ff40a392786889ad7dcf1, type: 2}
   - {fileID: 7400000, guid: da9b7fa68f69c4481ad6f1451a5f8396, type: 2}
   - {fileID: 7400000, guid: 995e3ea154d33414e8660dfc44917ffb, type: 2}
   - {fileID: 7400000, guid: dd06e4ead7d794c6b9950cd7f336e99e, type: 2}
   - {fileID: 7400000, guid: 2edee8d32000345d983c2fbcb833a5cb, type: 2}
   - {fileID: 7400000, guid: 56e3d3b88ab9746e691ba8d629b487b0, type: 2}
+  - {fileID: 7400000, guid: 6c2d4cb2dcf5f41b3b85a3b49aedffc5, type: 2}
+  - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
+  - {fileID: 7400000, guid: 51273ab035535419b8b26d79a7d510a0, type: 2}
   m_inventorySprites:
   - {fileID: 21300000, guid: 88563e219ed5649d8a4873b322ceb0d5, type: 3}
   - {fileID: 21300000, guid: bcc567af209184a1fbbf5ffbbd4aec45, type: 3}

@@ -6,7 +6,8 @@ using static GlobalScript;
 
 public class RoomRitualSite : RoomScript<RoomRitualSite>
 {
-
+	AudioHandle smallFireHandle;
+	AudioHandle bigFireHandle;
 
 	void OnEnterRoom()
 	{
@@ -14,6 +15,10 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		{
 			C.Player.Position = R.Current.GetHotspot("Pathway").WalkToPoint;
 		}
+		
+		if(Globals.hearthSummoned)  bigFireHandle = Audio.Play("big_fire_loop");
+		else smallFireHandle = Audio.Play("small_fire_loop");
+		
 	}
 
 	IEnumerator OnInteractHotspotPathway( IHotspot hotspot )
@@ -30,6 +35,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		
 		if(item == I.Doll)
 		{
+			Audio.Play("fire_burn_item");
 			E.FadeColor = Color.red;
 			yield return E.FadeOut(0.1f);
 			E.FadeColor = Color.red;
@@ -43,6 +49,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		}
 		if(item == I.VirginsBlood)
 		{
+			Audio.Play("fire_burn_item");
 			E.FadeColor = Color.red;
 			yield return E.FadeOut(0.1f);
 			E.FadeColor = Color.red;
@@ -56,6 +63,10 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		}
 		if(Globals.dollSacrificed && Globals.virginBloodSacrificed && !Globals.hearthSummoned)
 		{
+			Audio.Stop(smallFireHandle);
+			Audio.Play("fire_whoosh");
+			bigFireHandle = Audio.Play("big_fire_loop");
+		
 			Globals.hearthSummoned = true;
 		
 			Prop("SmallFire").Disable();
@@ -367,6 +378,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		yield return C.FaceClicked();
 		if(item == I.Glass) // Get Fireglass
 		{
+			Audio.Play("fire_burn_item");
 			I.Glass.Active = false;
 			C.Shapes.RemoveInventory("Glass");
 			yield return C.Display("Lost Glass");
@@ -382,6 +394,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		}
 		if(item == I.AngelsBlood) // Start Final Ritual
 		{
+			Audio.Play("fire_burn_item");
 			E.FadeColor = Color.yellow;
 			yield return E.FadeOut(0.1f);
 			E.FadeColor = Color.yellow;
@@ -403,6 +416,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 			}
 			else
 			{
+				Audio.Play("fire_burn_item");
 				E.FadeColor = Color.red;
 				yield return E.FadeOut(0.1f);
 				E.FadeColor = Color.red;
@@ -426,6 +440,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 			}
 			else
 			{
+				Audio.Play("fire_burn_item");
 				E.FadeColor = Color.green;
 				yield return E.FadeOut(0.1f);
 				E.FadeColor = Color.green;
@@ -442,11 +457,19 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		
 		if(Globals.angelBloodSacrificed && (Globals.laviniasHairSacrificed || Globals.godBileSacrificed)) // Hint
 		{
+			Audio.Play("fire_whoosh");
 			yield return E.WaitSkip();
 			yield return C.Shapes.Say("The fire... something is happening!");
 		}
 		
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
+	{
+		if(Globals.hearthSummoned)  Audio.Stop(bigFireHandle);
+		else Audio.Stop(smallFireHandle);
 		yield return E.Break;
 	}
 }

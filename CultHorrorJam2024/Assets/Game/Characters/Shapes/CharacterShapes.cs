@@ -48,17 +48,21 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 	{
 		if (item == I.Conception)
 		{
-			if(Globals.conceptionSense == senses.Sixth && Globals.sensesSatisfied >= 4)
-			{
-					C.Shapes.RemoveInventory("Conception");
-					yield return C.Display("Lost Conception");
+			I.Conception.Active = false;
+			if(!G.Conception.Visible) G.Conception.Show();
+			else G.Conception.Hide();
+			yield return E.ConsumeEvent;
 		
-					yield return C.Shapes.Say("It dropped something...");
+			//if(Globals.conceptionSense == senses.Sixth && Globals.sensesSatisfied >= 4)
+			//{
+					//C.Shapes.RemoveInventory("Conception");
+					//Display: Lost Conception
 		
-					C.Shapes.AddInventory("GodBile");
-					yield return C.Display("Got God Bile");
-			}
-			yield return C.Shapes.Say("Not sure if it likes me...");
+					//Shapes: It dropped something...
+		
+					//C.Shapes.AddInventory("GodBile");
+					//Display: Got God Bile
+			//}
 		}
 		else if (item == I.SecondFace)
 		{
