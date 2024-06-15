@@ -52,20 +52,10 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 			if(!G.Conception.Visible) G.Conception.Show();
 			else G.Conception.Hide();
 			yield return E.ConsumeEvent;
-		
-			//if(Globals.conceptionSense == senses.Sixth && Globals.sensesSatisfied >= 4)
-			//{
-					//C.Shapes.RemoveInventory("Conception");
-					//Display: Lost Conception
-		
-					//Shapes: It dropped something...
-		
-					//C.Shapes.AddInventory("GodBile");
-					//Display: Got God Bile
-			//}
 		}
 		else if (item == I.SecondFace)
 		{
+			Audio.Play("second_face_equip");
 			Globals.SetSecondFace(true);
 			yield return E.ConsumeEvent;
 		}

@@ -78,6 +78,7 @@ public class RoomCloister : RoomScript<RoomCloister>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("rubble_pickup_01");
 		yield return C.Display("Got Rubble");
 		C.Shapes.AddInventory("Rubble");
 		Prop("Rubble").Disable();
@@ -107,6 +108,11 @@ public class RoomCloister : RoomScript<RoomCloister>
 			{
 				if(Globals.conceptionSense == senses.Smell)
 				{
+					Audio.Play("sense_smell");
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
 					Camera.Shake(1f,1f);
 					Audio.Play("conception_like");
 		

@@ -74,13 +74,14 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 			if(Globals.conceptionSense == senses.Hear)
 			{
 					C.Wizard.AnimTalk = "Idle";
-					Audio.Play("wizard_talk");
+					Audio.Play("wizard_thought");
 					yield return C.Wizard.Say("... and his little ribbits, by god.");
 					yield return C.Wizard.Say("Why, if he were here, my presence would be obsolete!");
 					yield return C.Wizard.Say("I could release my protective spells over those books!");
 					yield return E.WaitSkip();
 					yield return C.Wizard.Say("Alas, the songs from my years in wizard school persist.");
 					yield return E.WaitSkip();
+					Audio.Play("wizard_thought");
 					yield return C.Wizard.Say("Smell Trouble? Spell Bubble! Smell Trouble? Spell Bubble!");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
@@ -88,7 +89,7 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
-					Audio.Play("wizard_talk");
+					Audio.Play("wizard_thought");
 					yield return C.Wizard.Say("I better not die here.");
 		
 					 C.Wizard.AnimTalk = "Talk";
@@ -286,8 +287,25 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 				Audio.Play("wizard_talk");
 				yield return C.Wizard.Say("She was insane.");
 			}
-		
-		
+		}
+		if(item == I.Pamphlet)
+		{
+			I.Pamphlet.Active = false;
+			yield return C.Wizard.Say("What have we here!");
+			yield return C.Wizard.Say("Some sort of, foldable tome. Aha, genius!");
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("It's a pamphlet.");
+			yield return C.Wizard.Say("Yes, yes. Of course.");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("Know something about it?");
+			yield return C.Wizard.Say("The Circle of Vesta?");
+			yield return C.Wizard.Say("Well, we're standing in their former place of residence.");
+			yield return E.WaitSkip();
+			yield return C.Wizard.Say("They... erm... vacated last night.");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Wizard.Say("It was... quite the show.");
 		}
 		
 		

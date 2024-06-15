@@ -87,6 +87,7 @@ public class RoomFront : RoomScript<RoomFront>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("glass_pickup_01");
 		yield return C.Display("Got Glass");
 		C.Shapes.AddInventory("Glass");
 		Prop("Glass").Disable();

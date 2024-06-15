@@ -33,6 +33,7 @@ public class RoomStoreroom : RoomScript<RoomStoreroom>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("doll_head_pickup");
 		yield return C.Display("Got Doll Head");
 		C.Shapes.AddInventory("DollHead");
 		Prop("DollHead").Disable();

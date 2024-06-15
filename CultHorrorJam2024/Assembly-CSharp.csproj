@@ -123,6 +123,7 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/GuiComponent.cs" />
      <Compile Include="Assets/Game/Characters/Recruit/CharacterRecruit.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/WalkableComponent.cs" />
+     <Compile Include="Assets/Game/Characters/Ghost/CharacterGhost.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/Gui/Image.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/RoomComponent.cs" />
      <Compile Include="Assets/Game/Inventory/AngelsBlood/InventoryAngelsBlood.cs" />
@@ -159,7 +160,11 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/PixelPerfectCollider.cs" />
      <Compile Include="Assets/Game/Rooms/Fork/RoomFork.cs" />
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSaveManager.cs" />
-     <Compile Include="Assets/Game/Characters/Ghost/CharacterGhost.cs" />
+     <Compile Include="Assets/Game/Inventory/LaviniasHair/InventoryLaviniasHair.cs" />
+     <Compile Include="Assets/Game/Inventory/FacelessSoul/InventoryFacelessSoul.cs" />
+     <Compile Include="Assets/Game/Inventory/GodBile/InventoryGodBile.cs" />
+     <Compile Include="Assets/Game/Inventory/MirrorScroll/InventoryMirrorScroll.cs" />
+     <Compile Include="Assets/Game/Inventory/VirginsBlood/InventoryVirginsBlood.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontPixelSmooth.shader" />

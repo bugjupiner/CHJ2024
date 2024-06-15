@@ -46,6 +46,7 @@ public class RoomLadder : RoomScript<RoomLadder>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("pamphlet_pickup");
 		yield return C.Display("Got Pamphlet");
 		Prop("Pamphlet").Disable();
 		C.Shapes.AddInventory("Pamphlet");

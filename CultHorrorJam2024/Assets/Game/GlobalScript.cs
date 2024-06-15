@@ -485,8 +485,15 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		Transform secondFaceSprite = C.Shapes.Instance.transform.Find("SecondFace");
 		if ( secondFaceSprite ) secondFaceSprite.gameObject.SetActive(isEnabled);
 		
-		if(isEnabled) C.Shapes.RemoveInventory("SecondFace");
-		else C.Shapes.AddInventory("SecondFace");
+		if(isEnabled)
+		{
+			C.Shapes.RemoveInventory("SecondFace");
+		}
+		else
+		{
+			Audio.Play("second_face_unequip");
+			C.Shapes.AddInventory("SecondFace");
+		}
 	}
 
 	public void SwitchMirrorState()
@@ -512,11 +519,12 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 
 	public void PlayConceptionSenseSound(senses sense)
 	{
-		if(sense == senses.Hear) Audio.Play("senses_hear");
-		else if(sense == senses.See) Audio.Play("senses_see");
-		else if(sense == senses.Smell) Audio.Play("senses_smell");
-		else if(sense == senses.Taste) Audio.Play("senses_taste");
-		else if(sense == senses.Sixth) Audio.Play("senses_sixth");
+		if(sense == senses.Hear) Audio.Play("sense_hear");
+		else if(sense == senses.See) Audio.Play("sense_see");
+		else if(sense == senses.Smell) Audio.Play("sense_smell");
+		else if(sense == senses.Taste) Audio.Play("sense_taste");
+		else if(sense == senses.Sixth) Audio.Play("sense_sixth");
+		else if(sense == senses.Feel) Audio.Play("conception_like");
 		
 	}
 }

@@ -15,4 +15,10 @@ public class CharacterGhost : CharacterScript<CharacterGhost>
 		yield return C.Ghost.Say("See through his lies...");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAt()
+	{
+		yield return C.Shapes.Say("A ghost!");
+		yield return E.Break;
+	}
 }

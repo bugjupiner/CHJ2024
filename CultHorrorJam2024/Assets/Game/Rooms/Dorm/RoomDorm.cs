@@ -44,6 +44,7 @@ public class RoomDorm : RoomScript<RoomDorm>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("blanket_pickup");
 		yield return C.Display("Got Blanket");
 		C.Shapes.AddInventory("Blanket");
 		Prop("Blanket").Disable();
@@ -58,6 +59,7 @@ public class RoomDorm : RoomScript<RoomDorm>
 			yield return C.Display("Lost Faceless Soul;");
 		
 			yield return C.Shapes.Say("That thing just flew away from me!");
+			C.Ghost.Enable();
 		}
 		yield return E.Break;
 	}

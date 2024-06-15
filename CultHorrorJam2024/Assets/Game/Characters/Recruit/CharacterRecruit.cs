@@ -163,12 +163,35 @@ public class CharacterRecruit : CharacterScript<CharacterRecruit>
 			yield return E.WaitSkip();
 			yield return C.Recruit.Say("It, um, belongs to someone else.");
 		}
+		if(item == I.Conception)
+		{
+			if(Globals.conceptionSense == senses.Hear)
+			{
+				if(Globals.recruitHasKnife) C.Recruit.AnimTalk = "Idle";
+				else C.Recruit.AnimTalk = "AltIdle";
+		
+				yield return C.Recruit.Say("How did it go so wrong... HOW?");
+				yield return C.Recruit.Say("She's supposed— supposed to know it all...");
+				yield return E.WaitSkip();
+				yield return C.Recruit.Say("D-did she know the others would...");
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return C.Recruit.Say("Did she think I would—NO");
+				yield return C.Recruit.Say("NO! I haven't I won't!");
+		
+				yield return C.Recruit.PlayAnimation("Stab");
+				yield return C.Recruit.Say("I WON'T");
+		
+				if(Globals.recruitHasKnife) C.Recruit.AnimTalk = "Talk";
+				else C.Recruit.AnimTalk = "AltTalk";
+			}
+		}
 		yield return E.Break;
 	}
 
 	IEnumerator OnLookAt()
 	{
-
+		yield return C.Shapes.Say("Weird lookin' fella");
 		yield return E.Break;
 	}
 }

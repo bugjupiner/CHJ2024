@@ -46,6 +46,7 @@ public class RoomStairwell : RoomScript<RoomStairwell>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("doll_body_pickup");
 		yield return C.Display("Got Doll Body");
 		C.Shapes.AddInventory("DollBody");
 		Prop("DollBody").Disable();

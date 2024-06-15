@@ -15,21 +15,37 @@ public class CharacterOmen : CharacterScript<CharacterOmen>
 		
 		if(!Globals.fireglassActive)
 		{
+			Camera.Shake(1f, 3f);
 			yield return C.Omen.Say("I SEE IT!");
 			yield return E.WaitSkip();
+			Camera.Shake(1f, 3f);
 			yield return C.Omen.Say("MY CITY!");
 			yield return E.WaitSkip();
+			Camera.Shake(1f, 3f);
 			yield return C.Omen.Say(" MY HOME!");
 		}
 		else
 		{
-			yield return C.Omen.Say("Vesta... hear me...");
-			yield return E.WaitSkip();
-			yield return C.Omen.Say("My name is Lavinia, and my people need you.");
-			yield return E.WaitSkip();
-			yield return C.Omen.Say("The hearths of our city are lit afire each night in your name.");
-			yield return E.WaitSkip();
-			yield return C.Omen.Say("In hopes that you find our home.");
+			if(!Globals.secondFace)
+			{
+				yield return C.Omen.Say("Vesta... hear me...");
+				yield return E.WaitSkip();
+				yield return C.Omen.Say("My name is Lavinia, and my people need you.");
+				yield return E.WaitSkip();
+				yield return C.Omen.Say("The hearths of our city are lit afire each night in your name.");
+				yield return E.WaitSkip();
+				yield return C.Omen.Say("In hopes that you find our home.");
+			}
+			else
+			{
+				yield return C.Omen.Say("You... you will not fool me...");
+				yield return E.WaitSkip();
+				yield return C.Omen.Say("I know that I am myself...");
+				yield return E.WaitSkip();
+				yield return C.Omen.Say("Only I can do this...");
+				yield return E.WaitSkip();
+				yield return C.Omen.Say("Go away...");
+			}
 		}
 		
 		
@@ -54,8 +70,23 @@ public class CharacterOmen : CharacterScript<CharacterOmen>
 		
 				C.Omen.Clickable = false;
 			}
-		
 		}
+		if(item == I.Conception)
+		{
+			if(Globals.conceptionSense == senses.Hear)
+			{
+				C.Omen.AnimTalk ="Idle";
+				yield return C.Omen.Say("BRING GLORY");
+				yield return C.Omen.Say("AND BRING WAR");
+				C.Omen.AnimTalk ="Talk";
+			}
+		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAt()
+	{
+		yield return C.Shapes.Say("That woman's on fire!");
 		yield return E.Break;
 	}
 }

@@ -135,7 +135,22 @@ public class CharacterShadow : CharacterScript<CharacterShadow>
 				yield return C.Shapes.Say(" Sorry, sorry!");
 			}
 		}
+		if(item == I.Blanket)
+		{
+			Audio.Play("shadow_talk");
+			yield return C.Shadow.Say("I have no need for this.");
+			yield return C.Shadow.Say("I am beyond feeling.");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("Ok");
+		}
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAt()
+	{
+		yield return C.Shapes.Say("It's my best friend!");
 		yield return E.Break;
 	}
 }

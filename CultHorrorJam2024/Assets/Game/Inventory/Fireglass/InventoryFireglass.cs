@@ -21,7 +21,8 @@ public class InventoryFireglass : InventoryScript<InventoryFireglass>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
-		yield return C.Shapes.Say("The whole place looks different through this...");
+		yield return C.Shapes.Say("I'm confused.");
+		yield return C.Shapes.Say("Is this a rock, or a portal?");
 		yield return E.Break;
 	}
 }

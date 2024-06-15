@@ -287,7 +287,6 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					Globals.SwitchMirrorState();
 					C.Shapes.AnimIdle = "CasinaIdle";
 					C.Shapes.AnimTalk = "CasinaTalk";
-					C.Shapes.Description = "Casina";
 		
 					C.Shapes.Position = Point("CasinaRise");
 		
@@ -363,6 +362,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		}
 		else
 		{
+			Audio.Play("scroll_pickup");
 			yield return C.Display("Got Inversion Scroll");
 			C.Shapes.AddInventory("InversionScroll");
 		

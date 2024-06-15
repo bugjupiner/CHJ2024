@@ -13,6 +13,14 @@ public class CharacterFinger : CharacterScript<CharacterFinger>
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		yield return C.Finger.Say("...");
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return C.Shapes.Say("Hello?");
+		yield return C.Finger.Say("...");
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return C.Shapes.Say("Okay...");
 		yield return E.Break;
 	}
 
@@ -35,7 +43,25 @@ public class CharacterFinger : CharacterScript<CharacterFinger>
 			yield return C.Display("Got Conception");
 			C.Shapes.AddInventory("Conception");
 		}
+		if(item == I.DormantSoul)
+		{
+			yield return C.WalkToClicked();
+			yield return C.Shapes.FaceRight();
+			yield return C.Shapes.Say("Is this yours?");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Finger.Say("...");
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("That's what I thought.");
+		}
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAt()
+	{
+		yield return C.Shapes.Say("I don't think fingers belong there.");
 		yield return E.Break;
 	}
 }

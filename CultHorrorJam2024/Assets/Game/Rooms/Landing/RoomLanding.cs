@@ -34,6 +34,11 @@ public class RoomLanding : RoomScript<RoomLanding>
 		
 			if(Globals.conceptionSense == senses.Hear)
 			{
+				Audio.Play("sense_hear");
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
 				Camera.Shake(1f,1f);
 				Audio.Play("conception_like");
 				yield return C.Shapes.Say("It liked that!");

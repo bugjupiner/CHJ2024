@@ -13,4 +13,10 @@ public class InventoryAngelsBlood : InventoryScript<InventoryAngelsBlood>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtInventory( IInventory thisItem )
+	{
+		yield return C.Shapes.Say("Feels powerful.");
+		yield return E.Break;
+	}
 }

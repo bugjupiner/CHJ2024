@@ -64,6 +64,7 @@ public class RoomYard : RoomScript<RoomYard>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("spellbook_pickup_01");
 		yield return C.Display("Got Spellbook Volume One");
 		C.Shapes.AddInventory("SpellbookOne");
 		Prop("Spellbook").Disable();

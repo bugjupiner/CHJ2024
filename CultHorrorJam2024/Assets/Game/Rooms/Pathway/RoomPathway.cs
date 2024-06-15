@@ -47,6 +47,7 @@ public class RoomPathway : RoomScript<RoomPathway>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("spellbook_pickup_01");
 		yield return C.Display("Got Spellbook Volume Two");
 		C.Shapes.AddInventory("SpellbookTwo");
 		Prop("SpellbookTwo").Disable();

@@ -51,10 +51,17 @@ public class RoomHiddenRoom : RoomScript<RoomHiddenRoom>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("scroll_pickup");
 		yield return C.Display("Got Mirror Scroll");
-		C.Shapes.AddInventory("Mirror Scroll");
+		C.Shapes.AddInventory("MirrorScroll");
 		Prop("MirrorScroll").Disable();
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropMirrorScroll( IProp prop, IInventory item )
+	{
+
 		yield return E.Break;
 	}
 }

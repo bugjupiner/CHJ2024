@@ -114,6 +114,11 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		{
 			if(Globals.conceptionSense == senses.See)
 			{
+				Audio.Play("sense_see");
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
 				Camera.Shake(1f,1f);
 				Audio.Play("conception_like");
 		

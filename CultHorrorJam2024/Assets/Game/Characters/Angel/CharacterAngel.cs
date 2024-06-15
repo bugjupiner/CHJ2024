@@ -174,7 +174,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Display("Lost Spellbook Volume Two");
 			}
 		}
-		if(item == I.InversionScroll) // Scroll
+		if(item == I.InversionScroll) // Inversion Scroll
 		{
 			if(!Globals.angelVolumeTwo)
 			{
@@ -206,11 +206,34 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 				yield return C.Display("Lost Scroll of Inversion");
 			}
 		}
+		
+		// Other Items
 		if(item == I.Blanket)
 		{
 			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("No thanks, I'm warm enough.");
 		}
+		
+		if(item == I.Conception)
+		{
+			if(Globals.conceptionSense == senses.Hear)
+			{
+				C.Angel.AnimTalk = "Idle";
+				Audio.Play("angel_hehe_thought");
+				yield return C.Angel.Say("Spin, twirl, tumble, jumble.");
+				yield return C.Angel.Say("I'll watch, I'll laugh, You'll burn, I'll laugh");
+		
+				Audio.Play("angel_hehe_04");
+				C.Angel.AnimTalk = "AltTalk";
+				yield return C.Angel.Say("Heh heh .. burn...");
+			}
+		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAt()
+	{
+		yield return C.Shapes.Say("Is that a demon?");
 		yield return E.Break;
 	}
 }

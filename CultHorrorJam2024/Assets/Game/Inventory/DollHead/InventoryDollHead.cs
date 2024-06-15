@@ -12,6 +12,7 @@ public class InventoryDollHead : InventoryScript<InventoryDollHead>
 	{
 		if (item == I.DollBody)
 		{
+			Audio.Play("doll_combine");
 			C.Shapes.AddInventory("Doll");
 			C.Shapes.RemoveInventory("DollHead");
 			C.Shapes.RemoveInventory("DollBody");

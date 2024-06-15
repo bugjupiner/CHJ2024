@@ -61,6 +61,7 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 	{
 		yield return C.WalkToClicked();
 		yield return C.Shapes.Say("There's food in here.");
+		yield return C.Shapes.Say("Looks tasty!");
 		yield return E.Break;
 	}
 
@@ -68,6 +69,7 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 	{
 		yield return C.WalkToClicked();
 		yield return C.Shapes.Say("There's food in here.");
+		yield return C.Shapes.Say("Looks tasty!");
 		yield return E.Break;
 	}
 
@@ -100,6 +102,11 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 		
 			if(Globals.conceptionSense == senses.Taste)
 			{
+				Audio.Play("sense_taste");
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
 				Camera.Shake(1f,1f);
 				Audio.Play("conception_like");
 				yield return C.Shapes.Say("It liked that!");
