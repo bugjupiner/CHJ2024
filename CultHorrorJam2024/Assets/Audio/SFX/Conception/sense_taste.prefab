@@ -51,8 +51,8 @@ MonoBehaviour:
     m_fadeIn: 0
     m_fadeOut: 0
   m_volume:
-    m_min: 1
-    m_max: 1
+    m_min: 0.5
+    m_max: 0.5
     m_hasMax: 0
     m_hasValue: 0
   m_pitch:
@@ -86,6 +86,66 @@ MonoBehaviour:
   m_chorusFilter: {fileID: 0}
   m_sounds:
   - m_sound: {fileID: 8300000, guid: 9d4aeea0f990b45fe8a7a6fbde0bad45, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: e78d3e906c4754c399c3bd1ea543987f, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 01235189bdcd64c3b8644b96ca457fd4, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: 9938c6d7a5b3c443fb9fabbcc427473d, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: c0447e0b0cf754025a8035255b60b248, type: 3}
     m_weight: 100
     m_loop: 0
     m_volume:

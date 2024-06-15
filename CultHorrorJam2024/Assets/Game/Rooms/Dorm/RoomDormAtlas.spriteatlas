@@ -38,10 +38,20 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 247611101288647eca253d8147127a72, type: 3}
+  - {fileID: 21300000, guid: 5d847fb66b5744c068cf53950753705e, type: 3}
+  - {fileID: 21300000, guid: cbbeee79d65fb4617a0762fefba86e68, type: 3}
   - {fileID: 21300000, guid: fc5f795af77f544739bfa84c28484c61, type: 3}
+  - {fileID: 21300000, guid: 70d65f9da589d429b9f44a17cadc96ed, type: 3}
+  - {fileID: 21300000, guid: 694ecc7e6f37a47bd84d7eec38fde183, type: 3}
+  - {fileID: 21300000, guid: 82846b7f3b5c445d0a2ee4ce29f4603a, type: 3}
   m_PackedSpriteNamesToIndex:
   - 02E-Composite
+  - Portal-01
+  - Portal-03
   - 02E-Obstacle01
+  - Portal-02
+  - Portal-Dorm
+  - Portal-04
   m_RenderDataMap: {}
   m_Tag: RoomDormAtlas
   m_IsVariant: 0

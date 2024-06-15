@@ -38,6 +38,7 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 			yield return E.WaitSkip();
 			E.FadeColor = Color.white;
 			yield return E.FadeOut(0.1f);
+			Audio.Play("wizard_spell_broken");
 			E.FadeColor = Color.white;
 			yield return E.FadeIn(0.2f);
 		
@@ -63,6 +64,7 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 		
 			E.FadeColor = Color.white;
 			yield return E.FadeOut(0.1f);
+			Audio.Play("wizard_spell_broken");
 			E.FadeColor = Color.white;
 			yield return E.FadeIn(0.2f);
 			yield return E.WaitSkip();

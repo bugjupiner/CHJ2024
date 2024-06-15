@@ -74,7 +74,7 @@ MonoBehaviour:
     m_hasValue: 0
   m_noDuplicateTime: -1
   m_mixerGroup: {fileID: 0}
-  m_reverbPreset: 22
+  m_reverbPreset: 0
   m_distortionLevel: 0
   m_lowPass: 0
   m_lowPassQ: 1
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_highPassFilter: {fileID: 0}
   m_chorusFilter: {fileID: 0}
   m_sounds:
-  - m_sound: {fileID: 8300000, guid: 3b18426afe2d946e4974aff67931b5c6, type: 3}
+  - m_sound: {fileID: 8300000, guid: b03bdb7c6131f4dba9a59a02a54d8b45, type: 3}
     m_weight: 100
     m_loop: 0
     m_volume:
@@ -100,37 +100,7 @@ MonoBehaviour:
       m_hasValue: 0
     m_startTime: 0
     m_endTime: 0
-  - m_sound: {fileID: 8300000, guid: baf2444d053f7410698d02fcaef68f0b, type: 3}
-    m_weight: 100
-    m_loop: 0
-    m_volume:
-      m_min: 1
-      m_max: 1
-      m_hasMax: 0
-      m_hasValue: 0
-    m_pitch:
-      m_min: 1
-      m_max: 1
-      m_hasMax: 0
-      m_hasValue: 0
-    m_startTime: 0
-    m_endTime: 0
-  - m_sound: {fileID: 8300000, guid: 738b5a34c36e448319f2366c3f66bba8, type: 3}
-    m_weight: 100
-    m_loop: 0
-    m_volume:
-      m_min: 1
-      m_max: 1
-      m_hasMax: 0
-      m_hasValue: 0
-    m_pitch:
-      m_min: 1
-      m_max: 1
-      m_hasMax: 0
-      m_hasValue: 0
-    m_startTime: 0
-    m_endTime: 0
-  - m_sound: {fileID: 8300000, guid: a665a77c8d2b546758cc1e4abb6a8e3e, type: 3}
+  - m_sound: {fileID: 8300000, guid: 96191cbe919e844ef949a326122345d0, type: 3}
     m_weight: 100
     m_loop: 0
     m_volume:

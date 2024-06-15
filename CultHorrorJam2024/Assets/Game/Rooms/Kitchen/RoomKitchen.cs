@@ -87,6 +87,7 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 			I.DormantSoul.Active = false;
 			C.Shapes.RemoveInventory("DormantSoul");
 			Globals.dormDoorOpened = true;
+			Audio.Play("dormant_soul_use");
 			yield return C.Display("Lost Dormant Soul");
 			yield return C.Shapes.Say("Seems like I can get in there now!");
 		}

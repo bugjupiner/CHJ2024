@@ -60,7 +60,7 @@ MonoBehaviour:
     m_clickable: 1
     m_visible: 1
     m_inventory: []
-    m_walkSpeed: {x: 70, y: 60}
+    m_walkSpeed: {x: 100, y: 60}
     m_moveable: 1
     m_solid: 0
     m_solidSize: {x: 20, y: 4}
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!114 &2444521480615515437
 MonoBehaviour:

@@ -157,6 +157,7 @@ MonoBehaviour:
   - {fileID: 1101487642922728209, guid: 36c8653a2cb7c4368bb5227d82575ae8, type: 3}
   - {fileID: 2275675917887263549, guid: 49483940b8b52453499d470fc5cb01ea, type: 3}
   - {fileID: 843470262827625897, guid: 51334e3a9849b4443a0c1fb0b28bb1f2, type: 3}
+  - {fileID: 3462255202684077402, guid: f4a2efcc95bef458b85d772ff1efa7ae, type: 3}
   - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
   - {fileID: 8107170259528221196, guid: a2380263bd8d04f5bad86a89a5dd1879, type: 3}
   - {fileID: 140763596355877163, guid: 9d709ca8e1ee447cdb3474139324d261, type: 3}
@@ -164,8 +165,8 @@ MonoBehaviour:
   - {fileID: 4442757737107753539, guid: f820710070dc54a1d80c4b0efdbae6be, type: 3}
   - {fileID: 768720625003740956, guid: c0cd819d03b7f445d8d7c205ecdfe105, type: 3}
   - {fileID: 1074995900076998768, guid: c3062ac5bbfd046b8b79342f236d02fb, type: 3}
-  - {fileID: 3462255202684077402, guid: f4a2efcc95bef458b85d772ff1efa7ae, type: 3}
   - {fileID: 8493252235393816069, guid: 156e589df965643ddba8f1c9d516f06a, type: 3}
+  - {fileID: 5256853498897068286, guid: 55123b9a6d1784ef4b535449d3410456, type: 3}
   m_inventoryAnimations:
   - {fileID: 7400000, guid: 759bd15cdea204096905345e000a8e3e, type: 2}
   - {fileID: 7400000, guid: ae645f9fd56ff40a392786889ad7dcf1, type: 2}

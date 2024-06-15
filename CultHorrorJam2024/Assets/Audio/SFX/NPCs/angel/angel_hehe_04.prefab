@@ -100,3 +100,18 @@ MonoBehaviour:
       m_hasValue: 0
     m_startTime: 0
     m_endTime: 0
+  - m_sound: {fileID: 8300000, guid: d06362f1312ab4ecc86c7113301c25a4, type: 3}
+    m_weight: 100
+    m_loop: 0
+    m_volume:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_pitch:
+      m_min: 1
+      m_max: 1
+      m_hasMax: 0
+      m_hasValue: 0
+    m_startTime: 0
+    m_endTime: 0

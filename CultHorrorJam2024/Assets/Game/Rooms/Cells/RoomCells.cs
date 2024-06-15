@@ -93,6 +93,7 @@ public class RoomCells : RoomScript<RoomCells>
 			yield return C.Shapes.Say("Hello?");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
+			Audio.Play("angel_hehe_06");
 			yield return C.Angel.Say("Don't tell me you're stuck.");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();

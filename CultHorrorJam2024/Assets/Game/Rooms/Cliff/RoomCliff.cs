@@ -18,6 +18,10 @@ public class RoomCliff : RoomScript<RoomCliff>
 		{
 			C.Player.Position = R.Current.GetHotspot("Ladder").WalkToPoint;
 		}
+		else if(R.Previous == R.Dorm)
+		{
+			C.Player.Position = R.Current.GetProp("PortalDorm").WalkToPoint;
+		}
 	}
 
 	IEnumerator OnInteractHotspotLadder( IHotspot hotspot )
@@ -53,6 +57,7 @@ public class RoomCliff : RoomScript<RoomCliff>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		Audio.Play("dormant_soul_pickup");
 		yield return C.Display("Got Dormant Soul");
 		C.Shapes.AddInventory("DormantSoul");
 		Hotspot("Robe").Disable();
@@ -85,6 +90,20 @@ public class RoomCliff : RoomScript<RoomCliff>
 	IEnumerator OnUseInvPropConception( IProp prop, IInventory item )
 	{
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropPortalDorm( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		Audio.Play("portal");
+		C.Player.Room = R.Dorm;
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropPortalDorm( IProp prop )
+	{
+		yield return C.Shapes.Say("It's a portal!");
 		yield return E.Break;
 	}
 }

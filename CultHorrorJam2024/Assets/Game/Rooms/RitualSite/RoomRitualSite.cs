@@ -16,9 +16,12 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 			C.Player.Position = R.Current.GetHotspot("Pathway").WalkToPoint;
 		}
 		
-		if(Globals.hearthSummoned)  bigFireHandle = Audio.Play("big_fire_loop");
+		if(Globals.hearthSummoned)
+		{
+			bigFireHandle = Audio.Play("big_fire_loop");
+			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+		}
 		else smallFireHandle = Audio.Play("small_fire_loop");
-		
 	}
 
 	IEnumerator OnInteractHotspotPathway( IHotspot hotspot )
@@ -71,6 +74,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		
 			Prop("SmallFire").Disable();
 			Prop("Fire").Enable();
+			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
 			yield return C.Shapes.Say("Whoa!");
 		}
 		yield return E.Break;
@@ -105,22 +109,29 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		if(Globals.angelBloodSacrificed && (Globals.laviniasHairSacrificed || Globals.godBileSacrificed)) // Endings
 		{
 			//Globals.SwitchMirrorState();
+			Globals.finaleStarted = true;
+			Globals.SetSecondFace(false);
+		
 			yield return C.Shapes.WalkTo(Point("FinalPoint"));
 			yield return C.Shapes.Say("I'm...");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
 			yield return C.Shapes.Say("I'm so cold");
+			AudioHandle jumbleSound = Audio.Play("player_jumble_01");
 			C.Shapes.PlayAnimationBG("Jumble");
 			yield return C.Shapes.Say("What's happening?");
 			yield return E.WaitSkip();
 			yield return C.Shapes.Say("I'm... uhh...");
 			yield return E.WaitSkip();
+			Audio.Play("fire_whoosh_final");
+			Audio.Stop(jumbleSound, 3f);
 			E.FadeColor = Color.white;
 			E.FadeOutBG(4.5f);
 			yield return C.Shapes.PlayAnimation("Transform");
 			yield return E.WaitSkip();
 			E.FadeColor = Color.white;
 			E.FadeInBG(4.5f);
+		
 		
 			if(Globals.laviniasHairSacrificed)
 			{
@@ -129,33 +140,46 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					C.Vesta.Visible = true;
 					C.Vesta.Clickable = true;
 		
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("OH, CASINA.");
 					yield return C.Vesta.Say("HOW FAR YOU'VE FALLEN.");
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("Huh?");
 					yield return C.Shapes.Say("Excuse me, are you Vesta?");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_12");
 					yield return C.Vesta.Say("YOU DO NOT KNOW ME?");
 					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_09");
 					yield return C.Vesta.Say("WHAT CRUEL IRONY.");
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("Well, I was wondering if you could help.");
 					yield return C.Shapes.Say("I... I think I'm lost. I need to go home.");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_05");
 					yield return C.Vesta.Say("THIS IS YOUR HOME.");
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_06");
 					yield return C.Vesta.Say("THIS HEARTH, IT BELONGS TO YOU.");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_10");
 					yield return C.Vesta.Say("IN A DIFFERENT FORM, YOU TRIED TO TAKE ME.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_14");
 					yield return C.Vesta.Say("INSTEAD, YOU LOST EVERYTHING.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("I... I don't understand.");
+					Audio.Play("vesta_talk_08");
 					yield return C.Vesta.Say("YOU NEVER WILL. YOU'VE CHANGED.");
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("YOU'VE BEEN REDUCED TO BASIC FORMS.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_05");
 					yield return C.Vesta.Say("IT'S... FUNNY.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
@@ -165,10 +189,13 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("Watch this.");
+					jumbleSound = Audio.Play("player_jumble_01");
 					C.Shapes.PlayAnimationBG("Jumble");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("HAHAHA");
+					Audio.Stop(jumbleSound, 3f);
 					yield return E.FadeOut(3f);
 					E.Pause();
 				}
@@ -183,39 +210,56 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_06");
 					yield return C.Shapes.Say("Interesting.");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_12");
 					yield return C.Shapes.Say("Not what I expected.");
+					Audio.Play("vesta_talk_12");
 					yield return C.Vesta.Say("FOOL. WHAT WERE YOU EXPECTING.");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_03");
 					yield return C.Shapes.Say("Hello Vesta.");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_14");
 					yield return C.Vesta.Say("CASINA.");
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("YOU WILL PAY YOUR OVERDUE RESPECT,");
+					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_06");
 					yield return C.Vesta.Say("AND LOOK AT ME WHILE YOU BURN.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_13");
 					yield return C.Shapes.Say("No. I don't think I will.");
+					Audio.Play("vesta_talk_09");
 					yield return C.Vesta.Say("WHAT?");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_01");
 					yield return C.Shapes.Say("I've learned a lot about myself today.");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_07");
 					yield return C.Shapes.Say("Namely, that at my very essence...");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_14");
 					yield return C.Shapes.Say("I don't want your power.");
 					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					Audio.Play("casina_talk_11");
 					yield return C.Shapes.Say("And I don't want you dead.");
 					yield return E.WaitSkip();
-					yield return C.Vesta.Say("SO WHAT DO YOU WANT?");
-					yield return C.Vesta.Say("WHAT WAS THE POINT OF ALL THIS MADNESS.");
+					Audio.Play("vesta_talk_01");
+					yield return C.Vesta.Say("WHAT?");
+					Audio.Play("vesta_talk_08");
+					yield return C.Vesta.Say("THEN WHAT WAS THE POINT OF ALL THIS MADNESS?");
 					E.FadeOutBG(5f);
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
-					yield return C.Shapes.Say("Got any Marshmallows?");
+					Audio.Play("casina_talk_14");
 					E.Pause();
 				}
 			}
@@ -230,6 +274,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					C.Shapes.AnimIdle = "HouseIdle";
 					C.Shapes.AnimTalk = "HouseIdle";
 		
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("OH, CASINA.");
 					yield return C.Vesta.Say("HOW FAR YOU'VE FALLEN.");
 					yield return E.WaitSkip();
@@ -238,31 +283,47 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return C.Shapes.Say("I can't see...");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_05");
 					yield return C.Vesta.Say("ARE YOU CLUELESS?");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_08");
 					yield return C.Vesta.Say("OF COURSE YOU ARE. YOU FOOL.");
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("Don't....");
 					yield return C.Shapes.Say("Don't be so mean—");
+					Audio.Play("vesta_talk_12");
 					yield return C.Vesta.Say("MEAN? COMING FROM THE TORTURER?");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("Torturer?");
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("YES, CASINA, YOU WERE A CRUEL CREATURE.");
 					yield return E.WaitSkip();
-					yield return C.Vesta.Say("BUT NOW YOUR EVIL NATURE WILL REMAIN EVISCERATED.");
+					Audio.Play("vesta_talk_09");
+					yield return C.Vesta.Say("BUT NOW...");
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_10");
+					yield return C.Vesta.Say("HA!");
+					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_06");
+					yield return C.Vesta.Say("YOU'RE JUST AN EMPTY HOUSE.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("Can you just tell me what's going on?");
 					yield return C.Shapes.Say("Why am I a house?");
 					yield return C.Shapes.Say("Change me back!");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("I ALMOST FEEL SORRY FOR YOU");
+					Audio.Play("vesta_talk_05");
 					yield return C.Vesta.Say("MY DEVOUT FOLLOWER, I DID NOT CHANGE YOU");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_12");
 					yield return C.Vesta.Say("YOU CHANGED YOURSELF.");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_01");
 					yield return C.Vesta.Say("FIRST, INTO THOSE SHAPES. AND NOW, INTO...");
 					yield return E.WaitSkip();
 					yield return C.Vesta.Say("THIS.");
@@ -271,7 +332,9 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("Please, just change me back!!!");
 					yield return E.WaitSkip();
+					Audio.Play("vesta_talk_06");
 					yield return C.Vesta.Say("TWICE NOW YOU HAVE MADE THE EFFORT TO BE MY HOME.");
+					Audio.Play("vesta_talk_12");
 					yield return C.Vesta.Say("BE CAREFUL WHAT YOU WISH FOR.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
@@ -294,32 +357,46 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					C.Shapes.Instance.GetComponentInChildren<ParticleSystem>().Play();
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_13");
 					yield return C.Shapes.Say("Hehehe...");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_12");
 					yield return C.Shapes.Say("HAHAHAHA....");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_07");
 					yield return C.Shapes.Say("I feel her... Vesta...");
+					Audio.Play("casina_talk_02");
 					yield return C.Shapes.Say("Her power is mine!");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_13");
 					yield return C.Shapes.Say("Goddess of Hearth and Home,");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_01");
 					yield return C.Shapes.Say("My warmth and purity,");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_14");
 					yield return C.Shapes.Say("Mine.");
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_12");
 					yield return C.Shapes.Say("HAHAHAHA");
+					Audio.Play("casina_talk_11");
 					yield return C.Shapes.Say("NOT EVEN TOTAL DESTRUCTION COULD STOP ME");
+					Audio.Play("casina_talk_10");
 					yield return C.Shapes.Say("MY WILL IS THAT OF THE UNIVERSE");
+					Audio.Play("casina_talk_08_big");
 					yield return C.Shapes.Say("THE POWER OF A GOD WAS NEVER HER'S");
 					yield return E.WaitSkip(1.0f);
+					Audio.Play("casina_talk_05_big");
 					yield return C.Shapes.Say("IT WAS MINE!!");
 					E.FadeOutBG(4.5f);
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_17_big");
 					yield return C.Shapes.Say("AHA, HAHAHA");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Audio.Play("casina_talk_05_big");
 					yield return C.Shapes.Say("MINE!");
 					E.Pause();
 				}

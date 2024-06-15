@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3448392537130930385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6916, y: 1.6916, z: 1.6916}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
     m_description: Vesta
     m_cursor: 
     m_room: RitualSite
-    m_position: {x: 67, y: -50}
+    m_position: {x: 67, y: -46}
     m_faceDirection: 2
     m_clickable: 0
     m_visible: 0

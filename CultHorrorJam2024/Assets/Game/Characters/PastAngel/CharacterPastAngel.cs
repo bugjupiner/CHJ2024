@@ -38,6 +38,7 @@ public class CharacterPastAngel : CharacterScript<CharacterPastAngel>
 		
 				E.FadeColor = Color.yellow;
 				yield return E.FadeOut();
+				Audio.Play("angel_spell_broken");
 				Globals.mirrorScrollFree = true;
 				E.FadeColor = Color.yellow;
 				yield return E.FadeIn();

@@ -51,6 +51,7 @@ namespace PowerScript
 		public static IInventory MirrorScroll   { get { return PowerQuest.Get.GetInventory("MirrorScroll"); } }
 		public static IInventory LaviniasHair   { get { return PowerQuest.Get.GetInventory("LaviniasHair"); } }
 		public static IInventory FacelessSoul   { get { return PowerQuest.Get.GetInventory("FacelessSoul"); } }
+		public static IInventory LonelySoul     { get { return PowerQuest.Get.GetInventory("LonelySoul"); } }
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

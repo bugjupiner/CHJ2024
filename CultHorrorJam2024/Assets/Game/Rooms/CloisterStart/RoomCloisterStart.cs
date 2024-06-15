@@ -25,6 +25,11 @@ public class RoomCloisterStart : RoomScript<RoomCloisterStart>
 		}
 		
 		omenFire = Audio.Play("small_fire_loop");
+		
+		if(Globals.hearthSummoned && !I.Glass.EverCollected)
+		{
+			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+		}
 	}
 
 	IEnumerator OnInteractHotspotCloisterGrass( IHotspot hotspot )

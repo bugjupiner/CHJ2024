@@ -22,6 +22,11 @@ public class RoomEntryway : RoomScript<RoomEntryway>
 		{
 			C.Player.Position = R.Current.GetHotspot("Bedroom").WalkToPoint;
 		}
+		
+		if(Globals.hearthSummoned && !I.Glass.EverCollected)
+		{
+			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+		}
 	}
 
 	IEnumerator OnInteractHotspotBedroom( IHotspot hotspot )

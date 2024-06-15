@@ -24,6 +24,10 @@ public class RoomBasement : RoomScript<RoomBasement>
 		{
 			C.Player.Position = R.Current.GetHotspot("Fork").WalkToPoint;
 		}
+		else if(R.Previous == R.Dorm)
+		{
+			C.Player.Position = R.Current.GetProp("PortalDorm").WalkToPoint;
+		}
 		
 		
 	}
@@ -58,6 +62,20 @@ public class RoomBasement : RoomScript<RoomBasement>
 	{
 		yield return C.WalkToClicked();
 		if(C.Player.TargetPosition == Hotspot("Cells").WalkToPoint) C.Player.Room = R.Cells;
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropPortalDorm( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		Audio.Play("portal");
+		C.Player.Room = R.Dorm;
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropPortalDorm( IProp prop )
+	{
+		yield return C.Shapes.Say("It's a portal!");
 		yield return E.Break;
 	}
 }

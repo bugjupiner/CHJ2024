@@ -22,6 +22,11 @@ public class RoomFront : RoomScript<RoomFront>
 		{
 			C.Player.Position = R.Current.GetHotspot("Landing").WalkToPoint;
 		}
+		
+		if(Globals.hearthSummoned && !I.Glass.EverCollected)
+		{
+			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+		}
 	}
 
 	IEnumerator OnInteractHotspotLanding( IHotspot hotspot )
@@ -90,7 +95,24 @@ public class RoomFront : RoomScript<RoomFront>
 		Audio.Play("glass_pickup_01");
 		yield return C.Display("Got Glass");
 		C.Shapes.AddInventory("Glass");
+		Prop("FireParticles").Instance.transform.GetComponentInChildren<ParticleSystem>().Stop();
 		Prop("Glass").Disable();
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropShard( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.FaceRight();
+		yield return C.Shapes.Say("Something seems different on the other side...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropShard( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.FaceRight();
+		yield return C.Shapes.Say("Something seems different on the other side...");
 		yield return E.Break;
 	}
 }

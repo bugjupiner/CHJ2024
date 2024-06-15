@@ -27,6 +27,11 @@ public class RoomPathway : RoomScript<RoomPathway>
 		
 			Prop("SpellbookTwo").Clickable = true;
 		}
+		
+		if(Globals.hearthSummoned && !I.Glass.EverCollected)
+		{
+			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+		}
 	}
 
 	IEnumerator OnInteractHotspotRitualSite( IHotspot hotspot )

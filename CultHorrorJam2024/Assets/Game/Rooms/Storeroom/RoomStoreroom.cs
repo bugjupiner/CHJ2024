@@ -18,8 +18,12 @@ public class RoomStoreroom : RoomScript<RoomStoreroom>
 		{
 			C.Player.Position = R.Current.GetPoint("Cells");
 		}
+		else if(R.Previous == R.Dorm)
+		{
+			C.Player.Position = R.Current.GetProp("PortalDorm").WalkToPoint;
+		}
 		
-		Audio.Play("worm_groan_03");
+		if(C.Worm.Visible) Audio.Play("worm_groan_03");
 	}
 
 	IEnumerator OnInteractHotspotFork( IHotspot hotspot )
@@ -37,6 +41,37 @@ public class RoomStoreroom : RoomScript<RoomStoreroom>
 		yield return C.Display("Got Doll Head");
 		C.Shapes.AddInventory("DollHead");
 		Prop("DollHead").Disable();
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropPortalDorm( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		Audio.Play("portal");
+		C.Player.Room = R.Dorm;
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropPortalDorm( IProp prop )
+	{
+		yield return C.Shapes.Say("It's a portal!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotRobe( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		Audio.Play("dormant_soul_pickup");
+		C.Shapes.AddInventory("LonelySoul");
+		yield return C.Display("Got Lonely Soul");
+		Hotspot("Robe").Disable();
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotRobe( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Another cultist robe...");
 		yield return E.Break;
 	}
 }

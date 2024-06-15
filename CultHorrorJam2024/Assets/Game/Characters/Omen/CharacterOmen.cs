@@ -15,35 +15,49 @@ public class CharacterOmen : CharacterScript<CharacterOmen>
 		
 		if(!Globals.fireglassActive)
 		{
-			Camera.Shake(1f, 3f);
+			Camera.Shake(1f, 2f);
+			Audio.Play("omen_talk_01");
 			yield return C.Omen.Say("I SEE IT!");
 			yield return E.WaitSkip();
-			Camera.Shake(1f, 3f);
+			yield return E.WaitSkip();
+			Camera.Shake(1f, 2f);
+			Audio.Play("omen_talk_02");
 			yield return C.Omen.Say("MY CITY!");
 			yield return E.WaitSkip();
-			Camera.Shake(1f, 3f);
+			yield return E.WaitSkip();
+			Camera.Shake(1f, 2f);
+			Audio.Play("omen_talk_03");
 			yield return C.Omen.Say(" MY HOME!");
 		}
 		else
 		{
 			if(!Globals.secondFace)
 			{
+				Audio.Play("lavinia_talk_01");
 				yield return C.Omen.Say("Vesta... hear me...");
 				yield return E.WaitSkip();
+				Audio.Play("lavinia_talk_02");
 				yield return C.Omen.Say("My name is Lavinia, and my people need you.");
 				yield return E.WaitSkip();
+				Audio.Play("lavinia_talk_01");
 				yield return C.Omen.Say("The hearths of our city are lit afire each night in your name.");
 				yield return E.WaitSkip();
+				Audio.Play("lavinia_talk_03");
 				yield return C.Omen.Say("In hopes that you find our home.");
 			}
 			else
 			{
+				Audio.Play("lavinia_talk_03");
 				yield return C.Omen.Say("You... you will not fool me...");
 				yield return E.WaitSkip();
+				Audio.Play("lavinia_talk_02");
 				yield return C.Omen.Say("I know that I am myself...");
 				yield return E.WaitSkip();
+				Audio.Play("lavinia_talk_01");
 				yield return C.Omen.Say("Only I can do this...");
 				yield return E.WaitSkip();
+				Camera.Shake(1f, 2f);
+				Audio.Play("omen_talk_02");
 				yield return C.Omen.Say("Go away...");
 			}
 		}

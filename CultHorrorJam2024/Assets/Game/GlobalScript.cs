@@ -70,7 +70,9 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public bool dormDoorOpened = false;
 	public bool basementDoorOpened = false;
 	
+	public bool portalsOpened = false;
 	
+	public bool finaleStarted = false;
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
 	
@@ -120,7 +122,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public void Update()
 	{
 		// Add anything that should happen every frame here.
-		if(!Globals.jumbled)
+		if(!Globals.jumbled && !finaleStarted)
 		{
 			bool mouseOverSomething = E.GetMouseOverClickable() != null;
 			if(mouseOverSomething && !E.GetBlocked())
@@ -467,6 +469,8 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		fireglassActive = use;
 		fireglassMask.SetActive(fireglassActive);
 		
+		C.Shapes.Clickable = !fireglassActive;
+		
 		C.Angel.Clickable = !fireglassActive;
 		C.PastAngel.Clickable = fireglassActive;
 		
@@ -530,5 +534,11 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		else if(sense == senses.Sixth) Audio.Play("sense_sixth");
 		else if(sense == senses.Feel) Audio.Play("conception_like");
 		
+	}
+
+	public IEnumerator PortalTeleport()
+	{
+
+		yield return E.Break;
 	}
 }
