@@ -87,8 +87,10 @@ MonoBehaviour:
   m_turnAnims: []
   m_transitionAnims: []
   m_animations:
-  - {fileID: 7400000, guid: 594394dcea6d64e74919dd9c2cd58613, type: 2}
   - {fileID: 7400000, guid: d980366566db9428c98959ab0217cf97, type: 2}
+  - {fileID: 7400000, guid: b2ae174326982440697b060d2be3c0a6, type: 2}
+  - {fileID: 7400000, guid: 083da09c3d4f342c0b971e6504ef65dd, type: 2}
+  - {fileID: 7400000, guid: 594394dcea6d64e74919dd9c2cd58613, type: 2}
 --- !u!60 &4385903926594374183
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +152,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 4d318331198f4480dbddb81145615ece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -197,7 +199,7 @@ MonoBehaviour:
   m_tint: {r: 1, g: 1, b: 1, a: 0}
   m_outline: {r: 1, g: 1, b: 1, a: 0}
   m_offset: {x: 0, y: 14.333334}
-  m_shaderOverride: {fileID: 0}
+  m_shaderOverride: {fileID: 4800000, guid: ef21cb5a4c6dc4e76b94393221ec3378, type: 3}
 --- !u!95 &5198479372243099332
 Animator:
   serializedVersion: 5

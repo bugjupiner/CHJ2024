@@ -50,7 +50,7 @@ MonoBehaviour:
   m_localize: 0
   m_sortingLayer: Gui
   m_orderInLayer: 10
-  m_wrapWidth: 200
+  m_wrapWidth: 120
   m_truncate: 0
   m_wrapUniformLineWidth: 0
   m_wrapWidthMin: 120
@@ -63,13 +63,17 @@ MonoBehaviour:
   m_shaderOverride: {fileID: 0}
   m_setFiltering: 1
   m_outline:
-    m_directions: 15
+    m_directions: 255
     m_width: 1
     m_color: {r: 0.08088237, g: 0.08088237, b: 0.08088237, a: 1}
-  m_typeSpeed: 0
+  m_typeSpeed: 0.04
   m_unlocalizedText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
     do eiusmod tempor incididunt ut labore et dolore magna aliqua
   m_outlineMeshes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -93,7 +97,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 703176b3361ccab4da6c9d4e7a52ad55, type: 3}
+  - {fileID: 2100000, guid: 5e8f49a193ffd42d9ac410f215a06d76, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,7 +116,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1164025503
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 10
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!102 &10256322
@@ -123,24 +127,28 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115000}
-  m_Text: 'Lorem ipsum dolor sit amet,
+  m_Text: 'Lorem ipsum dolor sit
 
-    consectetur adipiscing elit, sed do
+    amet, consectetur
 
-    eiusmod
-    tempor incididunt ut labore
+    adipiscing elit, sed
+    do
 
-    et dolore magna aliqua'
+    eiusmod tempor
+
+    incididunt ut labore et
+
+    dolore magna aliqua'
   m_OffsetZ: 0
-  m_CharacterSize: 10
-  m_LineSpacing: 0.9
+  m_CharacterSize: 2
+  m_LineSpacing: 1
   m_Anchor: 7
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 10
+  m_FontSize: 50
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 703176b3361ccab4da6c9d4e7a52ad55, type: 3}
+  m_Font: {fileID: 12800000, guid: 5e8f49a193ffd42d9ac410f215a06d76, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4283058902

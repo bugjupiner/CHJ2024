@@ -186,6 +186,39 @@ public class CharacterRecruit : CharacterScript<CharacterRecruit>
 				else C.Recruit.AnimTalk = "AltTalk";
 			}
 		}
+		if(item == I.Rubble)
+		{
+			Audio.Play("recruit_talk");
+			yield return C.Recruit.Say("HEY! BACK OFF!");
+			if(Globals.recruitHasKnife) C.Recruit.PlayAnimationBG("Stab");
+			yield return C.Recruit.Say("You can't be swinging heavy stuff around like that!");
+			yield return E.WaitSkip();
+			yield return C.Recruit.Say("You could break something!");
+			Audio.Play("recruit_talk");
+			if(Globals.recruitHasKnife) C.Recruit.PlayAnimationBG("Stab");
+			yield return C.Recruit.Say("T-this place is SACRED!");
+		
+		}
+		if(item == I.DormantSoul || item == I.FacelessSoul)
+		{
+			Audio.Play("recruit_talk");
+			yield return C.Recruit.Say("No... it can't be... that's..");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Recruit.Say("I can't look —");
+			Audio.Play("recruit_talk");
+			yield return C.Recruit.Say("GO AWAY!");
+			if(Globals.recruitHasKnife) C.Recruit.PlayAnimationBG("Stab");
+		}
+		if(item == I.DollHead || item == I.DollBody || item == I.Doll)
+		{
+			yield return C.Recruit.Say("The High Witch's doll...");
+			yield return E.WaitSkip();
+			yield return C.Recruit.Say("Are... are you planning...");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Recruit.Say("...On starting a fire?");
+		}
 		yield return E.Break;
 	}
 

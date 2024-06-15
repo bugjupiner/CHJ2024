@@ -6,8 +6,8 @@ using static GlobalScript;
 
 public class RoomCloisterStart : RoomScript<RoomCloisterStart>
 {
-
-
+	public AudioHandle omenFire = null;
+	
 	void OnEnterRoom()
 	{
 		if(R.Previous == R.Entryway)
@@ -23,6 +23,8 @@ public class RoomCloisterStart : RoomScript<RoomCloisterStart>
 		{
 			C.Player.Position = R.Current.GetHotspot("Pathway").WalkToPoint;
 		}
+		
+		omenFire = Audio.Play("small_fire_loop");
 	}
 
 	IEnumerator OnInteractHotspotCloisterGrass( IHotspot hotspot )
@@ -52,6 +54,12 @@ public class RoomCloisterStart : RoomScript<RoomCloisterStart>
 	{
 		yield return C.WalkToClicked();
 		if(Globals.jumbled) C.Player.Room = R.Entryway;
+		yield return E.Break;
+	}
+
+	IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
+	{
+		Audio.Stop(omenFire);
 		yield return E.Break;
 	}
 }

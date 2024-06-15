@@ -59,7 +59,12 @@ public class RoomDorm : RoomScript<RoomDorm>
 			yield return C.Display("Lost Faceless Soul;");
 		
 			yield return C.Shapes.Say("That thing just flew away from me!");
+		
+			E.FadeColor = Color.white;
+			yield return E.FadeOut();
 			C.Ghost.Enable();
+			E.FadeColor = Color.white;
+			yield return E.FadeIn();
 		}
 		yield return E.Break;
 	}

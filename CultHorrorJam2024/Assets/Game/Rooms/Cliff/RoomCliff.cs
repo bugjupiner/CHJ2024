@@ -61,7 +61,30 @@ public class RoomCliff : RoomScript<RoomCliff>
 
 	IEnumerator OnInteractPropConception( IProp prop )
 	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Shapes.Say("Excuse me, what is that thing?");
+		yield return E.WaitSkip();
+		yield return C.Finger.Say("...");
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return C.Shapes.Say("It's, uh,");
+		yield return C.Shapes.Say("I think it's looking at me.");
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return C.Finger.Say("...");
+		yield return E.Break;
+	}
 
+	IEnumerator OnLookAtPropConception( IProp prop )
+	{
+		yield return C.Shapes.Say("What is that?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropConception( IProp prop, IInventory item )
+	{
+		
 		yield return E.Break;
 	}
 }

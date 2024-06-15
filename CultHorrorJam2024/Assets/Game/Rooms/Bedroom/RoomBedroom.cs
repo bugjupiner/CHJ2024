@@ -121,7 +121,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 				yield return E.WaitSkip();
 				Camera.Shake(1f,1f);
 				Audio.Play("conception_like");
-		
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
 				Globals.sensesSatisfied += 1;
 				Globals.conceptionSaw = true;
 				yield return C.Shapes.Say("It liked that!");

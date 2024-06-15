@@ -41,6 +41,8 @@ public class RoomLanding : RoomScript<RoomLanding>
 				yield return E.WaitSkip();
 				Camera.Shake(1f,1f);
 				Audio.Play("conception_like");
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
 				yield return C.Shapes.Say("It liked that!");
 				Globals.sensesSatisfied += 1;
 				Globals.conceptionHeard = true;

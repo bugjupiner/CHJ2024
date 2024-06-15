@@ -24,7 +24,7 @@ MonoBehaviour:
     m_sidebar: {r: 0.213452, g: 0.2284135, b: 0.292, a: 1}
     m_cursor: {r: 1, g: 0.79607844, b: 0.41960785, a: 1}
   m_scriptEditorTheme: 3
-  m_spellCheckEnabled: 1
+  m_spellCheckEnabled: 0
   m_spellCheckIgnoredWords: []
   m_spellCheckDictionaryPath: Assets/Plugins/PowerQuest/ThirdParty/Editor/SpellCheck/en_US.dic
   m_yieldRegexes: []

@@ -15,9 +15,9 @@ public class CharacterShadow : CharacterScript<CharacterShadow>
 		
 		if(C.Shadow.FirstUse) // First encounter
 		{
-			Audio.Play("shadow_talk");
 			yield return C.Shapes.Say("Finally, a friend!");
 			yield return E.WaitSkip();
+			Audio.Play("shadow_talk");
 			yield return C.Shadow.Say("I've been waiting for you.");
 			yield return C.Shapes.Say("Oh! Really?");
 			yield return E.WaitSkip();
@@ -53,8 +53,7 @@ public class CharacterShadow : CharacterScript<CharacterShadow>
 			yield return C.Shapes.FaceRight();
 			C.Shapes.SayBG("Alright!");
 		}
-		
-		if(!C.Shapes.HasInventory("Conception"))
+		else if(!C.Shapes.HasInventory("Conception"))
 		{
 			Audio.Play("shadow_talk");
 			yield return C.Shadow.Say("Help me, friend.");

@@ -22,6 +22,7 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 		else if(Globals.secondFace)
 		{
 			yield return C.Angel.Say("It's you... my goddess...");
+			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("My... hehehe... my...");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
@@ -29,16 +30,15 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 			C.Angel.AnimTalk = "AltTalk";
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
+			Audio.Play("angel_hehe_04");
 			yield return C.Angel.Say("I— It's not me, it's you.");
 		}
 		else if(!Globals.angelVolumeOne && !Globals.angelVolumeTwo) // no books
 		{
-			C.Angel.AnimTalk = "AltTalk";
-			yield return C.Angel.Say("If you find any literature, bring it.");
-			yield return E.WaitSkip();
 			Audio.Play("angel_hehe_01");
+			C.Angel.AnimTalk = "AltTalk";
+			yield return C.Angel.Say("If you find any books, bring 'em.");
 			C.Angel.AnimTalk = "Talk";
-			yield return C.Angel.Say("USEFUL");
 		}
 		else if(Globals.angelVolumeOne && !Globals.angelVolumeTwo) // first book
 		{
@@ -205,6 +205,30 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 		
 				yield return C.Display("Lost Scroll of Inversion");
 			}
+		}
+		if(item == I.MirrorScroll)
+		{
+			Audio.Play("angel_hehe_04");
+			C.Angel.AnimTalk = "Talk";
+			yield return C.Angel.Say("heh.. heh...");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			C.Angel.AnimTalk = "AltTalk";
+			yield return C.Angel.Say("This isn't funny.");
+			yield return E.WaitSkip();
+			yield return C.Angel.Say("How did you get this?");
+			yield return C.Angel.Say("You... were never...");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			Audio.Play("angel_hehe_04");
+			yield return C.Angel.Say("heheh.. you.. you... heh... can't...");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			Audio.Play("angel_hehe_02");
+			C.Angel.AnimTalk = "Talk";
+			yield return C.Angel.Say("I'm about to snap.");
 		}
 		
 		// Other Items

@@ -83,6 +83,7 @@ public class CharacterWorm : CharacterScript<CharacterWorm>
 					Camera.Shake(1f, 4f);
 					Audio.Play("worm_groan_01");
 					Audio.Play("worm_rumble");
+					C.Worm.AnimTalk = "Excited";
 					yield return C.Worm.Say(" IT'S NOT ENOUGH HAPPY!");
 				}
 				else // Step Three

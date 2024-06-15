@@ -167,6 +167,7 @@
      <Compile Include="Assets/Game/Inventory/VirginsBlood/InventoryVirginsBlood.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontPixelSmooth.shader" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/FontSharp.shader" />
      <None Include="Assets/PowerQuest/Scripts/Shaders/PowerSpriteAdditive.shader" />

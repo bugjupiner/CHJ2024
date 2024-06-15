@@ -115,7 +115,8 @@ public class RoomCloister : RoomScript<RoomCloister>
 					yield return E.WaitSkip();
 					Camera.Shake(1f,1f);
 					Audio.Play("conception_like");
-		
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
 					Globals.sensesSatisfied += 1;
 					Globals.conceptionSmelled = true;
 					yield return C.Shapes.Say("It liked that!");

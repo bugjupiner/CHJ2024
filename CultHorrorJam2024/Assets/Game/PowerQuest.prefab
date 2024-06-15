@@ -55,7 +55,7 @@ MonoBehaviour:
   m_verticalResolution: 180
   m_letterboxWidth:
     m_min: 320
-    m_max: 320
+    m_max: 1920
     m_hasMax: 0
     m_hasValue: 0
   m_snapToPixel: 0

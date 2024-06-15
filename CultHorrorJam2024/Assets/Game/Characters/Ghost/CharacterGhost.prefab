@@ -137,7 +137,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 4d318331198f4480dbddb81145615ece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_tint: {r: 1, g: 1, b: 1, a: 0}
   m_outline: {r: 1, g: 1, b: 1, a: 0}
   m_offset: {x: 0, y: 16}
-  m_shaderOverride: {fileID: 0}
+  m_shaderOverride: {fileID: 4800000, guid: ef21cb5a4c6dc4e76b94393221ec3378, type: 3}
 --- !u!95 &3593379247404588611
 Animator:
   serializedVersion: 5

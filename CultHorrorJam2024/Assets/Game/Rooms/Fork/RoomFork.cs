@@ -94,7 +94,8 @@ public class RoomFork : RoomScript<RoomFork>
 					Audio.Play("conception_like");
 					C.Shapes.RemoveInventory("Conception");
 					yield return C.Display("Lost Conception");
-		
+					Audio.Play("god_bile_pickup");
+					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("It dropped something...");
 		

@@ -65,10 +65,9 @@ public class CharacterOmen : CharacterScript<CharacterOmen>
 			}
 			else
 			{
+				Audio.Play("lavina_hair_cut");
 				C.Shapes.AddInventory("LaviniasHair");
 				yield return C.Display("Got Lavinia's Hair");
-		
-				C.Omen.Clickable = false;
 			}
 		}
 		if(item == I.Conception)

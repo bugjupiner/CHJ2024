@@ -459,6 +459,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	{
 		string animName = "Conception" + conceptionSense.ToString();
 		I.Conception.Anim = animName;
+		I.Conception.AnimGui = animName;
 	}
 
 	public void SetFireglass(bool use)
@@ -471,6 +472,9 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		
 		R.Bedroom.GetHotspot("MirrorConception").Clickable = !fireglassActive;
 		R.Bedroom.GetHotspot("MirrorSwitch").Clickable = fireglassActive;
+		
+		if(use) Audio.PlayAmbientSound("fireglass");
+		else Audio.StopAmbientSound();
 	}
 
 	public void SwitchFireglass()

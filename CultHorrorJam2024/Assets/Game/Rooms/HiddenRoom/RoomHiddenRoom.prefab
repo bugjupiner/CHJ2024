@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: AngelBubble
+    m_description: Magic Casing
     m_cursor: 
     m_visible: 1
     m_clickable: 1

@@ -37,11 +37,19 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 3480423469640635986, guid: 0ed83e430af644dc3b829486ec33a1f4, type: 3}
+  - {fileID: 4074622779029831585, guid: 0ed83e430af644dc3b829486ec33a1f4, type: 3}
+  - {fileID: -2236063280135968023, guid: 0ed83e430af644dc3b829486ec33a1f4, type: 3}
+  - {fileID: 4442461309142262097, guid: 0ed83e430af644dc3b829486ec33a1f4, type: 3}
   - {fileID: 7222063361533018443, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
   - {fileID: -4305312060415011512, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
   - {fileID: 5536141865883498116, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
   - {fileID: 6662512864205336421, guid: 2602dbcb461e44c8fa8167b7adc73b9d, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Angel-hurt-sheet_3
+  - Angel-hurt-sheet_2
+  - Angel-hurt-sheet_1
+  - Angel-hurt-sheet_0
   - Angel-sheet_1
   - Angel-sheet_0
   - Angel-sheet_3
