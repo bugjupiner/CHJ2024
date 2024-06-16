@@ -65,6 +65,7 @@ public class GuiConception : GuiScript<GuiConception>
 	void OnShow()
 	{
 		UpdateImage(Globals.GetCurrentSense());
+		Audio.Play("look_sound");
 	}
 
 	IEnumerator OnClickBtnBack( IGuiControl control )

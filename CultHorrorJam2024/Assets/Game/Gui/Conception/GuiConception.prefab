@@ -217,6 +217,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundClick
+      value: look_sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundHover
+      value: options_hide
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_colorClick.b
       value: 0.5776896
       objectReference: {fileID: 0}
@@ -797,6 +805,14 @@ PrefabInstance:
       value: 0.4811321
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundClick
+      value: ui_click
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundHover
+      value: ui_hover
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_colorClick.b
       value: 1
       objectReference: {fileID: 0}
@@ -1000,6 +1016,14 @@ PrefabInstance:
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_colorOff.r
       value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundClick
+      value: ui_click
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundHover
+      value: ui_hover
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_colorClick.b
@@ -1324,6 +1348,14 @@ PrefabInstance:
       value: 0.4811321
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundClick
+      value: ui_click
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundHover
+      value: ui_hover
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_colorClick.b
       value: 1
       objectReference: {fileID: 0}
@@ -1527,6 +1559,14 @@ PrefabInstance:
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_colorOff.r
       value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundClick
+      value: ui_click
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
+      propertyPath: m_soundHover
+      value: ui_hover
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_colorClick.b
