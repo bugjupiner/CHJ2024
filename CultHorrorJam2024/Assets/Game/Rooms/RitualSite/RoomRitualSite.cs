@@ -36,6 +36,27 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		yield return C.WalkToClicked();
 		yield return C.Shapes.FaceRight();
 		
+		if(item == I.Pamphlet)
+		{
+			Audio.Play("fire_burn_item");
+			E.FadeColor = Color.red;
+			yield return E.FadeOut(0.1f);
+			E.FadeColor = Color.red;
+			yield return E.FadeIn(0.3f);
+		
+			I.Pamphlet.Active = false;
+			C.Shapes.RemoveInventory("Pamphlet");
+		
+			yield return C.Display("Lost Pamphlet");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			yield return C.Shapes.Say("...Never getting that back.");
+		}
+		if(item == I.SpellbookOne || item == I.SpellbookTwo || item == I.InversionScroll)
+		{
+			yield return C.Shapes.Say("Probably shouldn't try that.");
+		}
+		
 		if(item == I.Doll)
 		{
 			Audio.Play("fire_burn_item");
@@ -83,7 +104,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 	IEnumerator OnInteractPropSmallFire( IProp prop )
 	{
 		yield return C.WalkToClicked();
-		yield return C.FaceClicked();
+		yield return C.Shapes.FaceRight();
 		yield return C.Shapes.Say("It's a little fire.");
 		yield return E.Break;
 	}
@@ -111,9 +132,10 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 			//Globals.SwitchMirrorState();
 			Globals.finaleStarted = true;
 			Globals.SetSecondFace(false);
+			Globals.SetFireglass(false);
 		
-			if(Audio.IsPlaying("Music_Basement_Loop")); Audio.Stop("Music_Basement_Loop", 1f);
-			if(Audio.IsPlaying("Music_Basement_Reversed_Loop")); Audio.Stop("Music_Basement_Reversed_Loop", 1f);
+			if(Audio.IsPlaying("Music_Basement_Loop")) Audio.Stop("Music_Basement_Loop", 1f);
+			if(Audio.IsPlaying("Music_Basement_Reversed_Loop")) Audio.Stop("Music_Basement_Reversed_Loop", 1f);
 		
 			yield return C.Shapes.WalkTo(Point("FinalPoint"));
 			yield return C.Shapes.Say("I'm...");

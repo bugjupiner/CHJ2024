@@ -85,7 +85,7 @@ MonoBehaviour:
   m_highPassFilter: {fileID: 0}
   m_chorusFilter: {fileID: 0}
   m_sounds:
-  - m_sound: {fileID: 8300000, guid: 4ab326a84f79f4085a79ba3a24622fa2, type: 3}
+  - m_sound: {fileID: 8300000, guid: f3f6ba673f4d843aebb4e2311af1e5e8, type: 3}
     m_weight: 100
     m_loop: 0
     m_volume:
