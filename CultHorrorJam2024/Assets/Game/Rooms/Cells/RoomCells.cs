@@ -79,7 +79,7 @@ public class RoomCells : RoomScript<RoomCells>
 	{
 		if (!Audio.IsPlaying("Music_Basement_Loop"))
 		{
-					Audio.PlayMusic("Music_Basement_Loop");
+			Audio.PlayMusic("Music_Basement_Loop");
 		}
 		
 		if(!Globals.angelTutorial)
@@ -88,6 +88,7 @@ public class RoomCells : RoomScript<RoomCells>
 			yield return E.WaitSkip();
 			Audio.Play("angel_hehe_04");
 			yield return C.Angel.Say("Heh heh... Awake?");
+			E.FadeInBG(1f);
 			yield return E.WaitSkip();
 			yield return C.Shapes.FaceLeft();
 			yield return C.Shapes.Say("Hello?");

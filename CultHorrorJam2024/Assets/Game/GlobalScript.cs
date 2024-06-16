@@ -306,7 +306,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 			{
 				// Left click empty space, so walk
 				E.ProcessClick( eQuestVerb.Walk );
-				Audio.Play("move_sound");
+				Audio.Play("ui_click");
 			}
 		}
 		else if ( rightClick )
@@ -494,6 +494,8 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		
 		R.Bedroom.GetHotspot("MirrorConception").Clickable = !fireglassActive;
 		R.Bedroom.GetHotspot("MirrorSwitch").Clickable = fireglassActive;
+		
+		R.HiddenRoom.GetProp("TrumpetRat").Clickable = fireglassActive;
 		
 		if(use) Audio.PlayAmbientSound("fireglass");
 		else Audio.StopAmbientSound();

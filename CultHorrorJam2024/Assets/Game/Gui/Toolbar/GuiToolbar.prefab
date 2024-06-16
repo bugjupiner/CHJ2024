@@ -163,7 +163,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   m_soundShow: {fileID: 1249121492999120602, guid: 7936ddf327ac347e8b12e6001dd21675, type: 3}
-  m_soundHide: {fileID: 4111531230278209312, guid: cf0926dac2c47452088c0f0438880865, type: 3}
+  m_soundHide: {fileID: 0}
 --- !u!61 &5351698057302576425
 BoxCollider2D:
   m_ObjectHideFlags: 0

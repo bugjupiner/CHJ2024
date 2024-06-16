@@ -64,4 +64,20 @@ public class RoomHiddenRoom : RoomScript<RoomHiddenRoom>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractPropTrumpetRat( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return Prop("TrumpetRat").PlayAnimation("RatTrumpet");
+		Prop("TrumpetRat").Disable();
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return C.Shapes.Say("Huh.");
+		yield return E.Break;
+	}
+
+	void Update()
+	{
+	}
 }

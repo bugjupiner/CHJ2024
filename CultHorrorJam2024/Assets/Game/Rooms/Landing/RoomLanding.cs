@@ -16,6 +16,8 @@ public class RoomLanding : RoomScript<RoomLanding>
 		}
 		
 		if(!Globals.conceptionHeard) I.Conception.AnimGui = "ConceptionIconSpin";
+		
+		Audio.Play("shell_loop");
 	}
 
 	IEnumerator OnInteractHotspotFront( IHotspot hotspot )
@@ -61,6 +63,7 @@ public class RoomLanding : RoomScript<RoomLanding>
 	IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
 	{
 		Globals.UpdateConceptionSprite();
+		Audio.Stop("shell_loop");
 		yield return E.Break;
 	}
 
@@ -75,5 +78,10 @@ public class RoomLanding : RoomScript<RoomLanding>
 		yield return C.WalkToClicked();
 		yield return C.Shapes.Say("Sounds nice...");
 		yield return E.Break;
+	}
+
+	void Update()
+	{
+		Audio.UpdateCustomFalloff("shell_loop", C.Shapes.Position, Hotspot("Shell").WalkToPoint, 10f, 100f, 0f, 1f);
 	}
 }

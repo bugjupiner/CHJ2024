@@ -11,6 +11,8 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		// Hide the inventory in the title scene
 		G.InventoryBar.Hide();
+		Audio.Play("mainmenu_loop");
+		Audio.Play("big_fire_loop");
 		
 		// Later we could start some music here
 		//SystemAudio.PlayMusic("MusicSlowStrings", 1);
@@ -48,16 +50,28 @@ public class RoomTitle : RoomScript<RoomTitle>
 
 	public IEnumerator OnInteractPropNew( Prop prop )
 	{		
+		Audio.Play("portal");
+		Audio.Stop("mainmenu_loop");
+		Audio.Stop("big_fire_loop",2f);
+		
+		yield return E.FadeOut(3f);
+		
 		// Turn on the inventory and info bar now that we're starting a game
 		G.InventoryBar.Show();
 		
 		// Move the player to the room
 		E.ChangeRoomBG(R.Cells);
+		
+		
 		yield return E.ConsumeEvent;
 	}
 
 	public IEnumerator OnInteractPropContinue( Prop prop )
 	{
+		Audio.Play("portal");
+		Audio.Stop("mainmenu_loop");
+		Audio.Stop("big_fire_loop",2f);
+		
 		// Restore most recent save game
 		E.RestoreLastSave();
 		yield return E.ConsumeEvent;
