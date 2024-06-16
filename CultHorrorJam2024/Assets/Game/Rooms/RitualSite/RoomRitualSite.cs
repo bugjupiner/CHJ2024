@@ -130,6 +130,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		if(Globals.angelBloodSacrificed && (Globals.laviniasHairSacrificed || Globals.godBileSacrificed)) // Endings
 		{
 			//Globals.SwitchMirrorState();
+			G.InventoryBar.Hide();
 			Globals.finaleStarted = true;
 			Globals.SetSecondFace(false);
 			Globals.SetFireglass(false);
@@ -226,13 +227,17 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_01");
+					Camera.Shake(1f,1f);
 					yield return C.Vesta.Say("HAHAHA");
 					Audio.Stop(jumbleSound, 3f);
 					yield return E.FadeOut(3f);
-					E.Pause();
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					yield return E.ChangeRoom(R.EndScreen);
 				}
 				else // Mirrored Hearth Ritual
 				{
+					Globals.endingIndex = 1;
 					Globals.SwitchMirrorState();
 					C.Vesta.Visible = true;
 					C.Vesta.Clickable = true;
@@ -248,17 +253,21 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					Audio.Play("casina_talk_12");
 					yield return C.Shapes.Say("Not what I expected.");
 					Audio.Play("vesta_talk_12");
+					Camera.Shake(1f,2f);
 					yield return C.Vesta.Say("FOOL. WHAT WERE YOU EXPECTING.");
 					yield return E.WaitSkip();
 					Audio.Play("casina_talk_03");
 					yield return C.Shapes.Say("Hello Vesta.");
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_14");
+					Camera.Shake(1f,0.5f);
 					yield return C.Vesta.Say("CASINA.");
 					Audio.Play("vesta_talk_01");
+					Camera.Shake(1f,1f);
 					yield return C.Vesta.Say("YOU WILL PAY YOUR OVERDUE RESPECT,");
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_06");
+					Camera.Shake(1f,2f);
 					yield return C.Vesta.Say("AND LOOK AT ME WHILE YOU BURN.");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
@@ -283,8 +292,10 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return C.Shapes.Say("And I don't want you dead.");
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_01");
+					Camera.Shake(1f,0.5f);
 					yield return C.Vesta.Say("WHAT?");
 					Audio.Play("vesta_talk_08");
+					Camera.Shake(1f,2f);
 					yield return C.Vesta.Say("THEN WHAT WAS THE POINT OF ALL THIS MADNESS?");
 					E.FadeOutBG(5f);
 					yield return E.WaitSkip();
@@ -292,7 +303,9 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					Audio.Play("casina_talk_14");
-					E.Pause();
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					yield return E.ChangeRoom(R.EndScreen);
 				}
 			}
 		
@@ -300,6 +313,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 			{
 				if(!Globals.mirrored) // Inverted Ritual
 				{
+					Globals.endingIndex = 2;
 					C.Vesta.Visible = true;
 					C.Vesta.Clickable = true;
 		
@@ -324,6 +338,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return C.Shapes.Say("Don't....");
 					yield return C.Shapes.Say("Don't be so mean—");
 					Audio.Play("vesta_talk_12");
+					Camera.Shake(1f,1f);
 					yield return C.Vesta.Say("MEAN? COMING FROM THE TORTURER?");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
@@ -337,6 +352,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_10");
+					Camera.Shake(1f,1f);
 					yield return C.Vesta.Say("HA!");
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_06");
@@ -353,6 +369,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return C.Vesta.Say("MY DEVOUT FOLLOWER, I DID NOT CHANGE YOU");
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_12");
+					Camera.Shake(1f,1f);
 					yield return C.Vesta.Say("YOU CHANGED YOURSELF.");
 					yield return E.WaitSkip();
 					Audio.Play("vesta_talk_01");
@@ -374,11 +391,15 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return C.Shapes.Say("No...");
 					yield return E.WaitSkip();
 					yield return C.Shapes.Say("No... change me back...");
+					Camera.Shake(1f,2f);
 					yield return C.Shapes.Say("CHANGE ME BACK!");
-					E.Pause();
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					yield return E.ChangeRoom(R.EndScreen);
 				}
 				else // Mirrored Inverted Ritual
 				{
+					Globals.endingIndex = 3;
 					Globals.SwitchMirrorState();
 					C.Shapes.AnimIdle = "CasinaIdle";
 					C.Shapes.AnimTalk = "CasinaTalk";
@@ -389,10 +410,12 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					C.Shapes.Instance.GetComponentInChildren<ParticleSystem>().Play();
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Camera.Shake(0.2f,1f);
 					Audio.Play("casina_talk_13");
 					yield return C.Shapes.Say("Hehehe...");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Camera.Shake(1f,2f);
 					Audio.Play("casina_talk_12");
 					yield return C.Shapes.Say("HAHAHAHA....");
 					yield return E.WaitSkip();
@@ -412,25 +435,33 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 					yield return C.Shapes.Say("Mine.");
 					yield return E.WaitSkip();
 					Audio.Play("casina_talk_12");
+					Camera.Shake(1f,2f);
 					yield return C.Shapes.Say("HAHAHAHA");
 					Audio.Play("casina_talk_11");
+					Camera.Shake(1f,2f);
 					yield return C.Shapes.Say("NOT EVEN TOTAL DESTRUCTION COULD STOP ME");
 					Audio.Play("casina_talk_10");
+					Camera.Shake(2f,2f);
 					yield return C.Shapes.Say("MY WILL IS THAT OF THE UNIVERSE");
 					Audio.Play("casina_talk_08_big");
 					yield return C.Shapes.Say("THE POWER OF A GOD WAS NEVER HER'S");
 					yield return E.WaitSkip(1.0f);
 					Audio.Play("casina_talk_05_big");
+					Camera.Shake(2f,2f);
 					yield return C.Shapes.Say("IT WAS MINE!!");
 					E.FadeOutBG(4.5f);
 					yield return E.WaitSkip();
+					Camera.Shake(1f,2f);
 					Audio.Play("casina_talk_17_big");
 					yield return C.Shapes.Say("AHA, HAHAHA");
 					yield return E.WaitSkip();
 					yield return E.WaitSkip();
+					Camera.Shake(2f,2f);
 					Audio.Play("casina_talk_05_big");
 					yield return C.Shapes.Say("MINE!");
-					E.Pause();
+					yield return E.WaitSkip();
+					yield return E.WaitSkip();
+					yield return E.ChangeRoom(R.EndScreen);
 				}
 			}
 		

@@ -68,6 +68,7 @@ namespace PowerScript
 		public static IGui Options        { get { return PowerQuest.Get.GetGui("Options"); } }
 		public static IGui Save           { get { return PowerQuest.Get.GetGui("Save"); } }
 		public static IGui Conception     { get { return PowerQuest.Get.GetGui("Conception"); } }
+		public static IGui Credits        { get { return PowerQuest.Get.GetGui("Credits"); } }
 		// #GUI# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 
@@ -96,6 +97,7 @@ namespace PowerScript
 		public static IRoom RitualSite     { get { return PowerQuest.Get.GetRoom("RitualSite"); } }
 		public static IRoom Bedroom        { get { return PowerQuest.Get.GetRoom("Bedroom"); } }
 		public static IRoom HiddenRoom     { get { return PowerQuest.Get.GetRoom("HiddenRoom"); } }
+		public static IRoom EndScreen      { get { return PowerQuest.Get.GetRoom("EndScreen"); } }
 		// #ROOM# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

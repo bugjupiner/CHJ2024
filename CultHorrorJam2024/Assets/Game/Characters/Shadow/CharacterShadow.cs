@@ -126,6 +126,9 @@ public class CharacterShadow : CharacterScript<CharacterShadow>
 				yield return C.Display("Got Second Face");
 		
 				C.Ghost.Disable();
+				Audio.Play("conception_dislike");
+				yield return E.WaitSkip();
+				yield return C.Shapes.Say("Sorry buddy.");
 			}
 			else
 			{

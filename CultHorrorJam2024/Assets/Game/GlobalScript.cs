@@ -73,6 +73,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public bool portalsOpened = false;
 	
 	public bool finaleStarted = false;
+	public int endingIndex = 0;
 	
 	// UI Support
 	public bool mouseWasOverSomething = true;
@@ -244,6 +245,13 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// Blocking script called whenever the player clicks anywwere. This function is called before any other click interaction. If this function blocks, it will stop any other interaction from happening.
 	public IEnumerator OnAnyClick()
 	{
+		if(G.Credits.Visible)
+		{
+			Audio.Play("ui_back");
+			G.Credits.Hide();
+			R.EndScreen.GetProp("MainMenu").Clickable = true;
+			R.EndScreen.GetProp("Credits").Clickable = true;
+		}
 		yield return E.Break;
 	}
 

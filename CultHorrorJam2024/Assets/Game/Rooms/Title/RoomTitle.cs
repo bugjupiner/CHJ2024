@@ -101,4 +101,30 @@ public class RoomTitle : RoomScript<RoomTitle>
 
 		yield return E.Break;
 	}
+
+	void Update()
+	{
+	}
+
+	IEnumerator OnWalkTo()
+	{
+
+		yield return E.Break;
+	}
+
+	void OnPostRestore( int version )
+	{
+	}
+
+	IEnumerator UnhandledInteract( IQuestClickable mouseOver )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator UnhandledUseInv( IQuestClickable mouseOver, IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

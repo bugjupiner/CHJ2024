@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Game/Rooms/Title/SceneRoomTitle.unity
@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/HiddenRoom/SceneRoomHiddenRoom.unity
     guid: 3d0592dd2934d421aab0011164904c64
+  - enabled: 1
+    path: Assets/Game/Rooms/EndScreen/SceneRoomEndScreen.unity
+    guid: d68e4622b3e094974b470c2b78544b36
   m_configObjects: {}
