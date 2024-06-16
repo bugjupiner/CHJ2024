@@ -56,9 +56,9 @@ MonoBehaviour:
     m_hasMax: 0
     m_hasValue: 0
   m_pitch:
-    m_min: 1
-    m_max: 1
-    m_hasMax: 0
+    m_min: 0.8
+    m_max: 1.2
+    m_hasMax: 1
     m_hasValue: 0
   m_pan:
     m_min: 0
