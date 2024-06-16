@@ -70,13 +70,25 @@ MonoBehaviour:
   m_wrapUniformLineWidth: 0
   m_wrapWidthMin: 0
   m_keepOnScreen: 0
+  m_screenPadding:
+    left: 8
+    right: 8
+    top: 8
+    bottom: 8
   m_shaderOverride: {fileID: 0}
+  m_setFiltering: 1
   m_outline:
-    m_directions: 138
-    m_width: 1
+    m_directions: 255
+    m_width: 1.11
     m_color: {r: 0, g: 0, b: 0, a: 1}
+  m_typeSpeed: 0
   m_unlocalizedText: Mouse over
   m_outlineMeshes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -116,7 +128,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 703176b3361ccab4da6c9d4e7a52ad55, type: 3}
+  - {fileID: 2100000, guid: 572b8025ac61247d0ac051322e28a9e3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,7 +147,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1164025503
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -13950
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!102 &834330184178521851
@@ -148,18 +160,18 @@ TextMesh:
   m_GameObject: {fileID: 1258378264337265616}
   m_Text: Mouse over
   m_OffsetZ: 0
-  m_CharacterSize: 10
+  m_CharacterSize: 2
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 10
+  m_FontSize: 80
   m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 703176b3361ccab4da6c9d4e7a52ad55, type: 3}
+  m_RichText: 0
+  m_Font: {fileID: 12800000, guid: 572b8025ac61247d0ac051322e28a9e3, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4294941539
+    rgba: 4294967295
 --- !u!1 &6976587785897374010
 GameObject:
   m_ObjectHideFlags: 0

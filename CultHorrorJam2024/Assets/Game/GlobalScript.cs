@@ -73,6 +73,9 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public bool portalsOpened = false;
 	
 	public bool finaleStarted = false;
+	
+	// UI Support
+	public bool mouseWasOverSomething = true;
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
 	
@@ -122,9 +125,10 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public void Update()
 	{
 		// Add anything that should happen every frame here.
+		bool mouseOverSomething = E.GetMouseOverClickable() != null;
+		
 		if(!Globals.jumbled && !finaleStarted)
 		{
-			bool mouseOverSomething = E.GetMouseOverClickable() != null;
 			if(mouseOverSomething && !E.GetBlocked())
 			{
 				C.Shapes.AnimIdle = "Curious";
@@ -134,6 +138,10 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 				C.Shapes.AnimIdle = "Idle";
 			}
 		}
+		
+		if(mouseOverSomething && !mouseWasOverSomething && !Audio.IsPlaying("ui_hover")) Audio.Play("ui_hover");
+		
+		mouseWasOverSomething = mouseOverSomething;
 	}	
 
 	/// Called every frame, even when paused. Non-blocking functions only
@@ -255,6 +263,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		{
 			// Clear inventory on Right click, or left click on empty space, or on hotspot with cursor set to "None"
 			I.Active = null;
+			Audio.Play("ui_back");
 		}
 		else if ( Cursor.NoneCursorActive ) // Checks if cursor is set to "None"
 		{
@@ -268,38 +277,47 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		{
 			if ( mouseOverSomething ) // Check if they clicked on anything
 			{
-				if(!jumbled) C.Shapes.AnimIdle = "Idle";
+				if(!jumbled) C.Shapes.AnimIdle = "Idle"; // Clear Hover Animation
+		
 				if ( C.Plr.HasActiveInventory && Cursor.InventoryCursorOverridden == false )
 				{
 					// Left click with active inventory, use the inventory item
 					E.ProcessClick( eQuestVerb.Inventory );
+					Audio.Play("ui_click");
 				}
 				else if ( E.GetMouseOverType() == eQuestClickableType.Inventory )
 				{
 					// Left clicked on inventory item, make it the active item. Remove this "if statement" if you want to be able to "use" items by clicking on them
 					if((IInventory)E.GetMouseOverClickable() == I.Fireglass) SwitchFireglass();
-					else I.Active = (IInventory)E.GetMouseOverClickable();
-						//if(I.Active == I.Fireglass) SetFireglass(true);
+					else
+					{
+						I.Active = (IInventory)E.GetMouseOverClickable();
+						Audio.Play("ui_click");
+					}
 				}
 				else
 				{
 					// Left click on item, so use it
 					E.ProcessClick(eQuestVerb.Use);
+					Audio.Play("ui_click");
 				}
 			}
 			else  // They've clicked empty space
 			{
 				// Left click empty space, so walk
 				E.ProcessClick( eQuestVerb.Walk );
-					//if(fireglassMask) SetFireglass(false);
+				Audio.Play("move_sound");
 			}
 		}
 		else if ( rightClick )
 		{
 			// If right clicked something, look at it (if 'look' enabled in PowerQuest Settings)
 			if ( mouseOverSomething )
+			{
 				E.ProcessClick( eQuestVerb.Look );
-		   //else if(fireglassMask) SetFireglass(false);
+				Audio.Play("look_sound");
+			}
+		
 		}
 	}
 

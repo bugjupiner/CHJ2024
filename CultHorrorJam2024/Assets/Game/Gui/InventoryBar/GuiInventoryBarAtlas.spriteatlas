@@ -51,6 +51,7 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 4ca536807db98b446bd057d440f1ab89, type: 3}
   - {fileID: 21300000, guid: 9db32425a8bea624480b975ee16c9464, type: 3}
+  - {fileID: 21300000, guid: b17354365fb124671956953d5b3a4003, type: 3}
   - {fileID: 21300000, guid: 51f10908741ad9b4a91e614e0526da27, type: 3}
   - {fileID: 21300000, guid: f7cf8ce96043b1b4792ea00ab90aa2f7, type: 3}
   - {fileID: 21300000, guid: c0e1042b5253cd74294f210b30e2736f, type: 3}
@@ -58,6 +59,7 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - ArrowHover
   - ArrowClick
+  - InventoryBgCustom
   - Quit_0
   - Arrow
   - Options_0
