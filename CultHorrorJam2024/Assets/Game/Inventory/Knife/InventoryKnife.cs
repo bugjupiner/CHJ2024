@@ -10,6 +10,7 @@ public class InventoryKnife : InventoryScript<InventoryKnife>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("glass_pickup_01");
 		yield return C.Shapes.Say("Sharp!");
 		yield return E.Break;
 	}

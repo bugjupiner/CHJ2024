@@ -16,6 +16,7 @@ public class InventoryMirrorScroll : InventoryScript<InventoryMirrorScroll>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("scroll_pickup");
 		yield return C.Shapes.Say("'Mirrors: Sanctuary for the Soul'");
 		yield return E.Break;
 	}

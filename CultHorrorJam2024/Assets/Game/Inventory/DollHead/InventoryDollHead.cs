@@ -32,6 +32,7 @@ public class InventoryDollHead : InventoryScript<InventoryDollHead>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("doll_head_pickup");
 		yield return C.Shapes.Say("Where's the body?");
 		yield return E.Break;
 	}

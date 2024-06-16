@@ -10,6 +10,7 @@ public class InventoryInversionScroll : InventoryScript<InventoryInversionScroll
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("scroll_pickup");
 		yield return C.Shapes.Say("Hm, interesting!");
 		yield return E.WaitSkip();
 		yield return E.WaitSkip();

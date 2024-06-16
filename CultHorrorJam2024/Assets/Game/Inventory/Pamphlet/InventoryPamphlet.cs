@@ -8,6 +8,7 @@ public class InventoryPamphlet : InventoryScript<InventoryPamphlet>
 
 	public IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("pamphlet_pickup");
 		yield return C.Shapes.Say("This pamphlet has a weird symbol on top.");
 		yield return E.Break;
 		

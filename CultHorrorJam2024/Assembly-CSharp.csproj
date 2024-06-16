@@ -167,6 +167,7 @@
      <Compile Include="Assets/PowerQuest/Scripts/PowerQuest/QuestSaveManager.cs" />
      <Compile Include="Assets/TextWobble.cs" />
      <Compile Include="Assets/Game/Gui/InventoryBar/GuiInventoryBar.cs" />
+     <Compile Include="Assets/Game/Inventory/LonelySoul/InventoryLonelySoul.cs" />
      <None Include="Assets/PowerQuest/Version.txt" />
      <None Include="Assets/Fonts/_FontNotes.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

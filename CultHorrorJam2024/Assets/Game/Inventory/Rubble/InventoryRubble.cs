@@ -16,6 +16,7 @@ public class InventoryRubble : InventoryScript<InventoryRubble>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("rubble_pickup_01");
 		yield return C.Shapes.Say("Something must've blown this place up.");
 		yield return E.Break;
 	}

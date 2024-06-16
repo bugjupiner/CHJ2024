@@ -16,6 +16,7 @@ public class InventoryAngelsBlood : InventoryScript<InventoryAngelsBlood>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("past_angel_hurt");
 		yield return C.Shapes.Say("Feels powerful.");
 		yield return E.Break;
 	}

@@ -10,6 +10,7 @@ public class InventorySecondFace : InventoryScript<InventorySecondFace>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("second_face_equip");
 		yield return C.Shapes.Say("This mask makes me happy.");
 		yield return E.Break;
 	}

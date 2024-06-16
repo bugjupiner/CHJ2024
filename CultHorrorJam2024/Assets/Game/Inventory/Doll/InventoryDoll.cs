@@ -10,6 +10,7 @@ public class InventoryDoll : InventoryScript<InventoryDoll>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("doll_body_pickup");
 		yield return C.Shapes.Say("Just a normal doll.");
 		yield return E.Break;
 	}

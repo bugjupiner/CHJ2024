@@ -112,10 +112,14 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 			Globals.finaleStarted = true;
 			Globals.SetSecondFace(false);
 		
+			if(Audio.IsPlaying("Music_Basement_Loop")); Audio.Stop("Music_Basement_Loop", 1f);
+			if(Audio.IsPlaying("Music_Basement_Reversed_Loop")); Audio.Stop("Music_Basement_Reversed_Loop", 1f);
+		
 			yield return C.Shapes.WalkTo(Point("FinalPoint"));
 			yield return C.Shapes.Say("I'm...");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
+			Audio.PlayMusic("cutscene_01_loop");
 			yield return C.Shapes.Say("I'm so cold");
 			AudioHandle jumbleSound = Audio.Play("player_jumble_01");
 			C.Shapes.PlayAnimationBG("Jumble");
@@ -128,7 +132,13 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 			E.FadeColor = Color.white;
 			E.FadeOutBG(4.5f);
 			yield return C.Shapes.PlayAnimation("Transform");
+		
+			Prop("BackFire01").Show();
+			Prop("BackFire02").Show();
+			Prop("BackFire03").Show();
+			Prop("Foreground").Show();
 			yield return E.WaitSkip();
+			Audio.Play("more_fire");
 			E.FadeColor = Color.white;
 			E.FadeInBG(4.5f);
 		
@@ -452,7 +462,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 	IEnumerator OnUseInvPropFire( IProp prop, IInventory item )
 	{
 		yield return C.WalkToClicked();
-		yield return C.FaceClicked();
+		yield return C.Shapes.FaceRight();
 		if(item == I.Glass) // Get Fireglass
 		{
 			Audio.Play("fire_burn_item");

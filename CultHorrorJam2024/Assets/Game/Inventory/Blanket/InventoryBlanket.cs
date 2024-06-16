@@ -10,6 +10,7 @@ public class InventoryBlanket : InventoryScript<InventoryBlanket>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("blanket_pickup");
 		yield return C.Shapes.Say("Feels comfy.");
 		yield return E.Break;
 	}

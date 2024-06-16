@@ -10,6 +10,7 @@ public class InventorySpellbookTwo : InventoryScript<InventorySpellbookTwo>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("spellbook_pickup_01");
 		yield return C.Shapes.Say("This is written in a REALLY strange language.");
 		yield return C.Shapes.Say("I definitely can't read this.");
 		yield return E.Break;

@@ -21,6 +21,7 @@ public class InventoryFireglass : InventoryScript<InventoryFireglass>
 
 	IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
+		Audio.Play("glass_pickup_01");
 		yield return C.Shapes.Say("I'm confused.");
 		yield return C.Shapes.Say("Is this a rock, or a portal?");
 		yield return E.Break;

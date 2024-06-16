@@ -353,20 +353,20 @@ PolygonCollider2D:
       - {x: 131.89206, y: -17.906736}
       - {x: 99.56499, y: 3.838315}
       - {x: 96.80775, y: -8.430559}
-      - {x: 72.02849, y: -12.321849}
+      - {x: 83.90526, y: -15.488988}
       - {x: 51.730904, y: -44.134777}
       - {x: 18.163242, y: -65.698364}
       - {x: 2.5209618, y: -64.27056}
-      - {x: -42.237232, y: -50.258877}
-      - {x: -68.98528, y: -24.728771}
+      - {x: -42.237232, y: -55.80137}
+      - {x: -76.11134, y: -34.230183}
       - {x: -90.165924, y: -13.308292}
       - {x: -96.91855, y: -1.2918777}
-      - {x: -70.99852, y: 21.08413}
-      - {x: -57.193943, y: 32.646797}
-      - {x: -44.241653, y: 48.634293}
+      - {x: -80.49994, y: 21.875916}
+      - {x: -69.07072, y: 38.189293}
+      - {x: -52.1595, y: 51.009647}
       - {x: -15.02394, y: 62.736885}
-      - {x: 31.811192, y: 58.196323}
-      - {x: 56.208885, y: 36.943047}
+      - {x: 31.811192, y: 62.947025}
+      - {x: 60.167805, y: 45.652676}
       - {x: 89.872635, y: 18.718311}
       - {x: 135.45076, y: -12.393703}
       - {x: 125.495895, y: 39.432472}
@@ -806,7 +806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundClick
-      value: ui_click
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundHover
@@ -1019,7 +1019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundClick
-      value: ui_click
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundHover
@@ -1349,7 +1349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundClick
-      value: ui_click
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundHover
@@ -1562,7 +1562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundClick
-      value: ui_click
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7328553807973551976, guid: e9c95fe066d3fef45a012e8deb308df2, type: 3}
       propertyPath: m_soundHover

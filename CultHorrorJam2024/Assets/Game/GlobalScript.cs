@@ -299,14 +299,14 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 				{
 					// Left click on item, so use it
 					E.ProcessClick(eQuestVerb.Use);
-					Audio.Play("ui_click");
+					//Audio.Play("ui_click");
 				}
 			}
 			else  // They've clicked empty space
 			{
 				// Left click empty space, so walk
 				E.ProcessClick( eQuestVerb.Walk );
-				Audio.Play("ui_click");
+				//Audio.Play("ui_click");
 			}
 		}
 		else if ( rightClick )
@@ -315,7 +315,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 			if ( mouseOverSomething )
 			{
 				E.ProcessClick( eQuestVerb.Look );
-				Audio.Play("look_sound");
+				//Audio.Play("look_sound");
 			}
 		
 		}
@@ -533,14 +533,14 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		{
 			mirrored = false;
 			Shader.SetGlobalFloat("_InvertColors",0.0f);
-			Audio.StopMusic(0.2f);
+			//Audio.StopMusic(0.2f);
 		
 		}
 		else
 		{
 			mirrored = true;
 			Shader.SetGlobalFloat("_InvertColors",1.0f);
-			if (!Audio.IsPlaying("Music_Basement_Reversed_Loop")) Audio.PlayMusic("Music_Basement_Reversed_Loop");
+			//if (!Audio.IsPlaying("Music_Basement_Reversed_Loop")) Audio.PlayMusic("Music_Basement_Reversed_Loop");
 		
 		}
 	}
