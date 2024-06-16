@@ -151,4 +151,29 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 		Globals.UpdateConceptionSprite();
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotYard( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("That leads outside.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotDorm( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Seems haunted in there...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotHiddenRoom( IHotspot hotspot )
+	{
+		if(Globals.fireglassActive)
+		{
+			yield return C.Shapes.Say("I see a light in there...");
+		}
+		else
+		{
+			yield return C.Shapes.Say("It's a fireplace.");
+		}
+		yield return E.Break;
+	}
 }

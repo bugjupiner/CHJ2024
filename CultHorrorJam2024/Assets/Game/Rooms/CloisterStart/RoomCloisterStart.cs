@@ -67,4 +67,29 @@ public class RoomCloisterStart : RoomScript<RoomCloisterStart>
 		Audio.Stop(omenFire);
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotPathway( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Yup.");
+		yield return C.Shapes.Say("The world must've exploded.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloisterStone( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("More cloister.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloisterGrass( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("More cloister.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotEntryway( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("This leads inside.");
+		yield return E.Break;
+	}
 }

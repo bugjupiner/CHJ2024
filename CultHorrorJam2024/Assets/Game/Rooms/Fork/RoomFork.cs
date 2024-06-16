@@ -69,7 +69,7 @@ public class RoomFork : RoomScript<RoomFork>
 		yield return C.Shapes.Say("Vesta's Myth of Miracle");
 		yield return C.Shapes.Say("Virgin Priestess, Behold Her Shape In Fire");
 		yield return E.WaitSkip();
-		yield return C.Shapes.Say("Feel Her Heat Hrom Hearth, And Conceive");
+		yield return C.Shapes.Say("Feel Her Heat From Hearth, And Conceive");
 		yield return C.Shapes.Say("A Miraculous Conception With Senses of a God");
 		yield return E.WaitSkip();
 		yield return E.WaitSkip();
@@ -116,6 +116,24 @@ public class RoomFork : RoomScript<RoomFork>
 				yield return C.Shapes.Say("Not quite...");
 			}
 		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotStoreroom( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("That place gives me the creeps...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotBasement( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("What happened to this place?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCliff( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Something strange is that way...");
 		yield return E.Break;
 	}
 }

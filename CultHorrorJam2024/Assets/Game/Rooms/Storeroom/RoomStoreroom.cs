@@ -74,4 +74,16 @@ public class RoomStoreroom : RoomScript<RoomStoreroom>
 		yield return C.Shapes.Say("Another cultist robe...");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotFork( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("I should get out of here.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropDollHead( IProp prop )
+	{
+		yield return C.Shapes.Say("Some part of a doll.");
+		yield return E.Break;
+	}
 }

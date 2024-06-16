@@ -58,4 +58,30 @@ public class RoomStairwell : RoomScript<RoomStairwell>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotBasement( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Down I go.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloister( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("The cloister.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotSpike( IHotspot hotspot )
+	{
+		yield return C.Shapes.FaceRight();
+		yield return C.Shapes.Say("Looks like it's still hot.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotSpike( IHotspot hotspot )
+	{
+		yield return C.Shapes.FaceRight();
+		yield return C.Shapes.Say("Looks like it's still hot.");
+		yield return E.Break;
+	}
 }

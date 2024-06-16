@@ -52,4 +52,16 @@ public class RoomLadder : RoomScript<RoomLadder>
 		C.Shapes.AddInventory("Pamphlet");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotCliff( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Back to the cliff.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotYard( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Light!");
+		yield return E.Break;
+	}
 }

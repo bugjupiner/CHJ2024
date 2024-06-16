@@ -140,4 +140,47 @@ public class RoomCloister : RoomScript<RoomCloister>
 		Globals.UpdateConceptionSprite();
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotCloisterStartGrass( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Fire lady over there.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloisterStartStone( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Fire lady over there.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloisterEndGrass( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Moon is bright that way.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloisterEndStone( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Moon is bright that way.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotStairwell( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Leads down.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropRoses( IProp prop )
+	{
+		if(!Globals.fireglassActive)
+		{
+			yield return C.Shapes.Say("Something burnt...");
+		}
+		else
+		{
+			yield return C.Shapes.Say("Whoa, flowers!");
+		}
+		yield return E.Break;
+	}
 }

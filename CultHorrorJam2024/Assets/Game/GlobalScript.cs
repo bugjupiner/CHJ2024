@@ -392,14 +392,41 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		}
 		else if(item == I.Conception)
 		{
-			if(conceptionSense == senses.Hear && conceptionHeard) Audio.Play("conception_like");
+			PlayConceptionSenseSound(conceptionSense);
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
+			Camera.Shake(1f, 1f);
+			if(conceptionSense == senses.Feel) Audio.Play("conception_like");
+			else if(conceptionSense == senses.Hear && conceptionHeard) Audio.Play("conception_like");
 			else if(conceptionSense == senses.See && conceptionSaw) Audio.Play("conception_like");
 			else if(conceptionSense == senses.Taste && conceptionTasted) Audio.Play("conception_like");
 			else if(conceptionSense == senses.Smell && conceptionSmelled) Audio.Play("conception_like");
 			else
 			{
-				Camera.Shake(1f, 1f);
 				Audio.Play("conception_dislike");
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				switch(conceptionSense)
+				{
+					case senses.Smell:
+						yield return C.Shapes.Say("Doesn't smell great.");
+						break;
+					case senses.See:
+						yield return C.Shapes.Say("Not a pleasant sight.");
+						break;
+					case senses.Hear:
+						yield return C.Shapes.Say("Sounds bad.");
+						break;
+					case senses.Taste:
+						yield return C.Shapes.Say("Yuck!");
+						break;
+					case senses.Sixth:
+						yield return C.Shapes.Say("Not a good match...");
+						break;
+					default:
+						yield return C.Shapes.Say("I don't think it liked that...");
+						break;
+				}
 			}
 		}
 		else

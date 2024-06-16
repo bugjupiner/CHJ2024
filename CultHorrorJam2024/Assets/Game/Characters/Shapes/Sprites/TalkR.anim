@@ -272,4 +272,32 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1e-45
+    functionName: AnimSound
+    data: 
+    objectReferenceParameter: {fileID: 2716554266252194255, guid: f429a0a704c084aaa9f70f827b2a4e3d, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 1
+  - time: 0.2
+    functionName: AnimSound
+    data: 
+    objectReferenceParameter: {fileID: 2716554266252194255, guid: f429a0a704c084aaa9f70f827b2a4e3d, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 1
+  - time: 0.4
+    functionName: AnimSound
+    data: 
+    objectReferenceParameter: {fileID: 2716554266252194255, guid: f429a0a704c084aaa9f70f827b2a4e3d, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 1
+  - time: 0.6
+    functionName: AnimSound
+    data: 
+    objectReferenceParameter: {fileID: 2716554266252194255, guid: f429a0a704c084aaa9f70f827b2a4e3d, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 1

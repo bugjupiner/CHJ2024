@@ -77,4 +77,16 @@ public class RoomYard : RoomScript<RoomYard>
 		yield return C.Shapes.Say("Sure hope I can read.");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotLadder( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Dark down there.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotKitchen( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("That's a door.");
+		yield return E.Break;
+	}
 }

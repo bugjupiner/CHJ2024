@@ -78,4 +78,32 @@ public class RoomBasement : RoomScript<RoomBasement>
 		yield return C.Shapes.Say("It's a portal!");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotFork( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("This path splits after this....");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCells( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("The dungeon where I woke up.");
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return C.Shapes.Say("Ah, memories.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotStairwell( IHotspot hotspot )
+	{
+		if(Globals.basementDoorOpened)
+		{
+			yield return C.Shapes.Say("It's open!");
+		}
+		else
+		{
+			yield return C.Shapes.Say("Big, locked door.");
+		}
+		yield return E.Break;
+	}
 }

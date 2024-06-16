@@ -84,4 +84,23 @@ public class RoomLanding : RoomScript<RoomLanding>
 	{
 		Audio.UpdateCustomFalloff("shell_loop", C.Shapes.Position, Hotspot("Shell").WalkToPoint, 10f, 100f, 0f, 1f);
 	}
+
+	IEnumerator OnLookAtHotspotFront( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("This must be the front of the castle.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotDoor( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Why is that door upside down?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotDoor( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say("That's wrong.");
+		yield return E.Break;
+	}
 }

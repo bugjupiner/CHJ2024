@@ -79,7 +79,8 @@ public class RoomDorm : RoomScript<RoomDorm>
 		
 			E.FadeColor = Color.white;
 			yield return E.FadeOut();
-			C.Ghost.Enable();
+			C.Ghost.Clickable = true;
+			C.Ghost.Visible = true;
 			E.FadeColor = Color.white;
 			yield return E.FadeIn();
 		}
@@ -161,6 +162,42 @@ public class RoomDorm : RoomScript<RoomDorm>
 			Audio.Play("portal");
 			C.Player.Room = R.CloisterEnd;
 		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotFront( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("That symbol again...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotKitchen( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Back to the kitchen.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropPortalCloister( IProp prop )
+	{
+		yield return C.Shapes.Say("It's a portal!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropPortalBasement( IProp prop )
+	{
+		yield return C.Shapes.Say("It's a portal!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropPortalStoreroom( IProp prop )
+	{
+		yield return C.Shapes.Say("It's a portal!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropPortalCliff( IProp prop )
+	{
+		yield return C.Shapes.Say("It's a portal!");
 		yield return E.Break;
 	}
 }

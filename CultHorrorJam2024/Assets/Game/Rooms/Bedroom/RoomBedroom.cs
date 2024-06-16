@@ -177,4 +177,38 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		Globals.UpdateConceptionSprite();
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotEntryway( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Back towards the entryway.");
+		yield return E.Break;
+	}
+
+	void Update()
+	{
+	}
+
+	IEnumerator UpdateBlocking()
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnAnyClick()
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator AfterAnyClick()
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+
+		yield return E.Break;
+	}
 }

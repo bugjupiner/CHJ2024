@@ -132,6 +132,9 @@ public class RoomCells : RoomScript<RoomCells>
 			yield return C.Angel.Say("heh heh heh.");
 			yield return E.WaitSkip();
 			Globals.jumbled = false;
+			R.Cells.GetRegion("Bars").Walkable = Globals.jumbled;
+			R.Basement.GetRegion("Bars").Walkable = Globals.jumbled;
+		
 			Audio.Stop("player_jumble_01");
 			C.Shapes.AnimIdle = "Idle";
 			C.Shapes.AnimWalk = "Walk";
@@ -151,6 +154,24 @@ public class RoomCells : RoomScript<RoomCells>
 			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("You might find me USEFUL");
 		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotBasement( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("That door has a strange symbol...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotStoreroom( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Looks smelly...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotBarrels( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Those are barrels.");
 		yield return E.Break;
 	}
 }

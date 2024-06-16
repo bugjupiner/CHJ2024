@@ -68,7 +68,7 @@ public class RoomPathway : RoomScript<RoomPathway>
 
 	IEnumerator OnLookAtPropSpellbookTwo( IProp prop )
 	{
-
+		yield return C.Shapes.Say("This book seems different than the other.");
 		yield return E.Break;
 	}
 
@@ -94,6 +94,18 @@ public class RoomPathway : RoomScript<RoomPathway>
 	IEnumerator OnUseInvPropSpellBubble( IProp prop, IInventory item )
 	{
 
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloisterStart( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Maybe I should go.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotRitualSite( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("I think I see the hearth...");
 		yield return E.Break;
 	}
 }

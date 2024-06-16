@@ -612,4 +612,10 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		else Audio.Stop(smallFireHandle);
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotPathway( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("This way leads back.");
+		yield return E.Break;
+	}
 }

@@ -106,4 +106,23 @@ public class RoomCliff : RoomScript<RoomCliff>
 		yield return C.Shapes.Say("It's a portal!");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotFork( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("The shrine's over there.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotLadder( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Spooky...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotRupturedEarth( IHotspot hotspot )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Shapes.Say(" Looks like the world exploded.");
+		yield return E.Break;
+	}
 }

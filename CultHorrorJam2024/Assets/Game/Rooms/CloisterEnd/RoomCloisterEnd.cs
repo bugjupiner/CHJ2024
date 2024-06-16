@@ -61,4 +61,22 @@ public class RoomCloisterEnd : RoomScript<RoomCloisterEnd>
 		yield return C.Shapes.Say("It's a portal!");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotCloisterGrass( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("To the cloister.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotCloisterStone( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("To the cloister.");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotRobe( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("A cultists' robe");
+		yield return E.Break;
+	}
 }

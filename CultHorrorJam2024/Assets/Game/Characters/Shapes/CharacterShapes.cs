@@ -40,7 +40,7 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 
 	IEnumerator OnLookAt()
 	{
-
+		yield return C.Shapes.Say("I'm me...");
 		yield return E.Break;
 	}
 

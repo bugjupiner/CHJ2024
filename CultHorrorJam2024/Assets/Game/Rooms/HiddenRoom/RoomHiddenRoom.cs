@@ -80,4 +80,10 @@ public class RoomHiddenRoom : RoomScript<RoomHiddenRoom>
 	void Update()
 	{
 	}
+
+	IEnumerator OnLookAtPropTrumpetRat( IProp prop )
+	{
+		yield return C.Shapes.Say("A rat!");
+		yield return E.Break;
+	}
 }

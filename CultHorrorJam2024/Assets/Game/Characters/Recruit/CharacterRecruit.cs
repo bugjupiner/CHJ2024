@@ -13,7 +13,34 @@ public class CharacterRecruit : CharacterScript<CharacterRecruit>
 		yield return C.WalkToClicked();
 		yield return C.Player.FaceLeft();
 		
-		if(Globals.recruitHasSecondFace) // Get Second Face Back
+		if(Globals.fireglassActive)
+		{
+			if(!Globals.secondFace)
+			{
+				Audio.Play("recruit_talk");
+				yield return C.Recruit.Say("I... I don't know who you are.");
+				yield return E.WaitSkip();
+				Audio.Play("recruit_talk");
+				yield return C.Recruit.Say("Please, go away.");
+				yield return C.Recruit.Say("You could disturb the ritual.");
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				Audio.Play("recruit_talk");
+				yield return C.Recruit.Say("GAH! I've said too much.");
+			}
+			else
+			{
+				Audio.Play("recruit_talk");
+				yield return C.Recruit.Say("High Witch! My warmth and purity!");
+				yield return E.WaitSkip();
+				yield return C.Recruit.Say("I hope my blood has sufficed your needs.");
+				yield return E.WaitSkip();
+				Audio.Play("recruit_talk");
+				yield return C.Recruit.Say("I'd be happy to give more, my warmth.");
+			}
+		}
+		
+		else if(Globals.recruitHasSecondFace) // Get Second Face Back
 		{
 			yield return C.Shapes.Say("Yoink!");
 			Globals.recruitHasSecondFace = false;
@@ -38,7 +65,7 @@ public class CharacterRecruit : CharacterScript<CharacterRecruit>
 			yield break;
 		}
 		
-		if(!Globals.secondFace) // Default
+		else if(!Globals.secondFace) // Default
 		{
 			Audio.Play("recruit_talk");
 			yield return C.Recruit.Say("GET AWAY FROM ME!!!");

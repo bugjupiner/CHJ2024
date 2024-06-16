@@ -115,4 +115,22 @@ public class RoomFront : RoomScript<RoomFront>
 		yield return C.Shapes.Say("Something seems different on the other side...");
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotEntryway( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Big doors!");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotLanding( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("Is... is that a beach?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotDorm( IHotspot hotspot )
+	{
+		yield return C.Shapes.Say("The dorm's in there.");
+		yield return E.Break;
+	}
 }
