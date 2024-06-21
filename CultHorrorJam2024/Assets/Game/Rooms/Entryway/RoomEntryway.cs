@@ -25,7 +25,11 @@ public class RoomEntryway : RoomScript<RoomEntryway>
 		
 		if(Globals.hearthSummoned && !I.Glass.EverCollected)
 		{
-			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+			Prop("FireParticles").Visible = true;
+		}
+		else
+		{
+			Prop("FireParticles").Visible = false;
 		}
 	}
 
@@ -61,7 +65,23 @@ public class RoomEntryway : RoomScript<RoomEntryway>
 	IEnumerator OnInteractHotspotBigDoor( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		yield return C.Shapes.Say("Locked.");
+		if(Hotspot("BigDoor").UseCount <= 1)
+		{
+			yield return C.Shapes.Say("Locked.");
+		}
+		else if(Hotspot("BigDoor").UseCount <= 3)
+		{
+			yield return C.Shapes.Say("Still Locked.");
+		}
+		else if(Hotspot("BigDoor").UseCount <= 5)
+		{
+			yield return C.Shapes.Say("Why is this still locked?");
+		}
+		else if(Hotspot("BigDoor").UseCount <= 7)
+		{
+			yield return C.Shapes.Say("LET ME IN!");
+		}
+		
 		yield return E.Break;
 	}
 

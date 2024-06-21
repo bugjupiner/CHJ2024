@@ -119,7 +119,6 @@ public class RoomCells : RoomScript<RoomCells>
 	{
 		if(!Globals.angelTutorial)
 		{
-			Globals.angelTutorial = true;
 			C.Angel.AnimTalk = "Talk";
 			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("HA HA HA");
@@ -131,13 +130,8 @@ public class RoomCells : RoomScript<RoomCells>
 			Audio.Play("angel_hehe_04");
 			yield return C.Angel.Say("heh heh heh.");
 			yield return E.WaitSkip();
-			Globals.jumbled = false;
-			R.Cells.GetRegion("Bars").Walkable = Globals.jumbled;
-			R.Basement.GetRegion("Bars").Walkable = Globals.jumbled;
-		
-			Audio.Stop("player_jumble_01");
-			C.Shapes.AnimIdle = "Idle";
-			C.Shapes.AnimWalk = "Walk";
+			Globals.angelTutorial = true;
+			//Globals.SetJumbled(false);
 			yield return C.Shapes.FaceLeft();
 			yield return E.WaitSkip();
 			yield return C.Shapes.Say("Uh...");
@@ -153,6 +147,8 @@ public class RoomCells : RoomScript<RoomCells>
 			C.Angel.AnimTalk = "Talk";
 			Audio.Play("angel_hehe_01");
 			yield return C.Angel.Say("You might find me USEFUL");
+			yield return E.WaitSkip();
+			yield return C.Display("JUMBLE\n\nClick yourself, or press 'J' or 'Space'");
 		}
 		yield return E.Break;
 	}

@@ -25,7 +25,11 @@ public class RoomFront : RoomScript<RoomFront>
 		
 		if(Globals.hearthSummoned && !I.Glass.EverCollected)
 		{
-			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+			Prop("FireParticles").Visible = true;
+		}
+		else
+		{
+			Prop("FireParticles").Visible = false;
 		}
 	}
 
@@ -95,7 +99,7 @@ public class RoomFront : RoomScript<RoomFront>
 		Audio.Play("glass_pickup_01");
 		yield return C.Display("Got Glass");
 		C.Shapes.AddInventory("Glass");
-		Prop("FireParticles").Instance.transform.GetComponentInChildren<ParticleSystem>().Stop();
+		Prop("FireParticles").Visible = false;
 		Prop("Glass").Disable();
 		yield return E.Break;
 	}

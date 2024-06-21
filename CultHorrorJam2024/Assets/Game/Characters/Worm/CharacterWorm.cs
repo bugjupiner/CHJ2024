@@ -78,13 +78,13 @@ public class CharacterWorm : CharacterScript<CharacterWorm>
 					yield return E.WaitSkip();
 					C.Worm.AnimTalk = "Talk";
 					yield return C.Worm.Say("BUT NOT ENOUGH");
-					yield return C.Worm.Say("IT'S...");
+					yield return C.Worm.Say("I...");
 					yield return E.WaitSkip();
 					Camera.Shake(1f, 4f);
 					Audio.Play("worm_groan_01");
 					Audio.Play("worm_rumble");
 					C.Worm.AnimTalk = "Excited";
-					yield return C.Worm.Say(" IT'S NOT ENOUGH HAPPY!");
+					yield return C.Worm.Say(" I NEED MORE SMILE");
 				}
 				else // Step Three
 				{
@@ -102,6 +102,7 @@ public class CharacterWorm : CharacterScript<CharacterWorm>
 					C.Worm.Disable();
 		
 					Region("WormHole").Walkable = true;
+					Hotspot("Robe").Clickable = true;
 					Prop("DollHead").Clickable = true;
 				}
 		
@@ -141,6 +142,20 @@ public class CharacterWorm : CharacterScript<CharacterWorm>
 				Camera.Shake(1f, 4f);
 				yield return C.Worm.Say("ooooughhh.....");
 			}
+		}
+		if(item == I.Pamphlet)
+		{
+			Camera.Shake(1f, 4f);
+			Audio.Play("worm_groan_01");
+			yield return C.Worm.Say("I caaan't reeead");
+		}
+		if(item == I.Knife || item == I.Rubble)
+		{
+			C.Worm.AnimTalk = "Excited";
+			Camera.Shake(1f, 4f);
+			Audio.Play("worm_groan_03");
+			yield return C.Worm.Say("HA! TICKLES!");
+			C.Worm.AnimTalk = "Talk";
 		}
 		yield return E.Break;
 	}

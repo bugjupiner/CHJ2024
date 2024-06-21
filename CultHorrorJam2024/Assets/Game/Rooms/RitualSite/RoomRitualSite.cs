@@ -19,7 +19,9 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		if(Globals.hearthSummoned)
 		{
 			bigFireHandle = Audio.Play("big_fire_loop");
-			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+
+			if(!I.Glass.EverCollected) Prop("FireParticles").Visible = true;
+			else Prop("FireParticles").Visible = false;
 		}
 		else smallFireHandle = Audio.Play("small_fire_loop");
 	}
@@ -95,7 +97,7 @@ public class RoomRitualSite : RoomScript<RoomRitualSite>
 		
 			Prop("SmallFire").Disable();
 			Prop("Fire").Enable();
-			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+			Prop("FireParticles").Visible = true;
 			yield return C.Shapes.Say("Whoa!");
 		}
 		yield return E.Break;

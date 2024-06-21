@@ -237,6 +237,16 @@ public class CharacterAngel : CharacterScript<CharacterAngel>
 		}
 		
 		// Other Items
+		if(item == I.Pamphlet)
+		{
+			Audio.Play("angel_hehe_06");
+			yield return C.Angel.Say("Oh what's this?");
+			yield return C.Angel.Say("The Circle Of Vesta...");
+			Audio.Play("angel_hehe_02");
+			C.Angel.AnimTalk = "AltTalk";
+			yield return C.Angel.Say("hehehe, what's that?");
+			C.Angel.AnimTalk = "Talk";
+		}
 		if(item == I.Blanket)
 		{
 			Audio.Play("angel_hehe_01");

@@ -1340,7 +1340,7 @@ MonoBehaviour:
   m_data:
     m_description: FireParticles
     m_cursor: 
-    m_visible: 1
+    m_visible: 0
     m_clickable: 0
     m_animation: 
     m_alpha: 1
@@ -1596,7 +1596,7 @@ MonoBehaviour:
     - m_name: FinalPoint
       m_position: {x: -26.977722, y: -44}
     - m_name: CasinaRise
-      m_position: {x: 0, y: 26.940998}
+      m_position: {x: 0, y: 22}
   m_debugStartFunction: 
   m_hotspotComponents:
   - {fileID: 2957461442413591616}
@@ -1819,7 +1819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5318874183734394938
 Transform:
   m_ObjectHideFlags: 0
@@ -1916,7 +1916,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1

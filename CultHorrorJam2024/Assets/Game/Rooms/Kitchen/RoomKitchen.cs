@@ -30,7 +30,7 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 	IEnumerator OnInteractHotspotHiddenRoom( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		if(Globals.jumbled && Globals.fireglassActive) C.Player.Room = R.HiddenRoom;
+		if(Globals.jumbled) C.Player.Room = R.HiddenRoom;
 		else
 		{
 			yield return C.Shapes.Say("It's a fireplace.");
@@ -44,6 +44,9 @@ public class RoomKitchen : RoomScript<RoomKitchen>
 		if(Globals.dormDoorOpened) C.Player.Room = R.Dorm;
 		else
 		{
+			Audio.Play("dormant_soul_pickup");
+			yield return E.WaitSkip();
+			yield return E.WaitSkip();
 			yield return C.Shapes.Say("Huh?");
 			yield return C.Shapes.Say("Something is pushing me away...");
 		}

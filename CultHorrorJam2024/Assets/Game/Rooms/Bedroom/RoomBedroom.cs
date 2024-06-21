@@ -156,13 +156,27 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		{
 			E.FadeColor = Color.white;
 			yield return E.FadeOut(0.1f);
-			Globals.SwitchMirrorState();
 		
-			if(Globals.mirrored) Audio.PlayMusic("Music_Basement_Reversed_Loop");
-			else Audio.PlayMusic("Music_Basement_Loop");
+			if(I.MirrorScroll.EverCollected)
+			{
+				Globals.SwitchMirrorState();
 		
-			E.FadeColor = Color.white;
-			yield return E.FadeIn(0.3f);
+				if(Globals.mirrored) Audio.PlayMusic("Music_Basement_Reversed_Loop");
+				else Audio.PlayMusic("Music_Basement_Loop");
+		
+				E.FadeColor = Color.white;
+				yield return E.FadeIn(0.3f);
+			}
+			else
+			{
+				E.FadeColor = Color.white;
+				yield return E.FadeIn(0.3f);
+		
+				yield return E.WaitSkip();
+				yield return E.WaitSkip();
+				yield return C.Shapes.Say("Maybe I should know what I'm doing first.");
+			}
+		
 		}
 		else
 		{

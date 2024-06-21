@@ -28,7 +28,11 @@ public class RoomCloisterStart : RoomScript<RoomCloisterStart>
 		
 		if(Globals.hearthSummoned && !I.Glass.EverCollected)
 		{
-			Prop("FireParticles").Instance.transform.GetChild(0).gameObject.SetActive(true);
+			Prop("FireParticles").Visible = true;
+		}
+		else
+		{
+			Prop("FireParticles").Visible = false;
 		}
 	}
 

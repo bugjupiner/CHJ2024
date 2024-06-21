@@ -24,7 +24,7 @@ public class RoomEndScreen : RoomScript<RoomEndScreen>
 		{
 			Prop("EndingText").Instance.GetComponentInChildren<QuestText>().text = "HOUSE ENDING";
 		}
-		else if(Globals.endingIndex == 2)
+		else if(Globals.endingIndex == 3)
 		{
 			Prop("EndingText").Instance.GetComponentInChildren<QuestText>().text = "GODDESS ENDING";
 		}

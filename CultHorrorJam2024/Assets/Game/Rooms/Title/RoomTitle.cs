@@ -56,6 +56,11 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		yield return E.FadeOut(3f);
 		
+		yield return C.Display("CONTROLS\n\nLeft Click: Move / Interact \nRight Click: Look / Examine");
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		
+		
 		// Turn on the inventory and info bar now that we're starting a game
 		G.InventoryBar.Show();
 		

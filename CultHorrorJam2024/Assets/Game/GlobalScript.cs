@@ -95,6 +95,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public void OnEnterRoom()
 	{
 		if(Globals.secondFace) SetSecondFace(true);
+		if(Globals.jumbled) SetJumbled(false);
 	}
 
 	/// Blocking script called whenever you enter a room, after fade in is complete
@@ -128,18 +129,27 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		// Add anything that should happen every frame here.
 		bool mouseOverSomething = E.GetMouseOverClickable() != null;
 		
-		if(!Globals.jumbled && !finaleStarted)
+		if(!finaleStarted)
 		{
-			if(mouseOverSomething && !E.GetBlocked())
+			if(!Globals.jumbled)
 			{
-				C.Shapes.AnimIdle = "Curious";
+				if(mouseOverSomething && !E.GetBlocked())
+				{
+					C.Shapes.AnimIdle = "Curious";
+				}
+				else
+				{
+					C.Shapes.AnimIdle = "Idle";
+				}
 			}
 			else
 			{
-				C.Shapes.AnimIdle = "Idle";
+				if(C.Shapes.Talking && angelTutorial) SetJumbled(false);
 			}
 		}
 		
+		
+		// Hover Sounds
 		if(mouseOverSomething && !mouseWasOverSomething && !Audio.IsPlaying("ui_hover")) Audio.Play("ui_hover");
 		
 		mouseWasOverSomething = mouseOverSomething;
@@ -198,6 +208,9 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 				else
 					E.Restart();
 			}
+		
+			// Jumbled HotKey
+			if ( Input.GetKeyDown(KeyCode.J) ||  Input.GetKeyDown(KeyCode.Space)) Globals.SetJumbled(!jumbled);
 		}
 		
 		// Call through to gui system for keyboard navigation
@@ -595,5 +608,27 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	{
 
 		yield return E.Break;
+	}
+
+	public void SetJumbled(bool isEnabled)
+	{
+		Globals.jumbled = isEnabled;
+		if(isEnabled)
+		{
+			C.Shapes.AnimIdle = "Jumble";
+			C.Shapes.AnimWalk = "Jumble";
+			C.Shapes.AnimTalk = "Jumble";
+			Audio.Play("player_jumble_01");
+		}
+		else
+		{
+			C.Shapes.AnimIdle = "Idle";
+			C.Shapes.AnimWalk = "Walk";
+			C.Shapes.AnimTalk = "Talk";
+			Audio.Stop("player_jumble_01");
+		}
+		
+		R.Cells.GetRegion("Bars").Walkable = Globals.jumbled;
+		R.Basement.GetRegion("Bars").Walkable = Globals.jumbled;
 	}
 }

@@ -616,7 +616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8307237672549563560
 Transform:
   m_ObjectHideFlags: 0
@@ -713,7 +713,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -5567,9 +5567,9 @@ PolygonCollider2D:
       - {x: 104.04294, y: -29.796131}
       - {x: 110.92855, y: 80.577515}
       - {x: 132.5199, y: 83.8712}
-      - {x: 137.81415, y: 76.70436}
-      - {x: 143.21077, y: 61.278805}
-      - {x: 141.9079, y: -42.499817}
+      - {x: 147.19272, y: 84.910614}
+      - {x: 162.5541, y: 82.3806}
+      - {x: 161.83737, y: -59.49849}
       - {x: 126.19469, y: -53.895775}
 --- !u!1 &5641408559868280068
 GameObject:
@@ -5850,7 +5850,7 @@ MonoBehaviour:
   m_data:
     m_description: FireParticles
     m_cursor: 
-    m_visible: 1
+    m_visible: 0
     m_clickable: 0
     m_animation: FireParticles
     m_alpha: 1

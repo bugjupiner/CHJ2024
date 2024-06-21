@@ -244,7 +244,15 @@ public class CharacterRecruit : CharacterScript<CharacterRecruit>
 			yield return C.Recruit.Say("Are... are you planning...");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
+			Audio.Play("recruit_talk");
 			yield return C.Recruit.Say("...On starting a fire?");
+		}
+		if(item == I.DormantSoul)
+		{
+			Audio.Play("recruit_talk");
+			yield return C.Recruit.Say("No...!");
+			if(Globals.recruitHasKnife) C.Recruit.PlayAnimationBG("Stab");
+			yield return C.Recruit.Say("Let the damn soul rest already!");
 		}
 		yield return E.Break;
 	}

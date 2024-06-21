@@ -318,19 +318,23 @@ public class CharacterWizard : CharacterScript<CharacterWizard>
 		{
 			I.Pamphlet.Active = false;
 			yield return C.Wizard.Say("What have we here!");
+			Audio.Play("wizard_talk");
 			yield return C.Wizard.Say("Some sort of, foldable tome. Aha, genius!");
 			yield return E.WaitSkip();
 			yield return C.Shapes.Say("It's a pamphlet.");
+			Audio.Play("wizard_talk");
 			yield return C.Wizard.Say("Yes, yes. Of course.");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
 			yield return C.Shapes.Say("Know something about it?");
+			Audio.Play("wizard_talk");
 			yield return C.Wizard.Say("The Circle of Vesta?");
 			yield return C.Wizard.Say("Well, we're standing in their former place of residence.");
 			yield return E.WaitSkip();
 			yield return C.Wizard.Say("They... erm... vacated last night.");
 			yield return E.WaitSkip();
 			yield return E.WaitSkip();
+			Audio.Play("wizard_talk");
 			yield return C.Wizard.Say("It was... quite the show.");
 		}
 		

@@ -12,29 +12,12 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 		{
 			Globals.SetSecondFace(false);
 			yield return E.ConsumeEvent;
-			yield break;
 		}
-		
-		if(Globals.jumbled == true)
-		{
-			Globals.jumbled = false;
-			C.Shapes.AnimIdle = "Idle";
-			C.Shapes.AnimWalk = "Walk";
-			Audio.Stop("player_jumble_01");
-			}
 		else
 		{
-			if(Globals.jumbled == false)
-			{
-				Globals.jumbled = true;
-				C.Shapes.AnimIdle = "Jumble";
-				C.Shapes.AnimWalk = "Jumble";
-				Audio.Play("player_jumble_01");
-			}
+			Globals.SetJumbled(!Globals.jumbled);
+			yield return E.ConsumeEvent;
 		}
-		
-		R.Cells.GetRegion("Bars").Walkable = Globals.jumbled;
-		R.Basement.GetRegion("Bars").Walkable = Globals.jumbled;
 		yield return E.Break;
 	}
 
@@ -66,6 +49,7 @@ public class CharacterShapes : CharacterScript<CharacterShapes>
 		else if (item == I.DormantSoul)
 		{
 			yield return C.Shapes.Say("It wants nothing to do with me.");
+			yield return C.Shapes.Say("I think it needs to rest...");
 		}
 		else if (item == I.Knife)
 		{
